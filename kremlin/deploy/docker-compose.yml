@@ -1,0 +1,39 @@
+# Witness relay behind Caddy. Replace witness.example.com and the --allow list.
+# Tunnel: TLS on 8443 with the same certificate (certbot or Caddy-issued files mounted read-only).
+# Control API: https://witness.example.com/witness/ via Caddy.
+services:
+  relay:
+    build: { context: .., dockerfile: deploy/Dockerfile }
+    command:
+      - --tunnel=0.0.0.0:8443
+      - --tunnel-cert=/certs/fullchain.pem
+      - --tunnel-key=/certs/privkey.pem
+      - --tokens=/data/tokens.txt
+      - --rate=600
+      - --allow=openrouter.ai
+      - --allow=api.openai.com
+      - --allow=api.anthropic.com
+      - --allow=*.googleapis.com
+    volumes:
+      - witness-data:/data
+      - /etc/letsencrypt/live/witness.example.com:/certs:ro
+    ports: ["8443:8443"]
+    restart: unless-stopped
+  hub:
+    build: { context: .., dockerfile: deploy/Dockerfile }
+    entrypoint: ["kremlin-hub", "--dir", "/data/hub", "--listen", "0.0.0.0:8090", "--workers", "2",
+                 "--admin-token-file", "/data/admin-token.txt"]
+    command: ["--witness-key", "REPLACE_WITH_WITNESS_PUBLIC_KEY"]
+    volumes: [hub-data:/data]
+    restart: unless-stopped
+  caddy:
+    image: caddy:2
+    ports: ["80:80", "443:443"]
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+    restart: unless-stopped
+volumes:
+  hub-data: {}
+  witness-data: {}
+  caddy-data: {}

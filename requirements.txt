@@ -1,0 +1,7 @@
+# analysis and figures (the toolkit in kremlin/ has its own pyproject)
+numpy
+matplotlib
+httpx>=0.25
+datasets          # dataset prompts (wikitext, CodeAlpaca) for the TV campaigns and cache-semantics probes
+torch             # logit_reconstruction_benchmark_v1 only (local ground truth)
+transformers      # logit_reconstruction_benchmark_v1 only

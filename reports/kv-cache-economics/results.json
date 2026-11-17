@@ -1,0 +1,2039 @@
+{
+ "assumptions": {
+  "gpu_dollars_per_hour": [
+   2.5,
+   1.5,
+   4.0
+  ],
+  "gpu_peak_flops": 989000000000000.0,
+  "mfu": [
+   0.45,
+   0.6,
+   0.3
+  ],
+  "hbm_gb": 80,
+  "tiers": {
+   "HBM": {
+    "cost": null,
+    "bandwidth": null
+   },
+   "Host DRAM": {
+    "cost": [
+     0.001,
+     0.0002,
+     0.005
+    ],
+    "bandwidth": 50000000000.0
+   },
+   "NVMe SSD": {
+    "cost": [
+     3e-05,
+     5e-06,
+     0.00014
+    ],
+    "bandwidth": 10000000000.0
+   }
+  },
+  "kv_element_bytes": 2,
+  "recurrent_state_bytes": 4,
+  "note": "baseline, low-cost, high-cost cases; assumptions not measurements"
+ },
+ "models": [
+  {
+   "model": "MiniMaxAI--MiniMax-M1-80k",
+   "snapshot": "8d1494b1a260e22040d5b9b2eb332eb44500b34d",
+   "layers": 80,
+   "full_bytes": 40960,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 293601280,
+   "attn_full": 163840,
+   "attn_window": 0.0,
+   "linear_flops": 440401920,
+   "family": "Linear attention + global",
+   "active_params": 45900000000.0,
+   "bytes_per_token_32k": 49920.0,
+   "bytes_per_token_32k_fp8_kv": 29440.0,
+   "economics_32k": {
+    "recompute": 1.5230671809659339e-07,
+    "bytes": 49920.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 1.56e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.09763251160038038
+     },
+     "Host DRAM": {
+      "hold_per_hour": 4.9920000000000006e-08,
+      "load": 6.933333333333334e-10,
+      "breakeven_hours": 3.0371270986229972
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 1.4976e-09,
+      "load": 3.4666666666666667e-09,
+      "breakeven_hours": 99.38571810224806
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen2.5-72B-Instruct",
+   "snapshot": "495f39366efef23836d0cfae4fbe635880d2be31",
+   "layers": 80,
+   "full_bytes": 327680,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 1310720,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 72700000000.0,
+   "bytes_per_token_32k": 327680.0,
+   "bytes_per_token_32k_fp8_kv": 163840.0,
+   "economics_32k": {
+    "recompute": 2.9389593079429277e-07,
+    "bytes": 327680.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 1.024e-05,
+      "load": 0.0,
+      "breakeven_hours": 0.02870077449163015
+     },
+     "Host DRAM": {
+      "hold_per_hour": 3.2768000000000003e-07,
+      "load": 4.551111111111111e-09,
+      "breakeven_hours": 0.8830103139745533
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 9.830400000000001e-09,
+      "load": 2.275555555555556e-08,
+      "breakeven_hours": 27.581825280633257
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen2.5-7B-Instruct",
+   "snapshot": "a09a35458c702b33eeacc393d103063234e8bc28",
+   "layers": 28,
+   "full_bytes": 57344,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 200704,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 7600000000.0,
+   "bytes_per_token_32k": 57344.0,
+   "bytes_per_token_32k_fp8_kv": 28672.0,
+   "economics_32k": {
+    "recompute": 3.397974739417544e-08,
+    "bytes": 57344.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 1.792e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.018961912608356828
+     },
+     "Host DRAM": {
+      "hold_per_hour": 5.7344e-08,
+      "load": 7.964444444444446e-10,
+      "breakeven_hours": 0.578670880122262
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 1.72032e-09,
+      "load": 3.982222222222222e-09,
+      "breakeven_hours": 17.43717748555688
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen2.5-Coder-32B-Instruct",
+   "snapshot": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+   "layers": 64,
+   "full_bytes": 262144,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 655360,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 32800000000.0,
+   "bytes_per_token_32k": 262144.0,
+   "bytes_per_token_32k_fp8_kv": 131072.0,
+   "economics_32k": {
+    "recompute": 1.358693100650364e-07,
+    "bytes": 262144.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 8.192e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.016585609138798387
+     },
+     "Host DRAM": {
+      "hold_per_hour": 2.6214400000000005e-07,
+      "load": 3.640888888888889e-09,
+      "breakeven_hours": 0.5044113966985607
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 7.864320000000001e-09,
+      "load": 1.8204444444444446e-08,
+      "breakeven_hours": 14.961861371433503
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3-235B-A22B",
+   "snapshot": "8efa61729e24bd65b1d152b5ab5409052aa80e65",
+   "layers": 94,
+   "full_bytes": 192512,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 1540096,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 22000000000.0,
+   "bytes_per_token_32k": 192512.0,
+   "bytes_per_token_32k_fp8_kv": 96256.0,
+   "economics_32k": {
+    "recompute": 1.4740207986618233e-07,
+    "bytes": 192512.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 6.016e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.024501675509671268
+     },
+     "Host DRAM": {
+      "hold_per_hour": 1.92512e-07,
+      "load": 2.673777777777778e-09,
+      "breakeven_hours": 0.7517884707883381
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 5.77536e-09,
+      "load": 1.336888888888889e-08,
+      "breakeven_hours": 23.207763841092753
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3-235B-A22B-Instruct-2507",
+   "snapshot": "ac9c66cc9b46af7306746a9250f23d47083d689e",
+   "layers": 94,
+   "full_bytes": 192512,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 1540096,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 22000000000.0,
+   "bytes_per_token_32k": 192512.0,
+   "bytes_per_token_32k_fp8_kv": 96256.0,
+   "economics_32k": {
+    "recompute": 1.4740207986618233e-07,
+    "bytes": 192512.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 6.016e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.024501675509671268
+     },
+     "Host DRAM": {
+      "hold_per_hour": 1.92512e-07,
+      "load": 2.673777777777778e-09,
+      "breakeven_hours": 0.7517884707883381
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 5.77536e-09,
+      "load": 1.336888888888889e-08,
+      "breakeven_hours": 23.207763841092753
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3-30B-A3B",
+   "snapshot": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+   "layers": 48,
+   "full_bytes": 98304,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 393216,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 3300000000.0,
+   "bytes_per_token_32k": 98304.0,
+   "bytes_per_token_32k_fp8_kv": 49152.0,
+   "economics_32k": {
+    "recompute": 3.040373411227203e-08,
+    "bytes": 98304.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 3.072e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.009897048864671883
+     },
+     "Host DRAM": {
+      "hold_per_hour": 9.8304e-08,
+      "load": 1.3653333333333334e-09,
+      "breakeven_hours": 0.2953938881321075
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.9491200000000003e-09,
+      "load": 6.826666666666667e-09,
+      "breakeven_hours": 7.994611085885063
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3-30B-A3B-Instruct-2507",
+   "snapshot": "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe",
+   "layers": 48,
+   "full_bytes": 98304,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 393216,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 3300000000.0,
+   "bytes_per_token_32k": 98304.0,
+   "bytes_per_token_32k_fp8_kv": 49152.0,
+   "economics_32k": {
+    "recompute": 3.040373411227203e-08,
+    "bytes": 98304.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 3.072e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.009897048864671883
+     },
+     "Host DRAM": {
+      "hold_per_hour": 9.8304e-08,
+      "load": 1.3653333333333334e-09,
+      "breakeven_hours": 0.2953938881321075
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.9491200000000003e-09,
+      "load": 6.826666666666667e-09,
+      "breakeven_hours": 7.994611085885063
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3-32B",
+   "snapshot": "9216db5781bf21249d130ec9da846c4624c16137",
+   "layers": 64,
+   "full_bytes": 262144,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 1048576,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 32800000000.0,
+   "bytes_per_token_32k": 262144.0,
+   "bytes_per_token_32k_fp8_kv": 131072.0,
+   "economics_32k": {
+    "recompute": 1.5597457584041745e-07,
+    "bytes": 262144.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 8.192e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.019039865214894706
+     },
+     "Host DRAM": {
+      "hold_per_hour": 2.6214400000000005e-07,
+      "load": 3.640888888888889e-09,
+      "breakeven_hours": 0.5811068990765706
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 7.864320000000001e-09,
+      "load": 1.8204444444444446e-08,
+      "breakeven_hours": 17.51837811736717
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3-8B",
+   "snapshot": "b968826d9c46dd6066d109eabc6255188de91218",
+   "layers": 36,
+   "full_bytes": 147456,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 294912,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 8200000000.0,
+   "bytes_per_token_32k": 147456.0,
+   "bytes_per_token_32k_fp8_kv": 73728.0,
+   "economics_32k": {
+    "recompute": 4.0669082774719446e-08,
+    "bytes": 147456.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 4.608e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.008825755810485992
+     },
+     "Host DRAM": {
+      "hold_per_hour": 1.47456e-07,
+      "load": 2.048e-09,
+      "breakeven_hours": 0.26191598018879836
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 4.42368e-09,
+      "load": 1.0240000000000001e-08,
+      "breakeven_hours": 6.878680821108093
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3-Next-80B-A3B-Instruct",
+   "snapshot": "9c7f2fbe84465e40164a94cc16cd30b6999b0cc7",
+   "layers": 48,
+   "full_bytes": 24576,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 77266944,
+   "attn_full": 98304,
+   "attn_window": 0.0,
+   "linear_flops": 113246208,
+   "family": "Linear attention + global",
+   "active_params": 3000000000.0,
+   "bytes_per_token_32k": 26934.0,
+   "bytes_per_token_32k_fp8_kv": 14646.0,
+   "economics_32k": {
+    "recompute": 1.4565266823952365e-08,
+    "bytes": 26934.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 8.416875e-07,
+      "load": 0.0,
+      "breakeven_hours": 0.017304839176003405
+     },
+     "Host DRAM": {
+      "hold_per_hour": 2.6934e-08,
+      "load": 3.7408333333333336e-10,
+      "breakeven_hours": 0.5268873353612175
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 8.080200000000001e-10,
+      "load": 1.8704166666666665e-09,
+      "breakeven_hours": 15.711059326855397
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3.5-122B-A10B",
+   "snapshot": "dc4d348443bc740c68e2d77492492c11606384d5",
+   "layers": 48,
+   "full_bytes": 24576,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 153649152,
+   "attn_full": 196608,
+   "attn_window": 0.0,
+   "linear_flops": 226492416,
+   "family": "Linear attention + global",
+   "active_params": 10000000000.0,
+   "bytes_per_token_32k": 29265.0,
+   "bytes_per_token_32k_fp8_kv": 16977.0,
+   "economics_32k": {
+    "recompute": 4.161352557140896e-08,
+    "bytes": 29265.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 9.1453125e-07,
+      "load": 0.0,
+      "breakeven_hours": 0.04550257366427769
+     },
+     "Host DRAM": {
+      "hold_per_hour": 2.9264999999999998e-08,
+      "load": 4.0645833333333336e-10,
+      "breakeven_hours": 1.408066538119789
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 8.7795e-10,
+      "load": 2.0322916666666665e-09,
+      "breakeven_hours": 45.08369941880778
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3.5-27B",
+   "snapshot": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+   "layers": 64,
+   "full_bytes": 65536,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 153944064,
+   "attn_full": 196608,
+   "attn_window": 0.0,
+   "linear_flops": 226492416,
+   "family": "Linear attention + global",
+   "active_params": 27000000000.0,
+   "bytes_per_token_32k": 70234.0,
+   "bytes_per_token_32k_fp8_kv": 37466.0,
+   "economics_32k": {
+    "recompute": 9.466624124630192e-08,
+    "bytes": 70234.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.1948125e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.04313181251077343
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7.0234e-08,
+      "load": 9.754722222222223e-10,
+      "breakeven_hours": 1.3339802520727808
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.10702e-09,
+      "load": 4.8773611111111116e-09,
+      "breakeven_hours": 42.61415655057418
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3.5-35B-A3B",
+   "snapshot": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+   "layers": 40,
+   "full_bytes": 20480,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 64389120,
+   "attn_full": 81920,
+   "attn_window": 0.0,
+   "linear_flops": 94371840,
+   "family": "Linear attention + global",
+   "active_params": 3000000000.0,
+   "bytes_per_token_32k": 22445.0,
+   "bytes_per_token_32k_fp8_kv": 12205.0,
+   "economics_32k": {
+    "recompute": 1.3698096343731666e-08,
+    "bytes": 22445.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 7.0140625e-07,
+      "load": 0.0,
+      "breakeven_hours": 0.01952947574067335
+     },
+     "Host DRAM": {
+      "hold_per_hour": 2.2445e-08,
+      "load": 3.117361111111111e-10,
+      "breakeven_hours": 0.5964072280071533
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 6.7335e-10,
+      "load": 1.5586805555555555e-09,
+      "breakeven_hours": 18.028389081719926
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3.5-397B-A17B",
+   "snapshot": "8472618112abcbd45acbcdc58436aff4233c23f7",
+   "layers": 60,
+   "full_bytes": 30720,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 192061440,
+   "attn_full": 245760,
+   "attn_window": 0.0,
+   "linear_flops": 283115520,
+   "family": "Linear attention + global",
+   "active_params": 17000000000.0,
+   "bytes_per_token_32k": 36581.25,
+   "bytes_per_token_32k_fp8_kv": 21221.25,
+   "economics_32k": {
+    "recompute": 6.606027287820345e-08,
+    "bytes": 36581.25,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 1.1431640625e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.05778721973968933
+     },
+     "Host DRAM": {
+      "hold_per_hour": 3.658125e-08,
+      "load": 5.080729166666666e-10,
+      "breakeven_hours": 1.7919617279764024
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 1.0974375e-09,
+      "load": 2.5403645833333334e-09,
+      "breakeven_hours": 57.88020574736158
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen--Qwen3.5-9B",
+   "snapshot": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+   "layers": 32,
+   "full_bytes": 32768,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 51511296,
+   "attn_full": 65536,
+   "attn_window": 0.0,
+   "linear_flops": 75497472,
+   "family": "Linear attention + global",
+   "active_params": 9000000000.0,
+   "bytes_per_token_32k": 34340.0,
+   "bytes_per_token_32k_fp8_kv": 17956.0,
+   "economics_32k": {
+    "recompute": 3.155541374876731e-08,
+    "bytes": 34340.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 1.073125e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.0294051613267488
+     },
+     "Host DRAM": {
+      "hold_per_hour": 3.434e-08,
+      "load": 4.769444444444445e-10,
+      "breakeven_hours": 0.905022402572011
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 1.0302e-09,
+      "load": 2.3847222222222223e-09,
+      "breakeven_hours": 28.315561567215187
+     }
+    }
+   }
+  },
+  {
+   "model": "deepseek-ai--DeepSeek-V3",
+   "snapshot": "e815299b0bcbac849fa540c768ef21845365c9eb",
+   "layers": 61,
+   "full_bytes": 70272,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 2498560,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "MLA (latent)",
+   "active_params": 37000000000.0,
+   "bytes_per_token_32k": 70272.0,
+   "bytes_per_token_32k_fp8_kv": 35136.0,
+   "economics_32k": {
+    "recompute": 2.4321988490681445e-07,
+    "bytes": 70272.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.196e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.11075586744390459
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7.0272e-08,
+      "load": 9.76e-10,
+      "breakeven_hours": 3.447231968733129
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.10816e-09,
+      "load": 4.8800000000000005e-09,
+      "breakeven_hours": 113.05588043925246
+     }
+    }
+   }
+  },
+  {
+   "model": "deepseek-ai--DeepSeek-V3-0324",
+   "snapshot": "e9b33add76883f293d6bf61f6bd89b497e80e335",
+   "layers": 61,
+   "full_bytes": 70272,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 2498560,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "MLA (latent)",
+   "active_params": 37000000000.0,
+   "bytes_per_token_32k": 70272.0,
+   "bytes_per_token_32k_fp8_kv": 35136.0,
+   "economics_32k": {
+    "recompute": 2.4321988490681445e-07,
+    "bytes": 70272.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.196e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.11075586744390459
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7.0272e-08,
+      "load": 9.76e-10,
+      "breakeven_hours": 3.447231968733129
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.10816e-09,
+      "load": 4.8800000000000005e-09,
+      "breakeven_hours": 113.05588043925246
+     }
+    }
+   }
+  },
+  {
+   "model": "deepseek-ai--DeepSeek-V3.1",
+   "snapshot": "c0781d039fb7a1ba2abc4add0bdc293e92d2b8db",
+   "layers": 61,
+   "full_bytes": 70272,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 2498560,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "MLA (latent)",
+   "active_params": 37000000000.0,
+   "bytes_per_token_32k": 70272.0,
+   "bytes_per_token_32k_fp8_kv": 35136.0,
+   "economics_32k": {
+    "recompute": 2.4321988490681445e-07,
+    "bytes": 70272.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.196e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.11075586744390459
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7.0272e-08,
+      "load": 9.76e-10,
+      "breakeven_hours": 3.447231968733129
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.10816e-09,
+      "load": 4.8800000000000005e-09,
+      "breakeven_hours": 113.05588043925246
+     }
+    }
+   }
+  },
+  {
+   "model": "deepseek-ai--DeepSeek-V3.2",
+   "snapshot": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+   "layers": 61,
+   "full_bytes": 78080,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 2498560,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "MLA (latent)",
+   "active_params": 37000000000.0,
+   "bytes_per_token_32k": 78080.0,
+   "bytes_per_token_32k_fp8_kv": 42944.0,
+   "economics_32k": {
+    "recompute": 2.4321988490681445e-07,
+    "bytes": 78080.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.44e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.09968028069951412
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7.808e-08,
+      "load": 1.0844444444444445e-09,
+      "breakeven_hours": 3.101119882970927
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.3424e-09,
+      "load": 5.422222222222223e-09,
+      "breakeven_hours": 101.51881091384571
+     }
+    }
+   }
+  },
+  {
+   "model": "deepseek-ai--DeepSeek-V3.2-Exp",
+   "snapshot": "194c67e12b1b0d6df0ef373ddcf215bc84027409",
+   "layers": 61,
+   "full_bytes": 78080,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 2498560,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "MLA (latent)",
+   "active_params": 37000000000.0,
+   "bytes_per_token_32k": 78080.0,
+   "bytes_per_token_32k_fp8_kv": 42944.0,
+   "economics_32k": {
+    "recompute": 2.4321988490681445e-07,
+    "bytes": 78080.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.44e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.09968028069951412
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7.808e-08,
+      "load": 1.0844444444444445e-09,
+      "breakeven_hours": 3.101119882970927
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.3424e-09,
+      "load": 5.422222222222223e-09,
+      "breakeven_hours": 101.51881091384571
+     }
+    }
+   }
+  },
+  {
+   "model": "google--gemma-3-12b-it",
+   "snapshot": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+   "layers": 48,
+   "full_bytes": 65536,
+   "window_bytes": 327680,
+   "window": 1024,
+   "state_bytes": 0.0,
+   "attn_full": 65536,
+   "attn_window": 327680,
+   "linear_flops": 0.0,
+   "family": "Sliding / chunked window + global",
+   "active_params": 12000000000.0,
+   "bytes_per_token_32k": 75776.0,
+   "bytes_per_token_32k_fp8_kv": 37888.0,
+   "economics_32k": {
+    "recompute": 4.183064095170331e-08,
+    "bytes": 75776.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.368e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.01766496661811795
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7.5776e-08,
+      "load": 1.0524444444444446e-09,
+      "breakeven_hours": 0.538141317927297
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.2732800000000002e-09,
+      "load": 5.262222222222223e-09,
+      "breakeven_hours": 16.08619207905805
+     }
+    }
+   }
+  },
+  {
+   "model": "google--gemma-3-27b-it",
+   "snapshot": "005ad3404e59d6023443cb575daa05336842228a",
+   "layers": 62,
+   "full_bytes": 81920,
+   "window_bytes": 425984,
+   "window": 1024,
+   "state_bytes": 0.0,
+   "attn_full": 81920,
+   "attn_window": 425984,
+   "linear_flops": 0.0,
+   "family": "Sliding / chunked window + global",
+   "active_params": 27000000000.0,
+   "bytes_per_token_32k": 95232.0,
+   "bytes_per_token_32k_fp8_kv": 47616.0,
+   "economics_32k": {
+    "recompute": 8.978881633773983e-08,
+    "bytes": 95232.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.976e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.030170973231767418
+     },
+     "Host DRAM": {
+      "hold_per_hour": 9.5232e-08,
+      "load": 1.3226666666666666e-09,
+      "breakeven_hours": 0.9289540246038429
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.85696e-09,
+      "load": 6.613333333333334e-09,
+      "breakeven_hours": 29.113282301609576
+     }
+    }
+   }
+  },
+  {
+   "model": "google--gemma-3-4b-it",
+   "snapshot": "093f9f388b31de276ce2de164bdc2081324b9767",
+   "layers": 34,
+   "full_bytes": 20480,
+   "window_bytes": 118784,
+   "window": 1024,
+   "state_bytes": 0.0,
+   "attn_full": 20480,
+   "attn_window": 118784,
+   "linear_flops": 0.0,
+   "family": "Sliding / chunked window + global",
+   "active_params": 4300000000.0,
+   "bytes_per_token_32k": 24192.0,
+   "bytes_per_token_32k_fp8_kv": 12096.0,
+   "economics_32k": {
+    "recompute": 1.4840026064487135e-08,
+    "bytes": 24192.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 7.56e-07,
+      "load": 0.0,
+      "breakeven_hours": 0.019629664106464464
+     },
+     "Host DRAM": {
+      "hold_per_hour": 2.4192000000000002e-08,
+      "load": 3.36e-10,
+      "breakeven_hours": 0.5995381144381255
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 7.257600000000001e-10,
+      "load": 1.6800000000000002e-09,
+      "breakeven_hours": 18.132751962752334
+     }
+    }
+   }
+  },
+  {
+   "model": "google--gemma-4-26B-A4B-it",
+   "snapshot": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+   "layers": 30,
+   "full_bytes": 20480,
+   "window_bytes": 204800,
+   "window": 1024,
+   "state_bytes": 0.0,
+   "attn_full": 81920,
+   "attn_window": 204800,
+   "linear_flops": 0.0,
+   "family": "Sliding / chunked window + global",
+   "k_eq_v_global": true,
+   "active_params": 3800000000.0,
+   "bytes_per_token_32k": 26880.0,
+   "bytes_per_token_32k_fp8_kv": 13440.0,
+   "economics_32k": {
+    "recompute": 1.6691681583842015e-08,
+    "bytes": 26880.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 8.4e-07,
+      "load": 0.0,
+      "breakeven_hours": 0.01987104950457383
+     },
+     "Host DRAM": {
+      "hold_per_hour": 2.688e-08,
+      "load": 3.733333333333334e-10,
+      "breakeven_hours": 0.6070814081290433
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 8.064e-10,
+      "load": 1.866666666666667e-09,
+      "breakeven_hours": 18.38419508578292
+     }
+    }
+   }
+  },
+  {
+   "model": "google--gemma-4-31B-it",
+   "snapshot": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+   "layers": 60,
+   "full_bytes": 81920,
+   "window_bytes": 819200,
+   "window": 1024,
+   "state_bytes": 0.0,
+   "attn_full": 327680,
+   "attn_window": 819200,
+   "linear_flops": 0.0,
+   "family": "Sliding / chunked window + global",
+   "k_eq_v_global": true,
+   "active_params": 30700000000.0,
+   "bytes_per_token_32k": 107520.0,
+   "bytes_per_token_32k_fp8_kv": 53760.0,
+   "economics_32k": {
+    "recompute": 1.1513832003894694e-07,
+    "bytes": 107520.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 3.36e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.034267357154448494
+     },
+     "Host DRAM": {
+      "hold_per_hour": 1.0752e-07,
+      "load": 1.4933333333333336e-09,
+      "breakeven_hours": 1.0569660221876265
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 3.2256e-09,
+      "load": 7.466666666666667e-09,
+      "breakeven_hours": 33.3803488877357
+     }
+    }
+   }
+  },
+  {
+   "model": "ibm-granite--granite-4.0-h-small",
+   "snapshot": "b8c0982bab7fde4eb48110f5a069527c008fab39",
+   "layers": 40,
+   "full_bytes": 16384,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 152819712,
+   "attn_full": 32768,
+   "attn_window": 0.0,
+   "linear_flops": 226492416,
+   "family": "SSM (Mamba) / hybrid",
+   "active_params": 9000000000.0,
+   "bytes_per_token_32k": 21047.6875,
+   "bytes_per_token_32k_fp8_kv": 12855.6875,
+   "economics_32k": {
+    "recompute": 3.011558351745747e-08,
+    "bytes": 21047.6875,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 6.57740234375e-07,
+      "load": 0.0,
+      "breakeven_hours": 0.04578643960571151
+     },
+     "Host DRAM": {
+      "hold_per_hour": 2.1047687500000002e-08,
+      "load": 2.9232899305555556e-10,
+      "breakeven_hours": 1.4169373487895955
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 6.314306250000001e-10,
+      "load": 1.4616449652777778e-09,
+      "breakeven_hours": 45.379393107801334
+     }
+    }
+   }
+  },
+  {
+   "model": "ibm-granite--granite-4.2-8b",
+   "snapshot": "a7042144125ce5ae64f89610e8289647fc000b9a",
+   "layers": 40,
+   "full_bytes": 163840,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 327680,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 8000000000.0,
+   "bytes_per_token_32k": 163840.0,
+   "bytes_per_token_32k_fp8_kv": 81920.0,
+   "economics_32k": {
+    "recompute": 4.172037199315932e-08,
+    "bytes": 163840.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 5.12e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.00814851015491393
+     },
+     "Host DRAM": {
+      "hold_per_hour": 1.6384000000000002e-07,
+      "load": 2.2755555555555557e-09,
+      "breakeven_hours": 0.24075205345217138
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 4.9152000000000006e-09,
+      "load": 1.137777777777778e-08,
+      "breakeven_hours": 6.1732165965538615
+     }
+    }
+   }
+  },
+  {
+   "model": "meta-llama--Llama-3.1-70B-Instruct",
+   "snapshot": "1605565b47bb9346c5515c34102e054115b4f98b",
+   "layers": 80,
+   "full_bytes": 327680,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 1310720,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 70600000000.0,
+   "bytes_per_token_32k": 327680.0,
+   "bytes_per_token_32k_fp8_kv": 163840.0,
+   "economics_32k": {
+    "recompute": 2.873423600344531e-07,
+    "bytes": 327680.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 1.024e-05,
+      "load": 0.0,
+      "breakeven_hours": 0.028060777347114558
+     },
+     "Host DRAM": {
+      "hold_per_hour": 3.2768000000000003e-07,
+      "load": 4.551111111111111e-09,
+      "breakeven_hours": 0.863010403208441
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 9.830400000000001e-09,
+      "load": 2.275555555555556e-08,
+      "breakeven_hours": 26.915161588429513
+     }
+    }
+   }
+  },
+  {
+   "model": "meta-llama--Llama-3.1-8B-Instruct",
+   "snapshot": "0e9e39f249a16976918f6564b8830bc894c89659",
+   "layers": 32,
+   "full_bytes": 131072,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 262144,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 8000000000.0,
+   "bytes_per_token_32k": 131072.0,
+   "bytes_per_token_32k_fp8_kv": 65536.0,
+   "economics_32k": {
+    "recompute": 3.8369494363929145e-08,
+    "bytes": 131072.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 4.096e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.009367552334943638
+     },
+     "Host DRAM": {
+      "hold_per_hour": 1.3107200000000002e-07,
+      "load": 1.8204444444444444e-09,
+      "breakeven_hours": 0.27884712157809977
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 3.932160000000001e-09,
+      "load": 9.102222222222223e-09,
+      "breakeven_hours": 7.443052200751475
+     }
+    }
+   }
+  },
+  {
+   "model": "meta-llama--Llama-4-Maverick-17B-128E-Instruct",
+   "snapshot": "73d14711bcc77c16df3470856949c3764056b617",
+   "layers": 48,
+   "full_bytes": 49152,
+   "window_bytes": 147456,
+   "window": 8192,
+   "state_bytes": 0.0,
+   "attn_full": 122880,
+   "attn_window": 368640,
+   "linear_flops": 0.0,
+   "family": "Sliding / chunked window + global",
+   "active_params": 17000000000.0,
+   "bytes_per_token_32k": 86016.0,
+   "bytes_per_token_32k_fp8_kv": 43008.0,
+   "economics_32k": {
+    "recompute": 6.758191164538316e-08,
+    "bytes": 86016.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.688e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.02514208022521695
+     },
+     "Host DRAM": {
+      "hold_per_hour": 8.6016e-08,
+      "load": 1.1946666666666667e-09,
+      "breakeven_hours": 0.7718011181491409
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.58048e-09,
+      "load": 5.973333333333334e-09,
+      "breakeven_hours": 23.874852086452837
+     }
+    }
+   }
+  },
+  {
+   "model": "meta-llama--Llama-4-Scout-17B-16E-Instruct",
+   "snapshot": "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3",
+   "layers": 48,
+   "full_bytes": 49152,
+   "window_bytes": 147456,
+   "window": 8192,
+   "state_bytes": 0.0,
+   "attn_full": 122880,
+   "attn_window": 368640,
+   "linear_flops": 0.0,
+   "family": "Sliding / chunked window + global",
+   "active_params": 17000000000.0,
+   "bytes_per_token_32k": 86016.0,
+   "bytes_per_token_32k_fp8_kv": 43008.0,
+   "economics_32k": {
+    "recompute": 6.758191164538316e-08,
+    "bytes": 86016.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.688e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.02514208022521695
+     },
+     "Host DRAM": {
+      "hold_per_hour": 8.6016e-08,
+      "load": 1.1946666666666667e-09,
+      "breakeven_hours": 0.7718011181491409
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.58048e-09,
+      "load": 5.973333333333334e-09,
+      "breakeven_hours": 23.874852086452837
+     }
+    }
+   }
+  },
+  {
+   "model": "mistralai--Mistral-7B-Instruct-v0.3",
+   "snapshot": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+   "layers": 32,
+   "full_bytes": 131072,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 262144,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 7200000000.0,
+   "bytes_per_token_32k": 131072.0,
+   "bytes_per_token_32k_fp8_kv": 65536.0,
+   "economics_32k": {
+    "recompute": 3.58728959792283e-08,
+    "bytes": 131072.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 4.096e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.008758031244928785
+     },
+     "Host DRAM": {
+      "hold_per_hour": 1.3107200000000002e-07,
+      "load": 1.8204444444444444e-09,
+      "breakeven_hours": 0.2597995875151356
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 3.932160000000001e-09,
+      "load": 9.102222222222223e-09,
+      "breakeven_hours": 6.808134398652668
+     }
+    }
+   }
+  },
+  {
+   "model": "mistralai--Mistral-Nemo-Instruct-2407",
+   "snapshot": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+   "layers": 40,
+   "full_bytes": 163840,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 327680,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 12200000000.0,
+   "bytes_per_token_32k": 163840.0,
+   "bytes_per_token_32k_fp8_kv": 81920.0,
+   "economics_32k": {
+    "recompute": 5.482751351283876e-08,
+    "bytes": 163840.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 5.12e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.010708498732976319
+     },
+     "Host DRAM": {
+      "hold_per_hour": 1.6384000000000002e-07,
+      "load": 2.2755555555555557e-09,
+      "breakeven_hours": 0.32075169651662105
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 4.9152000000000006e-09,
+      "load": 1.137777777777778e-08,
+      "breakeven_hours": 8.83987136536885
+     }
+    }
+   }
+  },
+  {
+   "model": "mistralai--Mistral-Small-3.1-24B-Instruct-2503",
+   "snapshot": "68faf511d618ef198fef186659617cfd2eb8e33a",
+   "layers": 40,
+   "full_bytes": 163840,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 327680,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 24000000000.0,
+   "bytes_per_token_32k": 163840.0,
+   "bytes_per_token_32k_fp8_kv": 81920.0,
+   "economics_32k": {
+    "recompute": 9.165233968717622e-08,
+    "bytes": 163840.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 5.12e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.017900847595151606
+     },
+     "Host DRAM": {
+      "hold_per_hour": 1.6384000000000002e-07,
+      "load": 2.2755555555555557e-09,
+      "breakeven_hours": 0.5455125984595988
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 4.9152000000000006e-09,
+      "load": 1.137777777777778e-08,
+      "breakeven_hours": 16.33190143013477
+     }
+    }
+   }
+  },
+  {
+   "model": "mistralai--Mistral-Small-3.2-24B-Instruct-2506",
+   "snapshot": "95a6d26c4bfb886c58daf9d3f7332c857cb27b43",
+   "layers": 40,
+   "full_bytes": 163840,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 327680,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 24000000000.0,
+   "bytes_per_token_32k": 163840.0,
+   "bytes_per_token_32k_fp8_kv": 81920.0,
+   "economics_32k": {
+    "recompute": 9.165233968717622e-08,
+    "bytes": 163840.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 5.12e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.017900847595151606
+     },
+     "Host DRAM": {
+      "hold_per_hour": 1.6384000000000002e-07,
+      "load": 2.2755555555555557e-09,
+      "breakeven_hours": 0.5455125984595988
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 4.9152000000000006e-09,
+      "load": 1.137777777777778e-08,
+      "breakeven_hours": 16.33190143013477
+     }
+    }
+   }
+  },
+  {
+   "model": "moonshotai--Kimi-K2-Instruct",
+   "snapshot": "c2fee60e5323b9d7b2dc18875f3fd15af8e6a8d9",
+   "layers": 61,
+   "full_bytes": 70272,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 1249280,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "MLA (latent)",
+   "active_params": 32000000000.0,
+   "bytes_per_token_32k": 70272.0,
+   "bytes_per_token_32k_fp8_kv": 35136.0,
+   "economics_32k": {
+    "recompute": 1.63740040195234e-07,
+    "bytes": 70272.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.196e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.07456285983389527
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7.0272e-08,
+      "load": 9.76e-10,
+      "breakeven_hours": 2.3162004809203385
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.10816e-09,
+      "load": 4.8800000000000005e-09,
+      "breakeven_hours": 75.35483084549276
+     }
+    }
+   }
+  },
+  {
+   "model": "moonshotai--Kimi-K2-Instruct-0905",
+   "snapshot": "ac6c49f04883bd0a0598b790693a72061c676629",
+   "layers": 61,
+   "full_bytes": 70272,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 1249280,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "MLA (latent)",
+   "active_params": 32000000000.0,
+   "bytes_per_token_32k": 70272.0,
+   "bytes_per_token_32k_fp8_kv": 35136.0,
+   "economics_32k": {
+    "recompute": 1.63740040195234e-07,
+    "bytes": 70272.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.196e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.07456285983389527
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7.0272e-08,
+      "load": 9.76e-10,
+      "breakeven_hours": 2.3162004809203385
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.10816e-09,
+      "load": 4.8800000000000005e-09,
+      "breakeven_hours": 75.35483084549276
+     }
+    }
+   }
+  },
+  {
+   "model": "moonshotai--Kimi-K2-Thinking",
+   "snapshot": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+   "layers": 61,
+   "full_bytes": 70272,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 1249280,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "MLA (latent)",
+   "active_params": 32000000000.0,
+   "bytes_per_token_32k": 70272.0,
+   "bytes_per_token_32k_fp8_kv": 35136.0,
+   "economics_32k": {
+    "recompute": 1.63740040195234e-07,
+    "bytes": 70272.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.196e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.07456285983389527
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7.0272e-08,
+      "load": 9.76e-10,
+      "breakeven_hours": 2.3162004809203385
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.10816e-09,
+      "load": 4.8800000000000005e-09,
+      "breakeven_hours": 75.35483084549276
+     }
+    }
+   }
+  },
+  {
+   "model": "moonshotai--Kimi-K2.5",
+   "snapshot": "4d01dfe0332d63057c186e0b262165819efb6611",
+   "layers": 61,
+   "full_bytes": 70272,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 1249280,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "MLA (latent)",
+   "active_params": 32000000000.0,
+   "bytes_per_token_32k": 70272.0,
+   "bytes_per_token_32k_fp8_kv": 35136.0,
+   "economics_32k": {
+    "recompute": 1.63740040195234e-07,
+    "bytes": 70272.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.196e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.07456285983389527
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7.0272e-08,
+      "load": 9.76e-10,
+      "breakeven_hours": 2.3162004809203385
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.10816e-09,
+      "load": 4.8800000000000005e-09,
+      "breakeven_hours": 75.35483084549276
+     }
+    }
+   }
+  },
+  {
+   "model": "moonshotai--Kimi-Linear-48B-A3B-Instruct",
+   "snapshot": "e1df551a447157d4658b573f9a695d57658590e9",
+   "layers": 27,
+   "full_bytes": 8064,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 43417600,
+   "attn_full": 71680,
+   "attn_window": 0.0,
+   "linear_flops": 62914560,
+   "family": "Linear attention + global",
+   "active_params": 3000000000.0,
+   "bytes_per_token_32k": 9389.0,
+   "bytes_per_token_32k_fp8_kv": 5357.0,
+   "economics_32k": {
+    "recompute": 1.3125436592642527e-08,
+    "bytes": 9389.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.9340625e-07,
+      "load": 0.0,
+      "breakeven_hours": 0.04473468643780604
+     },
+     "Host DRAM": {
+      "hold_per_hour": 9.388999999999999e-09,
+      "load": 1.304027777777778e-10,
+      "breakeven_hours": 1.38407006229255
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.8166999999999997e-10,
+      "load": 6.520138888888889e-10,
+      "breakeven_hours": 44.283816891233144
+     }
+    }
+   }
+  },
+  {
+   "model": "nvidia--NVIDIA-Nemotron-Nano-9B-v2",
+   "snapshot": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+   "layers": 56,
+   "full_bytes": 16384,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 143548416,
+   "attn_full": 40960,
+   "attn_window": 0.0,
+   "linear_flops": 212336640,
+   "family": "SSM (Mamba) / hybrid",
+   "active_params": 9000000000.0,
+   "bytes_per_token_32k": 20764.75,
+   "bytes_per_token_32k_fp8_kv": 12572.75,
+   "economics_32k": {
+    "recompute": 3.051235491642637e-08,
+    "bytes": 20764.75,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 6.488984375e-07,
+      "load": 0.0,
+      "breakeven_hours": 0.04702177282777995
+     },
+     "Host DRAM": {
+      "hold_per_hour": 2.076475e-08,
+      "load": 2.8839930555555555e-10,
+      "breakeven_hours": 1.4555415119792345
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 6.229425000000001e-10,
+      "load": 1.4419965277777777e-09,
+      "breakeven_hours": 46.66619854745596
+     }
+    }
+   }
+  },
+  {
+   "model": "openai--gpt-oss-120b",
+   "snapshot": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+   "layers": 36,
+   "full_bytes": 36864,
+   "window_bytes": 36864,
+   "window": 128,
+   "state_bytes": 0.0,
+   "attn_full": 147456,
+   "attn_window": 147456,
+   "linear_flops": 0.0,
+   "family": "Sliding / chunked window + global",
+   "active_params": 5100000000.0,
+   "bytes_per_token_32k": 37008.0,
+   "bytes_per_token_32k_fp8_kv": 18504.0,
+   "economics_32k": {
+    "recompute": 2.3514076470808526e-08,
+    "bytes": 37008.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 1.1565e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.020332102439090814
+     },
+     "Host DRAM": {
+      "hold_per_hour": 3.7008e-08,
+      "load": 5.14e-10,
+      "breakeven_hours": 0.621489312332699
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 1.11024e-09,
+      "load": 2.5700000000000004e-09,
+      "breakeven_hours": 18.864458559238116
+     }
+    }
+   }
+  },
+  {
+   "model": "openai--gpt-oss-20b",
+   "snapshot": "6cee5e81ee83917806bbde320786a8fb61efebee",
+   "layers": 24,
+   "full_bytes": 24576,
+   "window_bytes": 24576,
+   "window": 128,
+   "state_bytes": 0.0,
+   "attn_full": 98304,
+   "attn_window": 98304,
+   "linear_flops": 0.0,
+   "family": "Sliding / chunked window + global",
+   "active_params": 3600000000.0,
+   "bytes_per_token_32k": 24672.0,
+   "bytes_per_token_32k_fp8_kv": 12336.0,
+   "economics_32k": {
+    "recompute": 1.6300200576714225e-08,
+    "bytes": 24672.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 7.71e-07,
+      "load": 0.0,
+      "breakeven_hours": 0.02114163498925321
+     },
+     "Host DRAM": {
+      "hold_per_hour": 2.4672e-08,
+      "load": 3.426666666666666e-10,
+      "breakeven_hours": 0.6467872045252739
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 7.401600000000001e-10,
+      "load": 1.7133333333333332e-09,
+      "breakeven_hours": 19.707721632323945
+     }
+    }
+   }
+  },
+  {
+   "model": "state-spaces--mamba-2.8b-hf",
+   "snapshot": "96c48e0292b63f5346b6d30061af2551f7101e26",
+   "layers": 64,
+   "full_bytes": 0.0,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 22937600,
+   "attn_full": 0.0,
+   "attn_window": 0.0,
+   "linear_flops": 31457280,
+   "family": "SSM (Mamba) / hybrid",
+   "active_params": 2800000000.0,
+   "bytes_per_token_32k": 700.0,
+   "bytes_per_token_32k_fp8_kv": 700.0,
+   "economics_32k": {
+    "recompute": 8.787179467974886e-09,
+    "bytes": 700.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 2.1875e-08,
+      "load": 0.0,
+      "breakeven_hours": 0.40169963282170906
+     },
+     "Host DRAM": {
+      "hold_per_hour": 7e-10,
+      "load": 9.722222222222223e-12,
+      "breakeven_hours": 12.53922463678952
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 2.1e-11,
+      "load": 4.8611111111111116e-11,
+      "breakeven_hours": 416.12230270779884
+     }
+    }
+   }
+  },
+  {
+   "model": "tiiuae--Falcon-H1-7B-Instruct",
+   "snapshot": "41e72f27effbab80cd45b6e884688452253a3686",
+   "layers": 44,
+   "full_bytes": 45056,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 139358208,
+   "attn_full": 135168,
+   "attn_window": 0.0,
+   "linear_flops": 207618048,
+   "family": "SSM (Mamba) / hybrid",
+   "active_params": 7600000000.0,
+   "bytes_per_token_32k": 49308.875,
+   "bytes_per_token_32k_fp8_kv": 26780.875,
+   "economics_32k": {
+    "recompute": 3.095283156698997e-08,
+    "bytes": 49308.875,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 1.54090234375e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.020087471274566275
+     },
+     "Host DRAM": {
+      "hold_per_hour": 4.9308875000000005e-08,
+      "load": 6.848454861111112e-10,
+      "breakeven_hours": 0.6138445884413071
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 1.47926625e-09,
+      "load": 3.4242274305555554e-09,
+      "breakeven_hours": 18.609634429525055
+     }
+    }
+   }
+  },
+  {
+   "model": "unsloth--Llama-3.3-70B-Instruct",
+   "snapshot": "99cd0d2c829e92a67c844f9144c2509632e5c87f",
+   "layers": 80,
+   "full_bytes": 327680,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 1310720,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 70600000000.0,
+   "bytes_per_token_32k": 327680.0,
+   "bytes_per_token_32k_fp8_kv": 163840.0,
+   "economics_32k": {
+    "recompute": 2.873423600344531e-07,
+    "bytes": 327680.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 1.024e-05,
+      "load": 0.0,
+      "breakeven_hours": 0.028060777347114558
+     },
+     "Host DRAM": {
+      "hold_per_hour": 3.2768000000000003e-07,
+      "load": 4.551111111111111e-09,
+      "breakeven_hours": 0.863010403208441
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 9.830400000000001e-09,
+      "load": 2.275555555555556e-08,
+      "breakeven_hours": 26.915161588429513
+     }
+    }
+   }
+  },
+  {
+   "model": "zai-org--GLM-4.5",
+   "snapshot": "cbb2c7cfb52fa128a9660cb1a7a78e017899e115",
+   "layers": 92,
+   "full_bytes": 376832,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 2260992,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 32000000000.0,
+   "bytes_per_token_32k": 376832.0,
+   "bytes_per_token_32k_fp8_kv": 188416.0,
+   "economics_32k": {
+    "recompute": 2.1546921359647482e-07,
+    "bytes": 376832.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 1.1776e-05,
+      "load": 0.0,
+      "breakeven_hours": 0.018297317730678907
+     },
+     "Host DRAM": {
+      "hold_per_hour": 3.76832e-07,
+      "load": 5.233777777777778e-09,
+      "breakeven_hours": 0.557902290194827
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 1.1304960000000001e-08,
+      "load": 2.616888888888889e-08,
+      "breakeven_hours": 16.744891154642378
+     }
+    }
+   }
+  },
+  {
+   "model": "zai-org--GLM-4.5-Air",
+   "snapshot": "a24ceef6ce4f3536971efe9b778bdaa1bab18daa",
+   "layers": 46,
+   "full_bytes": 188416,
+   "window_bytes": 0.0,
+   "window": 0,
+   "state_bytes": 0.0,
+   "attn_full": 1130496,
+   "attn_window": 0.0,
+   "linear_flops": 0.0,
+   "family": "Dense GQA",
+   "active_params": 12000000000.0,
+   "bytes_per_token_32k": 188416.0,
+   "bytes_per_token_32k_fp8_kv": 94208.0,
+   "economics_32k": {
+    "recompute": 9.525161487473319e-08,
+    "bytes": 188416.0,
+    "tiers": {
+     "HBM": {
+      "hold_per_hour": 5.888e-06,
+      "load": 0.0,
+      "breakeven_hours": 0.0161772443741055
+     },
+     "Host DRAM": {
+      "hold_per_hour": 1.88416e-07,
+      "load": 2.616888888888889e-09,
+      "breakeven_hours": 0.491649997801908
+     },
+     "NVMe SSD": {
+      "hold_per_hour": 5.652480000000001e-09,
+      "load": 1.3084444444444445e-08,
+      "breakeven_hours": 14.536481408211747
+     }
+    }
+   }
+  }
+ ],
+ "prices": [
+  {
+   "model": "openai--gpt-oss-20b",
+   "catalog_id": "openai/gpt-oss-20b",
+   "endpoints_with_cache_price": 7,
+   "min_input_price": 0.018,
+   "min_cached_read": 0.009,
+   "max_cached_read": 0.0375,
+   "recompute_cost": 0.016300200576714226,
+   "dram_one_hour_cost": 0.025014666666666668
+  },
+  {
+   "model": "openai--gpt-oss-120b",
+   "catalog_id": "openai/gpt-oss-120b",
+   "endpoints_with_cache_price": 18,
+   "min_input_price": 0.03,
+   "min_cached_read": 0.012,
+   "max_cached_read": 0.35,
+   "recompute_cost": 0.023514076470808526,
+   "dram_one_hour_cost": 0.03752200000000001
+  },
+  {
+   "model": "Qwen--Qwen3.5-27B",
+   "catalog_id": "qwen/qwen3.5-27b",
+   "endpoints_with_cache_price": 2,
+   "min_input_price": 0.19999999999999998,
+   "min_cached_read": 0.02,
+   "max_cached_read": 0.27,
+   "recompute_cost": 0.09466624124630192,
+   "dram_one_hour_cost": 0.07120947222222222
+  },
+  {
+   "model": "deepseek-ai--DeepSeek-V3.2-Exp",
+   "catalog_id": "deepseek/deepseek-v3.2",
+   "endpoints_with_cache_price": 6,
+   "min_input_price": 0.20879999999999999,
+   "min_cached_read": 0.0216,
+   "max_cached_read": 0.14,
+   "recompute_cost": 0.24321988490681445,
+   "dram_one_hour_cost": 0.07916444444444444
+  },
+  {
+   "model": "meta-llama--Llama-3.1-8B-Instruct",
+   "catalog_id": "meta-llama/llama-3.1-8b-instruct",
+   "endpoints_with_cache_price": 2,
+   "min_input_price": 0.049999999999999996,
+   "min_cached_read": 0.024999999999999998,
+   "max_cached_read": 0.22,
+   "recompute_cost": 0.03836949436392915,
+   "dram_one_hour_cost": 0.13289244444444448
+  },
+  {
+   "model": "zai-org--GLM-4.5-Air",
+   "catalog_id": "z-ai/glm-4.5-air",
+   "endpoints_with_cache_price": 2,
+   "min_input_price": 0.13,
+   "min_cached_read": 0.024999999999999998,
+   "max_cached_read": 0.03,
+   "recompute_cost": 0.09525161487473319,
+   "dram_one_hour_cost": 0.1910328888888889
+  },
+  {
+   "model": "google--gemma-3-27b-it",
+   "catalog_id": "google/gemma-3-27b-it",
+   "endpoints_with_cache_price": 3,
+   "min_input_price": 0.08,
+   "min_cached_read": 0.04,
+   "max_cached_read": 0.04,
+   "recompute_cost": 0.08978881633773983,
+   "dram_one_hour_cost": 0.09655466666666666
+  },
+  {
+   "model": "Qwen--Qwen3.5-9B",
+   "catalog_id": "qwen/qwen3.5-9b",
+   "endpoints_with_cache_price": 2,
+   "min_input_price": 0.08,
+   "min_cached_read": 0.04,
+   "max_cached_read": 0.149,
+   "recompute_cost": 0.03155541374876731,
+   "dram_one_hour_cost": 0.03481694444444444
+  },
+  {
+   "model": "Qwen--Qwen3-235B-A22B",
+   "catalog_id": "qwen/qwen3-235b-a22b-2507",
+   "endpoints_with_cache_price": 2,
+   "min_input_price": 0.14,
+   "min_cached_read": 0.049999999999999996,
+   "max_cached_read": 0.049999999999999996,
+   "recompute_cost": 0.14740207986618234,
+   "dram_one_hour_cost": 0.1951857777777778
+  },
+  {
+   "model": "google--gemma-3-12b-it",
+   "catalog_id": "google/gemma-3-12b-it",
+   "endpoints_with_cache_price": 1,
+   "min_input_price": 0.075,
+   "min_cached_read": 0.049999999999999996,
+   "max_cached_read": 0.049999999999999996,
+   "recompute_cost": 0.04183064095170331,
+   "dram_one_hour_cost": 0.07682844444444445
+  },
+  {
+   "model": "Qwen--Qwen3-Next-80B-A3B-Instruct",
+   "catalog_id": "qwen/qwen3-next-80b-a3b-instruct",
+   "endpoints_with_cache_price": 1,
+   "min_input_price": 0.09999999999999999,
+   "min_cached_read": 0.07,
+   "max_cached_read": 0.07,
+   "recompute_cost": 0.014565266823952365,
+   "dram_one_hour_cost": 0.027308083333333334
+  },
+  {
+   "model": "Qwen--Qwen3-32B",
+   "catalog_id": "qwen/qwen3-32b",
+   "endpoints_with_cache_price": 1,
+   "min_input_price": 0.14,
+   "min_cached_read": 0.09,
+   "max_cached_read": 0.09,
+   "recompute_cost": 0.15597457584041743,
+   "dram_one_hour_cost": 0.26578488888888896
+  },
+  {
+   "model": "unsloth--Llama-3.3-70B-Instruct",
+   "catalog_id": "meta-llama/llama-3.3-70b-instruct",
+   "endpoints_with_cache_price": 4,
+   "min_input_price": 0.19999999999999998,
+   "min_cached_read": 0.09999999999999999,
+   "max_cached_read": 0.71,
+   "recompute_cost": 0.28734236003445307,
+   "dram_one_hour_cost": 0.33223111111111114
+  },
+  {
+   "model": "Qwen--Qwen3-30B-A3B",
+   "catalog_id": "qwen/qwen3-30b-a3b-instruct-2507",
+   "endpoints_with_cache_price": 1,
+   "min_input_price": 0.09999999999999999,
+   "min_cached_read": 0.09999999999999999,
+   "max_cached_read": 0.09999999999999999,
+   "recompute_cost": 0.030403734112272027,
+   "dram_one_hour_cost": 0.09966933333333333
+  },
+  {
+   "model": "deepseek-ai--DeepSeek-V3",
+   "catalog_id": "deepseek/deepseek-chat-v3-0324",
+   "endpoints_with_cache_price": 1,
+   "min_input_price": 0.29,
+   "min_cached_read": 0.11,
+   "max_cached_read": 0.11,
+   "recompute_cost": 0.24321988490681445,
+   "dram_one_hour_cost": 0.07124799999999999
+  },
+  {
+   "model": "zai-org--GLM-4.5",
+   "catalog_id": "z-ai/glm-4.5",
+   "endpoints_with_cache_price": 1,
+   "min_input_price": 0.6,
+   "min_cached_read": 0.11,
+   "max_cached_read": 0.11,
+   "recompute_cost": 0.2154692135964748,
+   "dram_one_hour_cost": 0.3820657777777778
+  }
+ ],
+ "observed_cache": {
+  "coreweave-fp16": {
+   "requests": 800,
+   "hits": 637,
+   "block_tokens": 32
+  },
+  "akashml-fp8": {
+   "requests": 800,
+   "hits": 800,
+   "block_tokens": 16
+  },
+  "parasail-fp8": {
+   "requests": 800,
+   "hits": 506,
+   "block_tokens": 16
+  }
+ },
+ "price_vs_bytes": [],
+ "price_vs_bytes_fits": []
+}

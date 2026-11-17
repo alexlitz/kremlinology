@@ -1,0 +1,130 @@
+[
+ {
+  "model": "google/gemma-4-26b-a4b-it",
+  "order": "PP",
+  "hits": 9,
+  "n": 20,
+  "lo": 0.25819502085709295,
+  "hi": 0.6579179916924003
+ },
+ {
+  "model": "google/gemma-4-26b-a4b-it",
+  "order": "PV",
+  "hits": 8,
+  "n": 20,
+  "lo": 0.21880396741419272,
+  "hi": 0.613422057684794
+ },
+ {
+  "model": "google/gemma-4-26b-a4b-it",
+  "order": "VP",
+  "hits": 8,
+  "n": 20,
+  "lo": 0.21880396741419272,
+  "hi": 0.613422057684794
+ },
+ {
+  "model": "google/gemma-4-26b-a4b-it",
+  "order": "VV",
+  "hits": 10,
+  "n": 20,
+  "lo": 0.2992949144298199,
+  "hi": 0.7007050855701801
+ },
+ {
+  "model": "minimax/minimax-m3",
+  "order": "PP",
+  "hits": 15,
+  "n": 20,
+  "lo": 0.5312949900419365,
+  "hi": 0.888139947210597
+ },
+ {
+  "model": "minimax/minimax-m3",
+  "order": "PV",
+  "hits": 0,
+  "n": 19,
+  "lo": 0.0,
+  "hi": 0.16818436536845052
+ },
+ {
+  "model": "minimax/minimax-m3",
+  "order": "VP",
+  "hits": 0,
+  "n": 19,
+  "lo": 0.0,
+  "hi": 0.16818436536845052
+ },
+ {
+  "model": "minimax/minimax-m3",
+  "order": "VV",
+  "hits": 20,
+  "n": 20,
+  "lo": 0.8388698745050667,
+  "hi": 1.0
+ },
+ {
+  "model": "moonshotai/kimi-k2.6",
+  "order": "PP",
+  "hits": 11,
+  "n": 17,
+  "lo": 0.4129996672121182,
+  "hi": 0.826905138560951
+ },
+ {
+  "model": "moonshotai/kimi-k2.6",
+  "order": "PV",
+  "hits": 0,
+  "n": 20,
+  "lo": 0.0,
+  "hi": 0.16113012549493322
+ },
+ {
+  "model": "moonshotai/kimi-k2.6",
+  "order": "VP",
+  "hits": 0,
+  "n": 20,
+  "lo": 0.0,
+  "hi": 0.16113012549493322
+ },
+ {
+  "model": "moonshotai/kimi-k2.6",
+  "order": "VV",
+  "hits": 20,
+  "n": 20,
+  "lo": 0.8388698745050667,
+  "hi": 1.0
+ },
+ {
+  "model": "z-ai/glm-5.3-flash",
+  "order": "PP",
+  "hits": 19,
+  "n": 20,
+  "lo": 0.7638641064874331,
+  "hi": 0.9911187805671268
+ },
+ {
+  "model": "z-ai/glm-5.3-flash",
+  "order": "PV",
+  "hits": 0,
+  "n": 20,
+  "lo": 0.0,
+  "hi": 0.16113012549493322
+ },
+ {
+  "model": "z-ai/glm-5.3-flash",
+  "order": "VP",
+  "hits": 0,
+  "n": 20,
+  "lo": 0.0,
+  "hi": 0.16113012549493322
+ },
+ {
+  "model": "z-ai/glm-5.3-flash",
+  "order": "VV",
+  "hits": 13,
+  "n": 20,
+  "lo": 0.43285051021946463,
+  "hi": 0.8188104521320554
+ }
+]

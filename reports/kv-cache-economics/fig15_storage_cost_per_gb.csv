@@ -1,0 +1,7 @@
+tier,purchase_dollars_per_gb,dollars_per_gb_month,basis
+"HBM (H100, rental share)",,22.8125,H100 $2.50/h / 80 GB
+Host DRAM (DDR5 RDIMM),6.0,0.20071377481177277,"$6/GB, 4 y, 0.35 W/GB, 1.3x server share"
+NVMe SSD (SN850X-class),0.075,0.0018428877481177278,"$75/TB, 5 y"
+HDD RAID5 (Exos 16 TB),0.023333333333333334,0.0006559340634268767,"$17.5/TB, RAID5 3/4 usable, 5 y"
+Cloud block (gp3-class),,0.08,$0.08/GB-month list
+Cloud object (S3-class),,0.023,$0.023/GB-month list

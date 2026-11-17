@@ -1,0 +1,4534 @@
+{
+ "schema_version": 1,
+ "targets": [
+  {
+   "id": "alibaba",
+   "adapter": "openrouter",
+   "model": "qwen/qwen3.5-397b-a17b",
+   "provider": "alibaba",
+   "api_key_env": "OPENROUTER_API_KEY",
+   "parameters": {
+    "logprobs": true,
+    "top_logprobs": 5,
+    "reasoning": {
+     "enabled": false
+    }
+   },
+   "pricing": {
+    "input_per_million": 0.39,
+    "output_per_million": 2.34
+   }
+  },
+  {
+   "id": "parasail-fp8",
+   "adapter": "openrouter",
+   "model": "qwen/qwen3.5-397b-a17b",
+   "provider": "parasail/fp8",
+   "api_key_env": "OPENROUTER_API_KEY",
+   "parameters": {
+    "logprobs": true,
+    "top_logprobs": 5,
+    "reasoning": {
+     "enabled": false
+    }
+   },
+   "pricing": {
+    "input_per_million": 0.5,
+    "output_per_million": 3.0
+   }
+  },
+  {
+   "id": "venice",
+   "adapter": "openrouter",
+   "model": "qwen/qwen3.5-397b-a17b",
+   "provider": "venice",
+   "api_key_env": "OPENROUTER_API_KEY",
+   "parameters": {
+    "logprobs": true,
+    "top_logprobs": 5,
+    "reasoning": {
+     "enabled": false
+    }
+   },
+   "pricing": {
+    "input_per_million": 0.75,
+    "output_per_million": 3.0
+   }
+  },
+  {
+   "id": "streamlake",
+   "adapter": "openrouter",
+   "model": "qwen/qwen3.5-397b-a17b",
+   "provider": "streamlake",
+   "api_key_env": "OPENROUTER_API_KEY",
+   "parameters": {
+    "logprobs": true,
+    "top_logprobs": 5,
+    "reasoning": {
+     "enabled": false
+    }
+   },
+   "pricing": {
+    "input_per_million": 0.6,
+    "output_per_million": 3.6
+   }
+  },
+  {
+   "id": "novita",
+   "adapter": "openrouter",
+   "model": "qwen/qwen3.5-397b-a17b",
+   "provider": "novita",
+   "api_key_env": "OPENROUTER_API_KEY",
+   "parameters": {
+    "logprobs": true,
+    "top_logprobs": 5,
+    "reasoning": {
+     "enabled": false
+    }
+   },
+   "pricing": {
+    "input_per_million": 0.6,
+    "output_per_million": 3.6
+   }
+  }
+ ],
+ "probes": [
+  {
+   "id": "code-0000",
+   "messages": [
+    {
+     "role": "user",
+     "content": "You need to code a program that prints out the nth Fibonacci number.\n\nn=10"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0001",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a dictionary for counting the occurrence of each letter in the given string.\n\nstring = \"hello world\"\n#TODO"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0002",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a function that takes two strings as parameters, compares them, and returns 0 if they are equal, 1 if the first string is greater, and -1 if the second string is greater."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0003",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create an HTML page with an <h1> heading \"Welcome!\" and a <p> paragraph with the text \"I am happy to be here.\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0004",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a regex to extract links from a block of text\n\nText: The website www.example.com has great resources"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0005",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a function to find the longest substring without repetition.\n\nstr = \"pwwkew\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0006",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Convert the following JSON object to a .csv table.\n\n{\n  \"name\": \"John Doe\",\n  \"age\": 35,\n  \"job\": \"Software Engineer\"\n}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0007",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Convert a given integer to its equivalent hexadecimal value.\n\nnum = 67"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0008",
+   "messages": [
+    {
+     "role": "user",
+     "content": "How would you create a list of 10 elements by calling the range() function?"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0009",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Select all words that start with 'a' from the following text.\n\nThe quick brown fox jumps over the lazy dog."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0010",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Generate a SQL query to update existing row in a table\n\nTable = employee\nSet salary = 5000 where id = 2"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0011",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Using the Java programming language, print out the direct children of a given element in an HTML document.\n\n<div id=\"container\">\n  <p>This is a paragraph.</p>\n  <ul>\n    <li>This is a list item.</li>\n    <li>This is a second list item.</li>\n  </ul>\n</div>"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0012",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Code a function in C that takes an integer array and its size as two arguments and returns the average of these numbers.\n\narray = [1,2,3,4,5]\nsize = 5"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0013",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Using Python, create a function that takes a string as an argument and returns a updated string where each character is repeated twice.\n\ninputValue = \"Hello\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0014",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write the HTML code to create a button which redirects to another webpage when clicked."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0015",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Using the comment as a guide, insert a for loop in the following code to print out all numbers from 0 to 10.\n\n# TODO: Insert a for loop here"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0016",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Find the index of a given item in an array\n\narr = [1, 4, 6, 8, 9]\nitem = 8"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0017",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Rewrite the following C code as assembly language\n\nint a=5,b=6, c;\nc = a+b;"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0018",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Given the following Python code, identify if it is syntactically correct or not.\n\ndef add(a\nb):\nreturn a+b"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0019",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Design a CSS layout for a div with height of 50px, width of 100px and a rounded-corner of 10px."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0020",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a CSS selector to select all the list items with class \"list-item\"."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0021",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a function in JavaScript to create and return a copy of an object."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0022",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a method in Python which takes a positive integer and returns the sum of squares of all numbers smaller than the given number.\n\n5"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0023",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a SQL query to print names starting with a certain letter.\n\nLetter: A"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0024",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Develop a Java function that takes a string and searches for the occurrence of a given character.\n\nstring=\"Hello World\";\nch='l';"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0025",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a dictionary containing the key-value pair of a given string.\n\nstring = \"test string\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0026",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a SQL statement that generates the total profit made by each salesperson over the year.\n\nSELECT salesperson_name, SUM(profit) FROM sales GROUP BY salesperson_name"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0027",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Identify the HTML element and its attributes used to create a link in the following code snippet.\n\n<a target=\"_blank\" href=\"https://example.com\">Example link</a>"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0028",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create an SQL query that returns the current date."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0029",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a function that takes a matrix (MxN array) and returns the transposed matrix."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0030",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Rewrite the following code using the set module in Python\n\na = [1, 1, 2, 3, 4, 5, 5, 5]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0031",
+   "messages": [
+    {
+     "role": "user",
+     "content": "create a function to compare two strings and return a boolean depending on their equality or inequality.\n\nstring1 = 'hello' \nstring2 = 'world'"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0032",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a code to implement insertion sort on a given list.\n\nList: [4, 3, 6, 1, 5]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0033",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a set of webhook functions in Node.js"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0034",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a C# method that takes in an integer and multiplies it by 5"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0035",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a regex string to find all words that contain the letters 'a' and 'z' in them."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0036",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Given a linked list, remove all elements from it which have greater value than a given number X.\n\nhead = [7, 14, 28, 21, 32]\nvalue = 21"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0037",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write an SQL query to find the ID, course name and instructor name for courses taught by instructor \"John Smith\"."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0038",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a data visualization in Python using the given dataset.\n\nDataset: \nThe data contains information about the latest coronavirus cases per US state"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0039",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Identify the incorrect statement about the following code fragment.\n\ndef is_over21(age):\n    if age > 21:\n        return \u201ctrue\u201d\n    else:\n        return"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0040",
+   "messages": [
+    {
+     "role": "user",
+     "content": "What does the following code do?\n\ndef division(num1, num2):\n    return num1 / num2"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0041",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Compute the number of ways for a host to select 3 items from a list of 8 options."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0042",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write CSS code to position a block at the top centre of the page."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0043",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a Java method that takes two numbers and returns the sum of them."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0044",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Using SQL, write a query to find the employee names and the departments that they work in."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0045",
+   "messages": [
+    {
+     "role": "user",
+     "content": "What is the command to add a new key-value pair (\"country\": \"Australia\") to the following dictionary?\n\n{\n    \"name\": \"Dave\",\n    \"age\": 32\n}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0046",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Classify the given text according to its sentiment.\n\nThis product is terrible."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0047",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Suggest a python code to print all the even numbers from the given list.\n\nlist_of_numbers = [11, 22, 31, 37, 44]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0048",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a Python program to read a list of numbers and print them as a single string without any space.\n\n[34, 32, 67, 85]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0049",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Construct a class to represent a student"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0050",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a React component to display a list of items in an unordered list.\n\nconst listItems = [\"Apples\", \"Bananas\", \"Cherries\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0051",
+   "messages": [
+    {
+     "role": "user",
+     "content": "What is the difference between a list and a tuple in Python?"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0052",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a Bash script to create a directory"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0053",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a script for sorting the given array in decreasing order.\n\nconst array = [5, 10, 8, 6, 4, 9, 2]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0054",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a C program to implement diamond pattern."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0055",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Design a SQL query to find the average age of your group's members"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0056",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a React component that will render a list of student details for a particular class."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0057",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a program to insert the given character at a particular position in a given string.\n\nString = \"Geek university\"\nCharacter = 's'\nPosition = 8"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0058",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Explain the main differences between Java and Python."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0059",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Print the value corresponding to the given key in a dictionary.\n\ndic = {'name': 'John', 'age': 18}, key = 'name'"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0060",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Calculate the average score of the following list of numbers.\n\n[2, 4, 6, 8, 10]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0061",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Build an algorithm to compare two strings and report whether they are identical or not.\n\nstring1 = \"hello\";\nstring2 = \"world\";"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0062",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create code that given a stack (i.e., a sequence of objects), returns the reversed stack\n\nstack = [1, 2, 3, 4]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0063",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Split the following sentence into tokens.\n\nSentence: I cannot wait to go to the movies."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0064",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a function that can transform a string of text into an object containing the number of occurrences of each letter in the string.\n\nHello World"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0065",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a function to perform regex match in Python."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0066",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create an array with 5 elements in Python."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0067",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Given a list of tuples, return a new list with the value of each tuple increased by one.\n\ntuples = [(1,2), (2,3), (3,4)]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0068",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Use the Gaussian algorithm to learn the optimal parameters of a 2D linear regression model.\n\nTraining dataset: {(x1,y1), (x2,y2), (x3,y3)}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0069",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Change the last line of the code to assign the output of the function call to the variable n.\n\ndef add_two_numbers(x, y):\n    return x + y\n\n# TODO:"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0070",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Edit the code given below to make it print the numbers from 1 to 10 in increasing order.\n\nfor i in range(10):\n    print(i)"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0071",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Rewrite the following code snippet in Python to multiply an array of two numbers with each element in the array.\n\nvar numbers = [3, 5];\n\nfor (var i = 0; i < numbers.length; i++) {\n  numbers[i] = numbers[i] * 2;\n}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0072",
+   "messages": [
+    {
+     "role": "user",
+     "content": "How can you use recurrent neural networks for sequence prediction?"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0073",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write an HTML code to produce an ordered list with the following numbers: 9, 15, 3, 4."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0074",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Identify the data type for this expression: \"Hello World!\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0075",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Construct a for loop in Python to iterate through the items in the list and print their corresponding index.\n\nlst = [1,2,3]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0076",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Modify the following code to insert the element 'x' into the list at position 'index'\n\nlist1 = [1, 2, 3, 4, 5]\nx = 6\nindex = 3"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0077",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write an SQL query to find all the customers with first names starting with \"A\" from the customers table.\n\ncustomers table"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0078",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a Java class named\u00a0\"Shape\" which has an abstract method named \"surfaceArea\"."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0079",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Execute this JavaScript Promise chain and explain the output.\n\nnew Promise((resolve, reject) => {\n  setTimeout(() => {\n    resolve(1);\n  }, 1000);\n}).then((result) => {\n  console.log(result); // 1\n  return new Promise((resolve, reject) => {\n    setTimeout(() => {\n      resolve(result * 2);\n    }, 1000);\n  });\n}).then((result) => {\n  console.log(result); // 2\n  return result * 2;\n}).then((result) => {\n  console.log(result); // 4\n});"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0080",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a function in Rust that takes two strings and returns true if they are anagrams."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0081",
+   "messages": [
+    {
+     "role": "user",
+     "content": "What is the output of this C++ code for n = 3?\n\nint f(int n) {\n    if (n == 0 || n == 1)\n        return 1;\n    else\n        return f(n-1) + f(n-2);\n}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0082",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Generate a JavaScript array containing the first ten Fibonacci numbers."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0083",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a new array by combining the elements of 2 given arrays.\n\nArray 1: [1, 2, 3]\nArray 2: [4, 5, 6]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0084",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a function to calculate the perimeter of a provided triangle by using its three side lengths."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0085",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a Python script which checks if an input string is a palindrome."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0086",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a code to print the Fibonacci series of n terms."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0087",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a program using any scripting language to print the multiplication table of 5."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0088",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Parse the following JSON using JavaScript.\n\n{\"courseName\":\"Python\"}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0089",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a code that finds the most frequent element in a list.\n\ndata = [1, 2, 3, 2, 3, 2, 1, 2, 3]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0090",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a program to replace a given string with new text.\n\nOld Text: \"Hello World\" \nNew Text: \"Hello Universe\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0091",
+   "messages": [
+    {
+     "role": "user",
+     "content": "How would you implement Skip-Gram model in TensorFlow?"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0092",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a function that removes duplicates from an array and returns an array of the unique values.\n\narray = [5,5,5,10,10,15]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0093",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write regex to match the pattern xaaab."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0094",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Use the list comprehension feature of Python to create a list of words with length more than 5"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0095",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a bash script to create a folder with a given name\n\nfolder_name = my_folder"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0096",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Suggest an appropriate return data type of the following function that takes an integer array as input.\n\ndef find_max(arr):"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0097",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Convert the following list of strings to integers and calculate their total.\n\nlst = [\"4\", \"5\", \"2\", \"6\", \"8\", \"1\"]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0098",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a CSS code snippet to set the default font size to 16px and color to green for all links."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0099",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Define a function that takes three numbers and returns the average of them."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0100",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Update the given CSS class statement.\n\n.red_box { \n    background-color: #AAFF00; \n    margin: 10px; \n     width: 20px;\n}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0101",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create an object structure to represent a 3X3 grid of numbers. This grid should contain two 2\u2019s, two 4\u2019s, and a 6."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0102",
+   "messages": [
+    {
+     "role": "user",
+     "content": "You are given a list of numbers. Write a program to check if the given list is a palindrome or not.\n\n[1, 2, 3, 2, 1]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0103",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Add code to this function to return the square of the input number.\n\ndef square_number(number):\n1"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0104",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Modify the code to remove the duplicate elements from the given array.\n\n[5, 4, 5, 3, 2, 3, 1]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0105",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Update the code to sum the numbers from 0 to 10 and store the result in the 'total' variable.\n\ntotal = 0"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0106",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Using the numpy library, reshape the given matrix array to 5 rows and 2 columns.\n\nimport numpy as np \narr = np.array([[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12]])"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0107",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Design a program to compute the median of 3 integers."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0108",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Design a class in Java to represent a rectangle and include methods to calculate and return its perimeter and area."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0109",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a database table with 3 columns: id, name and size."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0110",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a program in Java to print a multiplication table of size 5x5."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0111",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Sort the following list using a bubble sort algorithm.\n\n[36, 71, 16, 21, 73]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0112",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Given a 2 dimensional array, create a code to transpose the array."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0113",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a website using HTML and CSS that displays \"Hello, World!\"."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0114",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Edit the Java code below to produce the output \"My name is NAME\".\n\npublic class Test { \n public static void main(String[] args) { \n System.out.println(\"My name is\"); \n } \n}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0115",
+   "messages": [
+    {
+     "role": "user",
+     "content": "In the following code, identify the list of variables present.\n\ndef f(x):\n    y = 2 * x  \n    z = x ** y \n    w = [x, y, z]\n    return w"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0116",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Train a Machine Learning model using scikit-learn that can solve a binary classification problem.\n\nDataset - number of samples 1000, number of features 5, target label - binary"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0117",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Convert a given 2D point to the polar representation.\n\nPoint: (1,1)"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0118",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a function to check if the two strings can be made equal by replacing the letters with asterisks in the same order.\n\nString s1 = \"aaabbcc\";\nString s2 =  \"a*a*b*c*\";"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0119",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a SQL query to find out the average price of a product from a table.\n\nproducts (id, name, category, price)"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0120",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Implement a web scraper in Python to fetch all the URLs from a given website.\n\nThe website URL is https://www.example.com"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0121",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Remove the first element in a list using slicing.\n\n[1, 2, 3, 4, 5]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0122",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Generate a correct SQL statement to select the employees with their name, gender, age and salary"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0123",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Transform the following list of tuples into a dictionary.\n\nlist_tuples = [(\"python\", 1), (\"is\", 2), (\"fun\", 3)]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0124",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Read the comment in the code and update the code accordingly.\n\ndef get_multiples(n, limit):\n    \"\"\"Return list of n's multiples for all numbers up to limit\"\"\"\n    multiples = []\n    # TODO: Your code here\n    return multiples"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0125",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a query for filtering an array of objects in a MongoDB collection by their 'age' field.\n\nThe collection is named 'users' and the filter should return objects with age greater than 21"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0126",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a machine learning model in Python to predict the total surface area of a cube given its side length\n\nside_length = 3"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0127",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a script that prints out the current value of environment variables"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0128",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a JavaScript program to accept a string and display the characters in reverse order."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0129",
+   "messages": [
+    {
+     "role": "user",
+     "content": "You need to write a program that takes a given string and checks if it is a valid IP address.\n\nstring1=\"255.255.0.10\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0130",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Add the two following numbers in C++.\n\nx = 4\ny = 5"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0131",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Loop through an array using JavaScript\n\nconst array = [2, 3, 5, 7, 11];"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0132",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a Python function to swap key-value pairs in a dictionary."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0133",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Compute the sum of two given lists\n\n[2,3,4], [1,2,3]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0134",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Use the 'subprocess' library to execute a shell command and store its output.\n\ncommand = \"echo hello world\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0135",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a function to output \"Thank you\" three times."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0136",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a code to add two numbers given as input.\n\na = 1\nb = 5"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0137",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a function that takes two strings and returns a boolean value indicating whether the two strings are anagrams or not."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0138",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a code in PHP to convert Celsius to Fahrenheit."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0139",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a Python program to create a dictionary with three elements."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0140",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a SQL query to get the title and year of the oldest movie in a database."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0141",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a MySQL query to select the name and description of all products"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0142",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create an Angular Directive for a text box that alerts when its contents change."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0143",
+   "messages": [
+    {
+     "role": "user",
+     "content": "From a given list, remove all elements that have a prime index.\n\nlist = [4, 7, 10, 11, 14]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0144",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create an algorithm in C# with a time complexity of O(n2)."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0145",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Using JavaScript, convert the following JSON object into a string.\n\nJObj = {\n  \u201cname\u201d : \u201cJohn\u201d,\n  \u201cage\u201d : 42\n}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0146",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Develop an HTML/CSS layout with 2 columns and a 2-row header."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0147",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a script which takes a list as an argument and shuffles it.\n\nmy_list = [1,2,3,4,5]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0148",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write code to determine if a word is a palindrome or not.\n\nword = \"noon\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0149",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Format this JSON data as per a specific schema.\n\n{\n    \"name\": \"John\",\n    \"age\": 20,\n    \"height_cm\": 178,\n    \"weight_kg\": 73\n}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0150",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Suggest a way to find the maximum number in an array without using the built-in max() function."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0151",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Find the longest substring with non-repeating characters"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0152",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Convert the following JSON string to a Python dictionary.\n\n{\"name\": \"John\", \"age\": 30, \"city\": \"New York\"}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0153",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Build a linear regression model using Python's scikit learn library.\n\nimport pandas as pd\nimport numpy as np\n\ndata = pd.DataFrame({\n    'x': [2.5, 0.5, 2.2, 1.9, 3.1, 2.3, 2, 1, 1.5, 1.1],\n    'y': [2.4, 0.7, 2.9, 2.2, 3, 2.7, 1.6, 1.1, 1.6, 0.9]\n    })\n\nX = data['x'].values.reshape(-1, 1)\ny = data['y'].values.reshape(-1, 1)"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0154",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a function that takes an array of numbers and returns an array whose elements are the product of all the elements except the element at the current index.\n\narr = [2, 3, 4, 5]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0155",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Implement a quick sort algorithm for a given array list."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0156",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Using Python, write a code to generate the Fibonacci series up to the given number.\n\nnum = 10"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0157",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a function in Java that takes a string as a parameter and returns the string in lowercase letters."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0158",
+   "messages": [
+    {
+     "role": "user",
+     "content": "In Python, define a function to extract characters after a given substring.\n\nString = \"Hello-world-123\"\nSubstring = \"-world\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0159",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Given a JSON object representing user scores for a game, write a JavaScript code snippet to get the highest user score.\n\n{\"John\": 80, \"Jane\": 98, \"Tom\": 50, \"Samantha\": 79}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0160",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a script to remove any white spaces in a text string.\n\nThe quick    brown fox"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0161",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a Java program to multiply two given matrices"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0162",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Suggest code for finding the maximum element in a Python dictionary."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0163",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Given a string, write a Python program to remove all special characters from it."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0164",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a function that takes a list of strings and returns a new list of strings with the first letter of each string as capital.\n\nnames = [\"mary\", \"john\", \"joseph\"]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0165",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Complete the following Python code so it prints even numbers from 0 to 10.\n\nfor num in range(0, 10):\n    if"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0166",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write an Objective-C class to represent a person containing attributes like name, age, and height."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0167",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create an HTML document to display \"Hello, World!\" in bold."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0168",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Determine the biggest value in the list.\n\n[7, 12, -5, 3, 9]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0169",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a Python code snippet for printing the items in a given set.\n\nmy_set = {1, 3, 5, 7, 9}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0170",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a Python function to generate a random integer in the range of 1 to 10."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0171",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a XML document to store information about books.\n\nBook Title: \"The Adventures of Tom Sawyer\"\nBook Author: Mark Twain\nBook Year: 1876\nThe Genre: Fiction"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0172",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a URL for the given information.\n\nProtocol: https\nSubdomain: mypage\nDomain: google\nPath: search"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0173",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a function to update the existing item of a dictionary with a new value.\n\nmydict = {\n  \"name\": \"John\",\n  \"age\": 25\n}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0174",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Implement a function in Java that takes a character and a string as arguments and determines whether the character is present in the string or not.\n\n'c' and \"programming\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0175",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a function 'combineTwoLists' with two parameters which combines two given lists into a new list.\n\nlist1 = [1, 2, 3]\nlist2 = [4, 5, 6]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0176",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Replace all the x in the given list with y.\n\nlist = [1, 2, 'x', 'x', 1]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0177",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Update the code to return a different string depending on the value of the variable test\n\nvar test = 3\ndef change(test):\n  #TODO"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0178",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Output the last three elements of a list.\n\nmy_list = [7, 1, 5, 4, 0]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0179",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Design an algorithm to detect the pattern of spikes in an EEG."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0180",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Identify all the statements that are erroneous or have logical errors.\n\na = 2\nb = 1\nif a > b\n    print(\"a is greater than b\")\nelif a == b\n    print(\"a is equal to b\")\nelse\n    print(\"b is greater than a\")"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0181",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write code to calculate the cosine similarity between the two given sentences\n\nSentences: \"this is a great day\" and \"this is a superb day\""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0182",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Use a loop to print out a list of numbers."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0183",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Generate a Java program to sort an array of n elements in ascending order"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0184",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create an SQL Query to display the first 5 records from the following table.\n\nusers\ncolumns: id, username, email"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0185",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write an algorithm in C++ for linear search."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0186",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Program a function to convert a given string with no spaces to a string with underscores (_) in all spaces between words.\n\nHelloWorld"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0187",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create an algorithm to reverse a linked list in place."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0188",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a program to calculate the total marks of a student.\n\nMarks of 5 Subjects:\nEnglish: 35\nMaths: 88\nChemistry: 70\nPhysics: 45\nComputer: 80"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0189",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Construct a query to find the 2nd highest salary from an employee table."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0190",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Modify the program to make sure that only integers are accepted as input.\n\nname = input(\"Enter your name: \")\nprint(\"Hello, \" + name)"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0191",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write code to store an input string in a hashmap with the count of its occurrence as the value\n\nThe input string is \"apple\"."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0192",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Extract the strings that match the following regex pattern from a text block\n\ntext block = \u201chotel #9888, school #9876, airport #987\u201d\nregex pattern = #[0-9]{4}"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0193",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a webhook in Python to listen to webhook requests."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0194",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a Python program to compare two lists and print the elements which are not common between the two.\n\nlist_a = [1, 2, 3, 4, 5]\nlist_b = [3, 4, 5, 6, 7]"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0195",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Analyze the given sentence and label each word according to its part of speech.\n\nSentence: She was embarrassed to open the door."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0196",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create a CSS style sheet to make the text on a page bold and the background yellow."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0197",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a SQL query to list all the customers whose age is over 18."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0198",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write C++ code to find the maximum subarray sum"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "code-0199",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Create an object in JavaScript named 'user' with the following attributes: name, age, and gender."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0200",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nCapel Lligwy is built from rubble masonry ; at about 5 feet ( 1 @.@ 5 m ) up the walls , the style changes and smaller stones are inserted into spaces between the larger blocks"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0201",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nFor a time , Capel Lligwy was used as a private place of worship for Lligwy House , a \" venerable mansion \" once owned by the Lloyd family which"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0202",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe same commentators suggest that here Starr could be referring to the 1969 \" Paul Is Dead \" hoax . The latter rumour circulated during September and October of that year while McCartney hid away on his Scottish farm , disconsolate after John Lennon had told him and Starr that he wanted a \""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0203",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nMost of the range is public land administered by the federal Bureau of Land Management . There is very little human development in the remote region \u2014 cattle grazing and ranching are the primary human uses \u2014 but former mines at the McDermitt Caldera produced some of the largest amounts"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0204",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe city has also been home to several athletes , many of whom have competed at professional levels . Among them are : Dennis Ray \" Oil Can \" Boyd , former Major League Baseball pitcher ; Negro league baseball catcher Paul Hardy ; professional basketball player Derrick"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0205",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nNick Hendricks ( Bateman ) and Dale Arbus ( Day ) are friends who despise their bosses . Nick works at a financial firm for the sadistic David Harken ( Spacey ) , who implies the possibility of a promotion for Nick for months , only to award it"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0206",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nTim 's driving days started as a toddler when he was given a go @-@ kart that he often drove inside buildings and across his lawn . He later raced the kart at tracks in"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0207",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOn 10 September , the Prime Minister announced to the nation that certain areas of the country would be placed under a variation of martial law , which he said would be applied in particular regions as and"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0208",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe team was in the national rankings all season and ended as the 2011 \u2013 12 Big Ten co @-@ champion with Michigan State and Ohio State . It had three victories over teams ranked in the top 10 at the time of the meeting"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0209",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAs of 2007 , according to a report submitted on his behalf , Churchill has written 10 books on his own and co @-@ authored 4 . Some have been reprinted with updates . He has written 51 book chapters , 3 law reviews , and 50 scholarly essays ; 27 of"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0210",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nDespite his reputation as an artist and seal @-@ carver , Hu was primarily a publisher . His publishing house , the Ten Bamboo Studio , produced reference works on calligraphy , poetry and art ; medical textbooks ; books on etymology and phonetics ; and copies of as well as commentaries on the Confucian Classics . Unlike other publishers"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0211",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nBurial 10 is the tomb of Yax Nuun Ayiin . It is located beneath Structure 34 in the North Acropolis . The tomb contained a rich array of offerings , including ceramic vessels and food , and nine youths were sacrificed to accompany the dead king . A dog was also entombed with the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0212",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nWith a satisfying protagonist completed , Sega turned to esteemed programmer Yuji Naka , who had impressed them through his work on Phantasy Star and the Genesis port of Ghouls ' n Ghosts . The gameplay originated with a tech demo by Naka , who developed an algorithm allowing a sprite to"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0213",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAlong with Lauderdale County and the city of Marion , Meridian is served by the East Mississippi Business Development Corporation , which was formed in 1996 by a group of business leaders from the area . While as of April 2010 , the city 's civilian labor force was only 15 @,@ 420 people , there is a"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0214",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn 2002 , Q magazine named \" Where the Streets Have No Name \" the 16th- \" most exciting tune ever \" . The following year , Q ranked the song at number 459 in a special edition titled \""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0215",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe U.S. Department of State 's 2012 report on religious freedom in Germany , published in 2013 , stated that \" The status of the Church of Scientology remains in limbo . The Constitutional Court and various courts at the state level have not explicitly ruled that Scientology is a religion ."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0216",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe residential area of Tikal covers an estimated 60 square kilometres ( 23 sq mi ) , much of which has not yet been cleared , mapped , or excavated"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0217",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nCooke 's opportunistic diversion had determined that the Spanish forces in the Philippines posed no immediate threat , although the mission had cost 18 lives : Admiral Rainier later expressed his satisfaction with the outcome in a letter to"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0218",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe police arrest Nick , Dale and Kurt , but the navigation @-@ system operator , Gregory , reveals that it is his companies policy to record all conversations for quality assurance . Gregory plays the tape that has Harken confessing he murdered Pellitt . Harken is"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0219",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOn The Joshua Tree Tour , \" Where the Streets Have No Name \" was most often used to open concerts . Fans and critics responded favourably to the song in a live setting . The San Diego Union @-@ Tribune wrote that , \" From the lofty sonic"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0220",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nResearch involving the reaction was relatively quiet in subsequent years , until in the mid @-@ 1980s when several syntheses employing the Nazarov cyclization were published . Shown below are"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0221",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn January 2005 , during the controversy over his 9 / 11 remarks , Churchill resigned as chairman of the ethnic studies department at the University of Colorado \u2014 his term as chair was scheduled to expire in"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0222",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThough cyclizations following the general template above had been observed prior to Nazarov 's involvement , it was his study of the rearrangements of allyl vinyl ketones that marked the first major examination of this process . Nazarov correctly reasoned that the allylic olefin isomerized in"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0223",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAs a senior , McCarty recorded 2 @,@ 400 yards and scored 33 touchdowns in just nine games , averaging 266 @.@ 7 yards and over three touchdowns per game . He ran for 380 yards"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0224",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nDemocrat William Goebel chose Beckham as his running mate in the Kentucky gubernatorial election of 1899 . Goebel was hesitant about the selection because he wanted someone who could deliver the vote of his home county in the general election , and Beckham 's native Nelson County was already committed to a rival candidate . But friends"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0225",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe 1888 \u2013 89 New Zealand Native football team was a New Zealand rugby union team that toured Britain , Ireland , Australia and New Zealand in 1888 and 1889 . It mostly comprised players of M\u0101ori ancestry , and also included some P\u0101keh\u0101 ( white New Zealanders ) . A wholly private endeavour , the tour was not"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0226",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAfter this , the Australians were able to resume their advance to the river on 7 May without further opposition . The previous three weeks in which they had advanced"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0227",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nTo ensure the safety of the merchant ships gathering at Macau in the winter of 1797 \u2013 98 , the British commander in the East Indies , Rear @-@ Admiral Peter Rainier , sent a convoy to China escorted"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0228",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe business route was created in August 1942 when former M \u2011 54 in Ironwood was renumbered as a business loop of US 2 . It was originally a bi @-@ state business connection before the Wisconsin Department of Transportation decommissioned Bus . US 2 in Hurley westward along State"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0229",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nGerman courts have so far not resolved whether Scientology should be accorded the legal status of a religious or worldview community , and different courts have reached contradictory conclusions . The German domestic intelligence service has monitored the organization 's activities ."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0230",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nRestoration work in 1983 cost \u00a3 1 @,@ 408 . Grants were received from the Association of Independent Museums , Blo ' Norton Women 's Institute , Ipswich Historical Transport Society , the National Association for Gifted Children , Mr"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0231",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe song 's tone implies that the speaker feels powerless against the discrimination and racism that he encounters ; despite this , by \" spreading the news \" of his poor treatment in a song , the speaker"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0232",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nBorn in Ottawa , Ontario , Gauthier received musical lessons as a child , in harmony , voice , and piano . The custom of the time dictated that North American musicians travel to Europe for training if they desired a reputable professional career , and in July 1902"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0233",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nEsquire magazine named Richmond as one of \" the best of the new generation \" in 1984 . That year he had one win at North Wilkesboro Speedway and second @-@ place finishes at Dover , Darlington and Riverside . Richmond finished the 1984 season 12th"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0234",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nShikamaru has ranked highly in the Weekly Sh\u014dnen Jump popularity polls for the series , continuously placing in the top ten and reaching fourth place in one poll . The last such poll was in 2011 , in which Shikamaru was in ninth place , behind Sasori and ahead of Hinata . Merchandise"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0235",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nUnder the command of Brigadier Heathcote Hammer the 15th Brigade consisted of three infantry battalions as well as two troops of tanks from the 2 / 4th Armoured Regiment , engineers from the 15th Field Company , a battery of 155 @-@ mm guns from ' U ' Heavy Battery , field artillery from the 2nd Field Regiment , and"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0236",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn January 1287 , the embassy arrived at Beijing , and was received by the Yuan emperor . The Burmese delegation formally acknowledged Mongol suzerainty of their kingdom , and agreed to pay annual tribute tied to the agricultural output of the country . ( Indeed , the tribute"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0237",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nMeanwhile , native island scouts \u2014 directed by British government official and officer in the British Solomon Islands Protectorate Defence Force , Martin Clemens \u2014 told the Marines of Japanese troops at Taivu , near"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0238",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe work was financed by grants of \u00a3 500 from the Council for the Preservation of Rural Essex , \u00a3 250 from St Edmundsbury Borough Council , \u00a3 200 from the Scarfe Trust , and \u00a3 200 from the Suffolk Mills Group . Other donations and"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0239",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nA modest force remained in Afghanistan over this time and was involved in counter @-@ insurgency operations in Uruzgan Province in conjunction United States and other coalition forces , including the Dutch prior to their withdrawal . The force consisted of motorised infantry , special forces , engineers , cavalry , artillery and aviation elements ."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0240",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nGerman public discourse does not regard Scientology as a religion , but generally characterizes it as a Sekte ( cult or sect ) , or as an exploitative profit @-@ making venture preying on vulnerable minds . Public concerns about the potential dangers posed by cults date back to the early 1970s , when widespread"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0241",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nWith the exception of Western Australia , the colonies also operated their own navies . In 1856 , Victoria received its own naval vessel , HMCSS Victoria , and its deployment to New Zealand in 1860 during the First Taranaki War marked the first occasion that an Australian warship had been deployed overseas . The colonial navies"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0242",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nTo further justify its stance , the German government has also pointed to the long history of U.S. court cases involving Scientology , including the conviction of 11 top Scientologists in 1979 and 1980 for a conspiracy involving the infiltration of U.S. government agencies , wiretapping and the theft of government documents , a 1994 U.S."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0243",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nBy the 1970s and 1980s , a century of intense cattle grazing had reduced much of the riparian vegetation along stream banks in the Trout Creek Mountains and elsewhere in the Great Basin . As a result , stream banks were eroding and upland vegetation was encroaching into riparian zones . Aspen populations declined as grazing cattle eliminated young trees"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0244",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe German government has said that it does not consider Scientology a religion , but a \" commercial enterprise with a history of taking advantage of vulnerable individuals and an extreme dislike of any criticism \" whose \" totalitarian"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0245",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nFollowing his term in the Senate , Beckham resumed his legal practice in Louisville . He sought another term as governor in 1927 . This time he had the support of the Louisville Courier @-@ Journal , which had been purchased by his ally , Robert W."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0246",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nE.J.H. Corner defined the varieties M. inclinata var. kinabaluensis and var. subglobospora in his 1994 publication on Agaric mushrooms of Malesia , a biogeographical region straddling the boundary of the Indomalaya and Australasia ecozones . The variety kinabaluensis ( named after its type locality , Kinabalu ) has a cap margin"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0247",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nRichmond grew up in a wealthy family and lived a freewheeling lifestyle , earning him the nickname \" Hollywood \" . In describing Richmond 's influence in racing , Charlotte Motor Speedway president Humpy Wheeler said : \" We"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0248",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nBeckham 's ardent support of prohibition likely cost him the election . His position put him at odds with Henry Watterson , editor of the powerful Louisville Courier @-@ Journal . As governor Beckham had crossed the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0249",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nCapel Lligwy has national recognition and statutory protection from alteration as it has been designated as a Grade II listed building \u2013 the lowest of the three grades of listing , designating \" buildings of special interest , which warrant every effort being made to preserve them \" . It was given this status on"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0250",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOn 28 August , 600 of Kawaguchi 's troops were loaded onto the destroyers Asagiri , Amagiri , Yugiri , and Shirakumo , designated Destroyer Division 20 ( DD20 ) . Because of a shortage of fuel , DD20 could not make the entire round"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0251",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAiming to knock Turkey out of the war the British then decided to stage an amphibious lodgement at Gallipoli and following a period of training and reorganisation the Australians were included amongst the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0252",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe demobilisation of the Australian military following the end of the Second World War was completed in 1947 . Plans for post @-@ war defence arrangements were predicated on maintaining a relatively strong peacetime force . It was envisioned that the Royal Australian Navy maintaining a fleet that would include two light fleet carriers , two cruisers , six"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0253",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn addition to these supposed messages in \" Back Off Boogaloo \" , observers have viewed the song title as Starr 's rebuke to McCartney to abandon his legal stand against the Beatles and Apple Corps ,"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0254",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe main crossing was planned for 20 May , with the 58th / 59th Infantry Battalion on the right tasked to cut the Buin Road and the Aitara Track to the east of the river , while on the left the 57th / 60th Infantry Battalion would divert the attention of the Japanese off"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0255",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nPapa Stour is one of the Shetland Islands in Scotland , with a population of under twenty people , some of whom immigrated after an appeal for residents in the 1970s . Located to the west of mainland Shetland"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0256",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn the centre , the main attack along the Buin Road began at 08 : 30 on 20 May after 20 minutes of strafing by New Zealand Corsairs had prepared the ground . Advancing under a creeping barrage"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0257",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nHomarus gammarus is found across the north @-@ eastern Atlantic Ocean from northern Norway to the Azores and Morocco , not including the Baltic Sea . It is also present"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0258",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nBlythe , who is nearsighted , took off his glasses before entering the stage , which together with the smoke and light effects allegedly left him half @-@ blind . Blythe said that people could easily reach the band members or climb up to the stage . One of the fans , who was identified as Milan Po\u0159\u00e1dek"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0259",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nLater , they play their favorite game , Eels and Escalators . Patrick always gets escalators but SpongeBob always gets eels . Eventually , he loses the game and accidentally utters the swear word . Patrick then races to the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0260",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nRadcliffe made his film debut in The Tailor of Panama , an American 2001 film based on John le Carr\u00e9 's 1996 spy novel , and a moderate commercial success . In 2002 he made his stage debut as a celebrity guest in a West End"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0261",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAustralia 's involvement in the Vietnam War was driven largely by the rise of communism in Southeast Asia after the Second World War , and the fear of its spread which developed in Australia during the 1950s and early 1960s . As a consequence ,"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0262",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAustralia entered the Second World War on 3 September 1939 . At the time of the declaration of war against Germany the Australian military was small and unready for war . Recruiting for a Second Australian Imperial Force ( 2nd AIF ) began in mid @-@ September . While there was no rush of volunteers like the First World"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0263",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nWhen the American Revolutionary War broke out in 1775 , the city of Charleston in the colony of South Carolina was a center of commerce in southern North America . The city 's citizens joined other colonists in opposing the British parliament 's attempts to"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0264",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nStela 23 was broken in antiquity and was re @-@ erected in a residential complex . The defaced portrait on the monument is that of the so @-@ called \""
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0265",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe tour returned to Pocono a month later , and Richmond battled for another victory in a fog @-@ shortened event . In the final 8 @-@ lap sprint , Richmond competed"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0266",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nDespite the controversy surrounding the song and its contribution to the delay in the release of Reign in Blood , \" Angel of Death \" is featured on all of Slayer 's live albums and DVDs and has appeared in several movies . The song was well received by critics ; Steve Huey of AllMusic described it as"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0267",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe fantail was made . Some of the small gears were replaced . The stocks were made from pitch pine and the blades from Douglas fir . Work at the mill over the winter included repairs to the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0268",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nYou men have done a great job , and I have just one more thing to ask of you . Hold out just one more night . I know we 've been without sleep a long time . But we expect another attack from them tonight and they may come"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0269",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn downtown , the MSU Riley Center provides revenue from tourism , arts , and entertainment sales . The Riley Center attracts more than 60 @,@ 000 visitors to downtown Meridian annually for conferences , meetings , and performances . Loeb 's Department Store on Front"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0270",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe TNA World Tag Team Championship was defended in the third match of the event by LAX against Team 3D . H\u00e9ctor Guerrero and Salinas accompanied LAX to the ring . Salinas , Guerrero , and Team 3D 's associate Johnny"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0271",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nPlans for a limited @-@ access route along the Route 29 corridor go back to 1932 , when a parkway was proposed along the Delaware River between Trenton and Lambertville ; this proposal never materialized . Plans for a freeway"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0272",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nGovernment publications on the dangers of sects increased between 1996 and 1998 , and a significant number of them dealt with the Church of Scientology . The German courts had approved such publications in 1989 , seeing them as part of the government 's responsibility to keep the public informed , and finding that they did not interfere"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0273",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nScientology formulated a \" Clear Germany \" strategy in 1994 \u2013 similar to equivalent strategies pursued by Scientology in other countries and regions of the world \u2013 with the long @-@ term aim of transforming German society in line with the Scientological ideal : a non @-@ pluralist society in which Scientology enjoys overriding influence . The programme sought to"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0274",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nLead Belly first recorded \" The Bourgeois Blues \" in December 1938 in New York City , for donation to the Library of Congress . He re @-@ recorded the song in April 1939 for Musicraft Records , for release the same year as a 78 rpm record . The version that was commercially released features Lead Belly singing and"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0275",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe town boomed in the aftermath of the Civil War , and experienced its \" Golden Age \" from 1880 to 1910 . The railroads in the area provided for a means of transportation and an"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0276",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nStructure 5D @-@ 43 is an unusual radial temple in the East Plaza , built over a pre @-@ existing twin pyramid complex . It is built into the end of the East Plaza Ballcourt and possessed four entry doorways and three stairways , the fourth ( south )"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0277",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nGame @-@ package illustrator Akira Watanabe said that his goal was to make the characters \" colorful \" , using clear lines and gradation to \" finish them neatly \" . According to Watanabe , the developers asked him to create a package design \" similar to pop art ... without being particular to conventional packages \" \u2013"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0278",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn 1990 , a few months after Richmond 's death , Washington television station WJLA @-@ TV and reporter Roberta Baskin reported that Dr. Forest Tennant , who was then"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0279",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe side 's success in their rugby matches contrasted to their failure in Victorian Rules \u2013 the New Zealanders played three rugby matches while in Victoria : against Melbourne ,"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0280",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nM @-@ 82 is a state trunkline in the Lower Peninsula in the US state of Michigan that travels between Fremont and Howard City . The section between Newaygo and Howard City travels through Fremont and along the southern edge of Manistee National Forest ."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0281",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAccording to the 2000 Census , of the 17 @,@ 890 housing units inside city limits , 15 @,@ 966 were occupied , 10 @,@ 033 of them by families . 31 @.@ 1 % of occupied households had children under the age"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0282",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe median income for a household in the city was $ 25 @,@ 085 , and the median income for a family was $ 31 @,@ 062 . Males had a median income of $ 29 @,@ 404 versus $ 19 @,@ 702 for"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0283",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nHurricane Beatriz was a Category 1 hurricane that killed four people after brushing the western coast of Mexico in June 2011 . Originating from an area of disturbed weather on"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0284",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nBut the agreement broke down a month later . In late June , the defeated king and his small retinue left their temporary capital for Pagan . But on 1 July 1287 , the king"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0285",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe most difficult of the main routes is the Black Cloud Trail , a Class 2 climb that takes ten to fourteen hours depending on pace , gains 5 @,@ 300 feet ( 1"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0286",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nA total of 2 @,@ 000 people attended Slammiversary , while the The Wrestling Observer Newsletter reported that 20 @,@ 000 people bought the event . Canadian Online Explorer writer Jon Waldman rated the entire event a 7 out of 10 , which was lower than the 8 out"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0287",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nFrom a Native Son : Selected Essays on Indigenism , 1985 \u2013 1995 ( 1996 ) is a collection of 23 previously published essays on Native American history , culture , and political activism . In his introduction"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0288",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nFollowing the Supreme Court ruling , Taylor fled to Indianapolis , Indiana , fearing he would be implicated in Goebel 's assassination . Beckham became acting governor , but because of the unusual circumstances surrounding the election , a special election was held November 6 , 1900 , to determine who would complete Goebel 's unexpired"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0289",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nBlythe 's defense team attacked differences between the testimonies the witnesses gave after the incident in 2010 and at the court . Among other things , one of the witnesses originally alleged that Nosek and Blythe shook hands or that one of them offered"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0290",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nMcCarty remained in a multi @-@ purpose role in 2010 and was utilized more frequently in the passing game compared to the previous season . He made a reception for a first down following a fake punt in Week 6 . He missed two games later in the season due to a hand injury"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0291",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn a 1987 profile on Churchill , the Denver Post reported that he was drafted , went to paratrooper school , then volunteered for Vietnam , where he served a 10"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0292",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe predominate storyline heading into the event was the rivalry between A.J. Styles and Kurt Angle , both members of The Angle Alliance group . On the February 14 episode of Impact ! , TNA held"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0293",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nTrey Burke was one of nearly 60 Bob Cousy Award candidates named in December 2011 . On January 4 , Burke was one of 20 finalists . On January 25 , Novak was named"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0294",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nListed on the NRHP on December 17 , 1999 , the Mackinac Trail \u2013 Carp River Bridge carries H @-@ 63 , the modern successor to US 2 , over the Carp River north of St. Ignace . The bridge is another spandrel arch structure 60 feet ( 18 m"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0295",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAt the start of the 1960s , Prime Minister Robert Menzies greatly expanded the Australian military so that it could carry out the Government 's policy of \" Forward Defence \" in South East Asia . In 1964"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0296",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOn July 17 , 2012 , Prague Municipal Court 's panel of three judges headed by judge Lubo\u0161 Vrba overturned the bail decision by doubling the bail amount to CZK 8 million ( ~ US $ 400 @,@ 000 )"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0297",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nJablonsk\u00fd gained fame as attorney of Yekta Uzunoglu , a Kurdish national who was first charged in 1994 with preparing to commit three murders and committing blackmail and torture ."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0298",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOn February 7 , 2013 , only one witness took the stand before the hearing was adjourned . Luk\u00e1\u0161 Havlena contacted the defense after reading about the trial in newspapers because he \" didn 't like the description of the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0299",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe first Mongol invasions of Burma ( Myanmar ) ( Burmese : \u1019\u103d\u1014 \u103a \u1002\u102d\u102f \u2013 \u1019\u103c\u1014 \u103a \u1019\u102c \u1005\u1005 \u103a ( \u1041\u1042\u1047\u1047 \u2013 \u1041\u1042\u1048\u1047 ) ) were a series of military conflicts between Kublai Khan 's Yuan dynasty , division of the Mongol Empire , and the Pagan Empire that took place"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0300",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe interchange is considered by Popular Mechanics to be one of \" The World 's 18 Strangest Roadways \" because of its height ( as high as a 12 @-@ story building ) , its 43 permanent bridges and other unusual design and construction"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0301",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nSonic the Hedgehog is a platform video game developed by Sonic Team and published by Sega for the Sega Genesis console . The game was first released in North America , Europe and Australia in June 1991 , and in Japan the following month ."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0302",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOriginally measured as 14 @,@ 433 feet ( 4 @,@ 399 m ) in height , Mount Elbert 's elevation was later adjusted to 14 @,@ 440 feet ( 4 @,@ 400 m ) following"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0303",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThere are good examples of horizontal water mills , also known as Norse or Clack Mills , around Dutch Loch . Originally these were two story buildings with turf roofs , built into banks to give access to the upper floor where the mill @-@ stone was sited . Inside the building there was a fixed lower millstone ,"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0304",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nJohn Rutledge , recently elected president of the General Assembly that remained as the backbone of South Carolina 's revolutionary government , organized a defense force under the command of 46 @-@ year @-@ old Colonel"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0305",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAt the Battle of Tsushima on 27 May 1905 , Asahi again followed the battleship Mikasa into combat , this time against the Second and Third Pacific Squadrons . Mikasa opened fire at the battleship Knyaz Suvorov , the Russian flagship , at 14 : 10 , and was joined by Asahi and the armoured cruiser Azuma shortly afterwards"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0306",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe New Zealanders expected to meet a mere exhibition 15 of scratch players , whereas Mr Rowland Hill had carefully collected the best possible team available . Such \" passing \" as the Home men displayed the Maoris frankly admit they have never previously witnessed . Said McCausland"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0307",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe Meridian Council for the Arts ( MCA ) was founded as Meridian 's and Lauderdale County 's official arts agency in 1978 . MCA operates its Community Art Grants program , the annual Threefoot Festival , several workshops , and other"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0308",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAlthough the importance of ' joint ' warfare had been highlighted during Second World War when Australian naval , ground and air units frequently served as part of single commands , the absence of a"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0309",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nTemple V stands south of the Central Acropolis and is the mortuary pyramid of an as yet unidentified ruler . The temple stands 57 metres ( 187 ft ) high , making it the second tallest structure at Tikal - only Temple IV is taller . The temple has been"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0310",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn February 2009 , the Berlin Administrative Court ruled that a poster placed by local city authorities on an advertising column next to a bus stop in front of the Berlin Scientology headquarters , warning passers"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0311",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\n\" Where the Streets Have No Name \" made its concert debut on 2 April 1987 in Tempe , Arizona on the opening night of The Joshua Tree Tour . It has since been played at"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0312",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAfter obtaining guns the conspirators returned to Portland , Oregon . They rented out an apartment in Portland to serve as their base of operations for the assassination of Turner . Rajneesh follower Carol Matthews ( Ma Prem Samadhi ) used a fake"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0313",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe episode received positive reviews , while various members of the SpongeBob SquarePants crew consider the episode to be one of their favorites , mainly due to the satirical nature of the episode . However , the episode was not immune to negative reception , and was criticized by watchdog media group the Parents"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0314",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe initial phase saw the Australians advance towards the Hongorai River . Following the end of the early fighting , the Australian advance towards the main Japanese concentration at Buin continued as they struck out towards the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0315",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nWales : Jim Webb ( Newport ) , George Thomas ( Newport ) , Dickie Garrett ( Penarth ) , Charlie Arthur ( Cardiff ) , Norman Biggs ( Cardiff ) , Charlie"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0316",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nTwo rival communist @-@ backed black nationalist groups initiated military campaigns to overthrow the government and introduce majority rule : the Chinese @-@ aligned Zimbabwe African National Union ( ZANU ) , mostly comprising Shonas"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0317",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe mountain was named in honor of Colorado statesman Samuel Hitt Elbert , who was active in the formative period of the state and Governor of the Territory of Colorado from 1873 to 1874 . Henry W. Stuckle of the Hayden"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0318",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nRoute 29 was initially designated in 1927 to run from downtown Trenton to Newark , following present @-@ day Route 179 and US 202 between Lambertville and Somerville and US 22 between Somerville"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0319",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOn 21 June 2008 , Stuart Hill , the owner and only resident of the 1 hectare ( 2 @.@ 5 acres ) island of Forewick Holm ( which he"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0320",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn the 5th century the power of the city reached as far south as Cop\u00e1n , whose founder K 'inich Yax K 'uk ' Mo ' was clearly connected with Tikal . Cop\u00e1n itself was"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0321",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn 1978 , Churchill began working at the University of Colorado Boulder as an affirmative action officer in the university administration . He also lectured on American Indian issues in the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0322",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe current route was originally legislated in 1911 as part of the Delaware River Drive , a named state highway that was proposed to run from along the Delaware River from Trenton to the New York border in Montague Township . Route 29 was originally defined in 1927 to run from Trenton to"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0323",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAs governor Beckham sought to unite his party and the state . As part of this effort he supported changes to the blatantly partisan Goebel Election Law , authored by his late running mate while"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0324",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe conflict lasted for over 150 years and followed the pattern of British settlement in Australia . Beginning in New South Wales with the arrival of the first Europeans in May 1788 , it continued in Sydney and its surrounds until the 1820s . As the frontier moved west so did the conflict , pushing into outback New"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0325",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn 2000 , producer David Heyman asked Radcliffe to audition for the role of Harry Potter for the film adaptation of Harry Potter and the Philosopher 's Stone , the best @-@ selling book by British author J. K. Rowling . Rowling had been searching for an unknown British actor to personify the character , and the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0326",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe walls were partially rebuilt in the 14th century , and the upper parts of the walls date from this time . A chapel was added to the south side of the building in the 16th century . A vault under the south chapel was used to bury members of a local family ,"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0327",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOn 15 September , General Hyakutake at Rabaul learned of Kawaguchi 's defeat , the Imperial Japanese Army 's first defeat involving a unit of this size in the war . The general forwarded the news to the Imperial General Headquarters in Japan . In an emergency session ,"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0328",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAir Vice Marshal Frank Headlam , CB , CBE ( 15 July 1914 \u2013 23 December 1976 ) was a senior commander in the Royal Australian Air Force ( RAAF ) . Born and educated in Tasmania"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0329",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nStela 29 bears a Long Count ( 8 @.@ 12 @.@ 14 @.@ 8 @.@ 15 ) date equivalent to AD 292 , the earliest surviving Long Count date from the Maya lowlands . The stela is also the earliest monument to bear the Tikal emblem glyph . It bears a sculpture of the king facing to"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0330",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe Daily Mail called the performance \" energetic \" . Tom Young from BBC Music called the performance a \" delight \" but described the video as the \" lowlight \" of the tour . Ed Gonzalez from Slant Magazine wrote that the performance was"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0331",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAt the start of the Russo @-@ Japanese War , Asahi , commanded by Captain Hikohachi Yamada , was assigned to the 1st Division of the 1st Fleet . She participated in the Battle of Port Arthur on 9 February 1904 , when Vice Admiral T\u014dg\u014d Heihachir\u014d led the 1st Fleet in an attack on the Russian"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0332",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nJosephine continued to intensify throughout the afternoon as the storm became more symmetrical . However , due to the location of the storm , there was a lack of accurate wind"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0333",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn November 2008 , the government abandoned its attempts to ban Scientology , after finding insufficient evidence of illegal or unconstitutional activity . The report by the BfV cited knowledge gaps and noted several points that would make the success of any"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0334",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe Butterfly World Tour was the third concert tour by American singer @-@ songwriter Mariah Carey . The tour promoted Carey 's album at the time , Butterfly ( 1997 ) , and included songs from several of her previous albums . The tour visited Asia , Australia and the United States , with rehearsals taking"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0335",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn June 1994 , the United Keetoowah Band had voted to stop awarding associate memberships . Such honorary associate membership recognizes an individual 's assistance to the tribe , but it has nothing to do with Indian ancestry , and it does not entitle an individual to vote in the tribe as a member . The Keetoowah"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0336",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nTropical Storm Josephine formed as a tropical wave that emerged off the west coast of Africa near the end of August 2008 . It tracked south of Cape Verde and"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0337",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nRoute 29 follows Main Street north through Lambertville , crossing into Delaware Township . It comes to an interchange with U.S. Route 202 just east of the New Hope @-@ Lambertville Toll Bridge"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0338",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nFollowing the season , Trey Burke first said he was not inclined to enter the 2012 NBA Draft . A few days later , however , the realization that the pool of point guards in the 2012 draft was shallow and Burke 's stock was high led to some deliberation for him and"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0339",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nRevlon also collaborated with the makers of Die Another Day to create a cosmetics line based around the character Jinx . The limited edition 007 Colour Collection was launched on 7 November 2002 to coincide with the film 's release . The product names were loaded with puns and innuendo , with shades and textures ranging from the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0340",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nDuring the tour , several bits and performances were filmed and later edited into a VHS and DVD entitled Around the World . The VHS featured performances from Tokyo Dome , Aloha Stadium as well as few other skits and scenes that were later compiled into the video . The film first begins with"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0341",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe depiction of the police attempting to shut down the video shoot due to safety concerns actually happened during filming , just as seen in the video . Hamlyn was almost arrested following a confrontation with the police . According to Avis , the events depicted in the video show what"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0342",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe fourteenth king of Tikal was Chak Tok Ich 'aak ( Great Jaguar Paw ) . Chak Tok Ich 'aak built a palace that was preserved and developed by later rulers until it became the core of the Central Acropolis . Little is known about Chak Tok Ich 'aak except"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0343",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nUnlike most forts for military use , the fort did not have defensive walls or structures when first built ; the wide @-@ open area and the available artillery made an"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0344",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe terrain in the Trout Creek Mountains varies from broad , flat basins and rolling ridges to high rock escarpments cut by deep canyons . The canyons have steep walls"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0345",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe millstones were removed from the stone floor , which was then repaired . One of the main beams was found to have been attacked by Death Watch beetles , and over a third of the elm beam was replaced with oak . The six"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0346",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOn 19 February 1952 , Headlam became senior air staff officer ( SASO ) at Eastern Area Command in Penrith , New South Wales . During his term as SASO , the RAAF began re @-@ equipping with English Electric Canberra jet bombers and CAC Sabre jet"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0347",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nRadcliffe is a supporter of the Labour Party . Until 2012 Radcliffe had publicly supported the Liberal Democrats , and before the 2010 general election Radcliffe endorsed Nick Clegg , the Lib Dem leader . In 2012 , however ,"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0348",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nCatherine Jane Stork volunteered to be the follower who would actually murder Turner , and bought guns and silencers . Stork was known to fellow followers as Ma Shanti Bhadra , and was also one of the three \" Big Mammas \" in Rajneeshpuram . Sally @-@ Anne Croft ("
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0349",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nMount Elbert is composed largely of quartzite . However , the summit ridge consists of metamorphic basement rock , which is Pre @-@ Cambrian in origin and about 1 @.@ 7 billion"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0350",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nHer performance in Fargo in 1923 resulted in a headline in the Fargo Forum the next day that was headed Eva Gauthier \u2019 s Program Sets Whole Town Buzzing : Many People Are of Two Minds Regarding Jazz"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0351",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nA version of Sonic the Hedgehog was developed by Ancient and released in 1991 for Sega 's 8 @-@ bit consoles , the Master System and Game Gear . Its plot and gameplay mechanics are similar to the 16 @-@ bit version , with different level themes and digital assets . The level design is flatter , with no vertical"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0352",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe idea for assembling a team of M\u0101ori footballers to tour Britain was conceived by Joseph Warbrick , a rugby player who had toured with the first New Zealand national team in 1884 . He initially proposed a team of M\u0101ori or part @-@ M\u0101ori to play the touring British side in 1888 ;"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0353",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe first state trunkline highway designated along the path of the modern US 2 was M \u2011 12 , a designation that was in use by July 1 , 1919 , between Ironwood and"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0354",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe following year , McCarty joined the senior team at St. Thomas More , skipping the junior team entirely . He continued in his role as a running back while switching to the secondary defensively . Despite being a rare Grade"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0355",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe immediate result of the war was the collapse of the Pagan Empire . However , the war merely accelerated the collapse but did not cause it . Pagan 's disintegration was \" in fact more prolonged and agonized . \" The kingdom"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0356",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe Mundo Perdido is to the west of the Plaza of the Seven Temples . It is the largest ceremonial complex dating from the Preclassic period at Tikal . The complex was organized as a large E @-@ Group consisting of a pyramid aligned with a platform to the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0357",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOka 's unit of about 650 men attacked the Marines at several locations on the west side of the Lunga perimeter . At about 04 : 00 on 14 September , two Japanese companies attacked positions held by the 3rd Battalion"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0358",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\n\" The Same Old Story \" is the second episode of the first season of the American science fiction drama television series Fringe . The episode was written by executive producer Jeff Pinkner and co"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0359",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nHu Zhengyan was a noted seal @-@ carver , producing personal seals for numerous dignitaries . His style was rooted in the classical seal script of the Han dynasty , and he followed the Huizhou school of carving founded by his contemporary He Zhen . Hu 's calligraphy , although balanced and with a clear compositional structure"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0360",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nBecause they overstabilize the pentadienyl cation , \u03b2 @-@ electron donating substiuents often severely impede Nazarov cyclization . Building from this , several electrocyclic ring openings of \u03b2 @-@ alkoxy cyclopentanes have been reported . These are typically referred to as retro @-@"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0361",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nMoultrie saw Sullivan 's Island , a sandy spit of land at the entrance to Charleston Harbor extending north about 4 miles ( 6 @.@ 4 km ) long and a few hundred yards wide , as a place well suited to build a fort that could protect the entrance from intruding enemy warships . A large vessel sailing into"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0362",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe U.S. Department of State has repeatedly claimed that Germany 's actions constitute government and societal discrimination against minority religious groups and expressed its concerns over the violation of Scientologists ' individual rights"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0363",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nA work instruction introduced in 1996 requires government staff in the Arbeits\u00e4mter \u2013 local employment agencies and social security offices operated by the Federal Ministry of Labour and Social Affairs \u2013 to mark companies owned by Scientologists with the letter \" S \" . Where companies are suspected of having Scientologist staff , prospective employees are alerted to this fact"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0364",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nNME lauded the song as the opening track by saying the album \" starts by spitting furiously \" . The publication praised Bono 's impassioned singing and The Edge 's guitar playing , which transformed"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0365",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAs the sun rose on 14 September , pockets of Japanese soldiers remained scattered along both sides of the ridge . But with Tamura 's battalion shattered after losing \u00be of its officers and men , and"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0366",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nRoute 29 passes under the Trenton @-@ Morrisville Toll Bridge , which carries U.S. Route 1 over the Delaware River . Access to U.S. Route 1 southbound is provided by ramps from Route 29 while access to Route 29 from northbound U.S. Route 1 is provided by South Warren Street . Route"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0367",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOn July 7 , 2012 , there was a vigil organized in Lamb of God 's hometown of Richmond , Virginia , by a friend of Blythe 's . At"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0368",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAnother eyewitness was a fan , Alena Rozs\u00edvalov\u00e1 , who testified that she saw Blythe shove Nosek , saying \" [ h ] e climbed onto the stage , and when he tried to stand up , Blythe shoved him . \" According to"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0369",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe soundtrack was composed by award @-@ winning composer Christopher Lennertz , with music contributed by Mike McCready of Pearl Jam , Stefan Lessard of Dave Matthews Band and Money Mark \u2014"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0370",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOxford 's Oliver Moore said \" we got the rage going in the crew , and we started to kill it , we hit an awesome rhythm \" . Cambridge coach Duncan Holland congratulated his opponents : \" Well done to Oxford , they were much faster on the day \" . Following tradition , the"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0371",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nOnce the cyclization has occurred , an oxyallyl cation is formed . As discussed extensively above , the typical course for this intermediate is elimination followed by enolate tautomerization . However , these two steps can be interrupted by various nucleophiles and electrophiles , respectively . Oxyallyl cation trapping has been developed extensively by Fredrick G. West of"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0372",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe writing staff used their individual childhood experiences as inspirations to come up with much of the story lines for this episode . The idea for \" Sailor Mouth \" was inspired by creative director Derek Drymon 's experience"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0373",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn 2010 , the Bavarian Administrative Court ruled that a woman working in a children 's daycare centre , whose employment had been terminated when her ex @-@ husband identified her as a Scientologist , should be reinstated . The woman had demonstrated to the court"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0374",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nA Slayer tribute band called Dead Skin Mask released an album with eight Slayer tracks , \" Angel of Death \" being one of them . The death metal bands Debauchery and Monstrosity covered the song ,"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0375",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nFrom 7 February 2006 to 9 December 2008 , Ayola starred in BBC medical drama Holby City as nurse Kyla Tyson . She had previously appeared in Holby City 's sister show Casualty , and had made an appearance in Holby City 's fifth series as patient Marianne Lawson . She was approached about returning to the show"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0376",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nGauthier was a controversial musician in her time . Her choice of music for performance was often condemned , and often praised . The appropriateness of jazz music for a classically trained singer , combined with the performances taking place in concert halls lead some critics to"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0377",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn 1861 , the Victorian ship HMCSS Victoria was dispatched to help the New Zealand colonial government in its war against M\u0101ori in Taranaki . Victoria was subsequently used for patrol duties and logistic"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0378",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn December 2012 , the National Park Service approved the listing of the Upper Twin Falls Bridge that crosses the Menominee River northwest of Iron Mountain . The structure is a single @-@ span"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0379",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nBond confronts Graves , but Frost arrives to reveal herself as the traitor who betrayed Bond in North Korea , forcing 007 to escape from Graves ' facility . Bond then returns in his Aston"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0380",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nMasashi Kishimoto has noted that he likes Shikamaru due to his easygoing nature despite being a genius , and contrasted him against Sasuke Uchiha 's intelligent but abrasive personality . Kishimoto also comically remarked that he would marry Shikamaru if he were a girl , noting that Shikamaru"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0381",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIn 1990 , Sega ordered its in @-@ house development studio , AM8 , to develop a game featuring a mascot for the company . This was a position already held by the character Alex Kidd , but he was considered similar to Mario and deemed unsatisfactory ; Sega president Hayao Nakayama"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0382",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe Ireland fixture was played at Lansdowne Road , Dublin , on 1 December 1888 . Both teams had a number of leading players out injured \u2013 the Irish were forced to make four changes to their original selection . Ireland led 3 \u2013 0 at"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0383",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nDuring the shoot U2 played an eight @-@ song set , which included four performances of \" Where the Streets Have No Name \" . Prior to filming , a week was spent reinforcing the roof of the liquor store to ensure it would"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0384",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nChurchill 's subjects are often American Indian figures and other themes associated with Native American Culture . He uses historical photographs as source material for works . In the early"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0385",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nLive performances of \" Where the Streets Have No Name \" appear in the concert video releases Rattle and Hum , Zoo TV : Live from Sydney , and PopMart : Live from Mexico City , as well as the respective audio releases of the latter two concerts , Zoo TV Live and Hasta la Vista"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0386",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe Boxer Rebellion in China began in 1900 , and a number of western nations \u2014 including many European powers , the United States , and Japan \u2014 soon sent forces as part of the China Field Force to protect their interests . In June , the British"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0387",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nBeckham obtained his early education at Roseland Academy in Bardstown . In 1881 he served as a page in the Kentucky House of Representatives at the age of 12 . Later , he enrolled at Central University ( now Eastern"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0388",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nHe has long been interested in issues associated with the Dawes Act , which broke up the communal reservation lands and assigned plots to individual households . Connected with that was the federal government 's first use of \" blood quantum \" to define individual membership in tribes , for what became known"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0389",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nWriting for The A.V. Club , television reviewer Hayden Childs commented that \" Exit Through the Kwik @-@ E @-@ Mart \" was \" somewhat amusing and far more coherent than"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0390",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nThe game is divided into six zones ( Green Hill , Marble , Spring Yard , Labyrinth , Star Light , and Scrap Brain ) , each with its own visual style and enemies . A player must navigate through each zone ( subdivided into three acts ) to"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0391",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nNew oak joists were laid on the dust floor and temporary boarding laid to provide a working platform for repairs to the top of the mill tower . The bin floor was removed , apart"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0392",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nUpon the release of The Joshua Tree , critics praised \" Where the Streets Have No Name \" . Steve Morse of The Boston Globe noted the \" bell @-@ like tones from the Edge"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0393",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nRichmond joined Hendrick Motorsports in 1986 , where he teamed up with veteran crew chief Harry Hyde . It took the team until the middle of the season to gel . Richmond had suffered a 64 @-@ race winless streak that was finally broken at the Van Scoy Diamond Mine 500 at Pocono in June 1986 ."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0394",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nHome Made Mince Pie is a 1910 American silent short comedy produced by the Thanhouser Company . The film is a comedy of circumstances , in which the Gale family is going to host a dinner . The focus of the humor is in a mince pie that brandy is added to in an attempt to make it more"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0395",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nSonic was originally teal @-@ colored , then a light shade of blue , but he was changed to dark blue so he would stand out against certain backgrounds and to match the Sega logo"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0396",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\n\" The Bourgeois Blues \" follows a traditional twelve @-@ bar blues format . It is written in 44 time but annotated to note that the song rhythmically should swing at medium shuffle . The song was"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0397",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nIllness forced Gauthier to halt giving performances in the late 1920s , but she would return to the stage in 1931 , giving a concert in Havana , Cuba ."
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0398",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\n\" The Bourgeois Blues \" is a blues song by American folk and blues musician , Lead Belly . It was written in June 1937 in response to the discrimination and segregation that Lead Belly faced during"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  },
+  {
+   "id": "wiki-0399",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Continue the following passage. Reply with the continuation only.\n\nAcross Guerrero , Beatriz produced heavy rain , peaking at 222 @.@ 5 mm ( 8 @.@ 76 in ) in Copala , Guerrero . Several homes across the state were damaged , though none were destroyed . In Acapulco , 380 homes"
+    }
+   ],
+   "max_tokens": 1,
+   "stream": false
+  }
+ ],
+ "repeats": 2,
+ "seed": 20261110,
+ "limits": {
+  "max_requests": 4000,
+  "max_output_tokens": 32000,
+  "max_cost_usd": 1.0,
+  "deadline_s": 30,
+  "unknown_cost": "stop",
+  "min_interval_s": 0.25,
+  "retry_http_statuses": [
+   429,
+   502,
+   503,
+   504
+  ],
+  "max_retries": 5,
+  "max_total_retries": 600,
+  "retry_backoff_s": 5
+ },
+ "analysis": {
+  "reference_target": "alibaba",
+  "tv_budgets": [
+   0.01,
+   0.05,
+   0.1
+  ],
+  "logprob_error": 0.01
+ },
+ "evidence": {
+  "catalog_snapshot": true,
+  "attachments": [
+   {
+    "path": "configs/bench/llama70b-dataset-tv-v1.prompts.json",
+    "role": "prompt_manifest"
+   }
+  ]
+ }
+}

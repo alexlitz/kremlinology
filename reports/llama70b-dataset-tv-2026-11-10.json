@@ -1,0 +1,984 @@
+{
+  "run": "data/kremlinology-llama70b-dataset-tv-v2",
+  "reference": "coreweave-fp16",
+  "allowances": [
+    0.0,
+    0.01,
+    0.05
+  ],
+  "threshold": 0.05,
+  "results": {
+    "0.0": {
+      "code": {
+        "reference_self": {
+          "prompts": 200,
+          "assessable": 178,
+          "assessable_average": {
+            "prompts": 178,
+            "mean_lower": 0.005457643226691955,
+            "mean_upper": 0.005480424847642733,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.045499999999999985,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.00485730247175584,
+            "mean_upper": 0.11487757811440204,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.045499999999999985,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 2,
+            "n": 178,
+            "fraction": 0.011235955056179775,
+            "lower": 0.001363634571002538,
+            "upper": 0.03999680191018333,
+            "alpha": 0.05
+          }
+        },
+        "akashml-fp8": {
+          "prompts": 200,
+          "assessable": 178,
+          "assessable_average": {
+            "prompts": 178,
+            "mean_lower": 0.06246733781215101,
+            "mean_upper": 0.062487725784442213,
+            "confidence_lower": 0.048,
+            "confidence_upper": 0.10150000000000003,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.0555959306528144,
+            "mean_upper": 0.16561407594815358,
+            "confidence_lower": 0.048,
+            "confidence_upper": 0.10150000000000003,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 78,
+            "n": 178,
+            "fraction": 0.43820224719101125,
+            "lower": 0.36408478302620606,
+            "upper": 0.5144125661162045,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 171,
+            "n": 175,
+            "fraction": 0.9771428571428571,
+            "lower": 0.942513261124827,
+            "upper": 0.9937378856146115,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.10570819199407981,
+            0.058028404597835266,
+            0.024312115527331504
+          ]
+        },
+        "parasail-fp8": {
+          "prompts": 200,
+          "assessable": 179,
+          "assessable_average": {
+            "prompts": 179,
+            "mean_lower": 0.05376689464134711,
+            "mean_upper": 0.053788503623811844,
+            "confidence_lower": 0.0415,
+            "confidence_upper": 0.09250000000000003,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.04812137070400566,
+            "mean_upper": 0.1531407107433116,
+            "confidence_lower": 0.0415,
+            "confidence_upper": 0.09250000000000003,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 68,
+            "n": 179,
+            "fraction": 0.37988826815642457,
+            "lower": 0.3085248129295971,
+            "upper": 0.4553005201407241,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 163,
+            "n": 174,
+            "fraction": 0.9367816091954023,
+            "lower": 0.8897017103773917,
+            "upper": 0.9680220932431853,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.08685210140717951,
+            0.05744454433821597,
+            0.018209377734799966
+          ]
+        },
+        "sambanova": {
+          "prompts": 200,
+          "assessable": 182,
+          "assessable_average": {
+            "prompts": 182,
+            "mean_lower": 0.08439520156675143,
+            "mean_upper": 0.08441961730783644,
+            "confidence_lower": 0.0615,
+            "confidence_upper": 0.12350000000000005,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.07679963342574381,
+            "mean_upper": 0.16682185175013114,
+            "confidence_lower": 0.0615,
+            "confidence_upper": 0.12350000000000005,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 89,
+            "n": 182,
+            "fraction": 0.489010989010989,
+            "lower": 0.4143461424993261,
+            "upper": 0.5640395688052879,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 171,
+            "n": 176,
+            "fraction": 0.9715909090909091,
+            "lower": 0.9349508431217282,
+            "upper": 0.9907126234351087,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.12323069867079044,
+            0.079077754082034,
+            0.051958379354504744
+          ]
+        }
+      },
+      "wiki": {
+        "reference_self": {
+          "prompts": 200,
+          "assessable": 153,
+          "assessable_average": {
+            "prompts": 153,
+            "mean_lower": 0.006380382760907092,
+            "mean_upper": 0.009859005053604321,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.056499999999999995,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.004880992812093926,
+            "mean_upper": 0.2425421388660073,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.056499999999999995,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 3,
+            "n": 153,
+            "fraction": 0.0196078431372549,
+            "lower": 0.0040620067838308595,
+            "upper": 0.05623126658696166,
+            "alpha": 0.05
+          }
+        },
+        "akashml-fp8": {
+          "prompts": 200,
+          "assessable": 152,
+          "assessable_average": {
+            "prompts": 152,
+            "mean_lower": 0.08094729926360093,
+            "mean_upper": 0.08461834667457256,
+            "confidence_lower": 0.0585,
+            "confidence_upper": 0.13,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.0615199474403367,
+            "mean_upper": 0.30430994347267515,
+            "confidence_lower": 0.0585,
+            "confidence_upper": 0.13,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 82,
+            "n": 152,
+            "fraction": 0.5394736842105263,
+            "lower": 0.45684847909385284,
+            "upper": 0.6205300319464142,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 145,
+            "n": 148,
+            "fraction": 0.9797297297297297,
+            "lower": 0.9419061230308041,
+            "upper": 0.9958001154249199,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.1472052767782157,
+            0.08725756103927587,
+            0.011170146099860806
+          ]
+        },
+        "parasail-fp8": {
+          "prompts": 200,
+          "assessable": 149,
+          "assessable_average": {
+            "prompts": 149,
+            "mean_lower": 0.06613064355214662,
+            "mean_upper": 0.0698407073618718,
+            "confidence_lower": 0.0475,
+            "confidence_upper": 0.11599999999999999,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.049267329446349234,
+            "mean_upper": 0.3070313269845945,
+            "confidence_lower": 0.0475,
+            "confidence_upper": 0.11599999999999999,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 64,
+            "n": 149,
+            "fraction": 0.42953020134228187,
+            "lower": 0.34882198435354406,
+            "upper": 0.5130974275208422,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 141,
+            "n": 148,
+            "fraction": 0.9527027027027027,
+            "lower": 0.9049789679958709,
+            "upper": 0.9807753007977706,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.12511455092388446,
+            0.07072591872253227,
+            0.0050447622861848245
+          ]
+        },
+        "sambanova": {
+          "prompts": 200,
+          "assessable": 157,
+          "assessable_average": {
+            "prompts": 157,
+            "mean_lower": 0.036602503816490925,
+            "mean_upper": 0.04015221508067443,
+            "confidence_lower": 0.0225,
+            "confidence_upper": 0.08499999999999996,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.028732965495945378,
+            "mean_upper": 0.24651948883832944,
+            "confidence_lower": 0.0225,
+            "confidence_upper": 0.08499999999999996,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 44,
+            "n": 157,
+            "fraction": 0.2802547770700637,
+            "lower": 0.21159385564322514,
+            "upper": 0.3574118445429635,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 129,
+            "n": 153,
+            "fraction": 0.8431372549019608,
+            "lower": 0.7756503757930822,
+            "upper": 0.8968344816991853,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.07463998682830547,
+            0.03172444011775299,
+            0.004068733924415759
+          ]
+        }
+      }
+    },
+    "0.01": {
+      "code": {
+        "reference_self": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.004429251001894709,
+            "mean_upper": 0.01534133307203923,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.051000000000000045,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.004429251001894709,
+            "mean_upper": 0.01534133307203923,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.051000000000000045,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 2,
+            "n": 200,
+            "fraction": 0.01,
+            "lower": 0.0012133490137360482,
+            "upper": 0.03565466839723956,
+            "alpha": 0.05
+          }
+        },
+        "akashml-fp8": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.05441334469123151,
+            "mean_upper": 0.06736325729939817,
+            "confidence_lower": 0.0415,
+            "confidence_upper": 0.10199999999999998,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.05441334469123151,
+            "mean_upper": 0.06736325729939817,
+            "confidence_lower": 0.0415,
+            "confidence_upper": 0.10199999999999998,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 76,
+            "n": 200,
+            "fraction": 0.38,
+            "lower": 0.312465435177671,
+            "upper": 0.4511487579165505,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 154,
+            "n": 200,
+            "fraction": 0.77,
+            "lower": 0.7053936054340206,
+            "upper": 0.8264191371984089,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.09613489413690782,
+            0.051636698237954796,
+            0.016613880022137806
+          ]
+        },
+        "parasail-fp8": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.0459103383133726,
+            "mean_upper": 0.058855711140812055,
+            "confidence_lower": 0.035,
+            "confidence_upper": 0.09350000000000003,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.0459103383133726,
+            "mean_upper": 0.058855711140812055,
+            "confidence_lower": 0.035,
+            "confidence_upper": 0.09350000000000003,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 62,
+            "n": 200,
+            "fraction": 0.31,
+            "lower": 0.24665803744172538,
+            "upper": 0.3790770405203251,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 136,
+            "n": 200,
+            "fraction": 0.68,
+            "lower": 0.6105301149383424,
+            "upper": 0.7440388123600417,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.07627743408852251,
+            0.04855810363230961,
+            0.013866502545582327
+          ]
+        },
+        "sambanova": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.07494891269931185,
+            "mean_upper": 0.08793502571330919,
+            "confidence_lower": 0.0535,
+            "confidence_upper": 0.12350000000000005,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.07494891269931185,
+            "mean_upper": 0.08793502571330919,
+            "confidence_lower": 0.0535,
+            "confidence_upper": 0.12350000000000005,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 84,
+            "n": 200,
+            "fraction": 0.42,
+            "lower": 0.35074385779105666,
+            "upper": 0.4916638251226194,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 146,
+            "n": 200,
+            "fraction": 0.73,
+            "lower": 0.6628474093126706,
+            "upper": 0.7901966625338543,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.1104601214693551,
+            0.0774143430531495,
+            0.03808923354966274
+          ]
+        }
+      },
+      "wiki": {
+        "reference_self": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.004129819336838183,
+            "mean_upper": 0.017607776155430847,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.05300000000000005,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.004129819336838183,
+            "mean_upper": 0.017607776155430847,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.05300000000000005,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 2,
+            "n": 200,
+            "fraction": 0.01,
+            "lower": 0.0012133490137360482,
+            "upper": 0.03565466839723956,
+            "alpha": 0.05
+          }
+        },
+        "akashml-fp8": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.061029580281265254,
+            "mean_upper": 0.07576441948812059,
+            "confidence_lower": 0.043,
+            "confidence_upper": 0.11150000000000004,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.061029580281265254,
+            "mean_upper": 0.07576441948812059,
+            "confidence_lower": 0.043,
+            "confidence_upper": 0.11150000000000004,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 86,
+            "n": 200,
+            "fraction": 0.43,
+            "lower": 0.3603855918269895,
+            "upper": 0.5017208471715773,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 107,
+            "n": 200,
+            "fraction": 0.535,
+            "lower": 0.4632998577883217,
+            "upper": 0.6056472647385425,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.14207308730268395,
+            0.042337620279616454,
+            0.0005119022914885872
+          ]
+        },
+        "parasail-fp8": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.0485022400368854,
+            "mean_upper": 0.0633568190400729,
+            "confidence_lower": 0.0335,
+            "confidence_upper": 0.09850000000000003,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.0485022400368854,
+            "mean_upper": 0.0633568190400729,
+            "confidence_lower": 0.0335,
+            "confidence_upper": 0.09850000000000003,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 63,
+            "n": 200,
+            "fraction": 0.315,
+            "lower": 0.25130532565451746,
+            "upper": 0.38427769772542675,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 101,
+            "n": 200,
+            "fraction": 0.505,
+            "lower": 0.4335866549750125,
+            "upper": 0.5762629496829219,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.11007768020534935,
+            0.036581357544306,
+            0.00030811052793864446
+          ]
+        },
+        "sambanova": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.027825081369803058,
+            "mean_upper": 0.042702193595831675,
+            "confidence_lower": 0.0165,
+            "confidence_upper": 0.07799999999999996,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.027825081369803058,
+            "mean_upper": 0.042702193595831675,
+            "confidence_lower": 0.0165,
+            "confidence_upper": 0.07799999999999996,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 41,
+            "n": 200,
+            "fraction": 0.205,
+            "lower": 0.15131057199552017,
+            "upper": 0.2676539207852846,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 76,
+            "n": 200,
+            "fraction": 0.38,
+            "lower": 0.312465435177671,
+            "upper": 0.4511487579165505,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.06350766101307084,
+            0.02069669978851637,
+            0.00011071266258610701
+          ]
+        }
+      }
+    },
+    "0.05": {
+      "code": {
+        "reference_self": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.0010213101902721152,
+            "mean_upper": 0.05395035164581035,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.08799999999999997,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.0010213101902721152,
+            "mean_upper": 0.05395035164581035,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.08799999999999997,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 0,
+            "n": 200,
+            "fraction": 0.0,
+            "lower": 0.0,
+            "upper": 0.018275340355136248,
+            "alpha": 0.05
+          }
+        },
+        "akashml-fp8": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.0411838142993535,
+            "mean_upper": 0.10393246704783919,
+            "confidence_lower": 0.0295,
+            "confidence_upper": 0.13749999999999996,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.0411838142993535,
+            "mean_upper": 0.10393246704783919,
+            "confidence_lower": 0.0295,
+            "confidence_upper": 0.13749999999999996,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 49,
+            "n": 200,
+            "fraction": 0.245,
+            "lower": 0.187084126076002,
+            "upper": 0.31063986586159753,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 48,
+            "n": 200,
+            "fraction": 0.24,
+            "lower": 0.1825719038924727,
+            "upper": 0.30530628564713835,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.07162750817967442,
+            0.039158694178481945,
+            0.013601080944593821
+          ]
+        },
+        "parasail-fp8": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.03296508282479695,
+            "mean_upper": 0.09575850654556875,
+            "confidence_lower": 0.023,
+            "confidence_upper": 0.129,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.03296508282479695,
+            "mean_upper": 0.09575850654556875,
+            "confidence_lower": 0.023,
+            "confidence_upper": 0.129,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 44,
+            "n": 200,
+            "fraction": 0.22,
+            "lower": 0.16463606131178526,
+            "upper": 0.2838612473135066,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 41,
+            "n": 200,
+            "fraction": 0.205,
+            "lower": 0.15131057199552017,
+            "upper": 0.2676539207852846,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.05149515973755681,
+            0.03680158328866788,
+            0.011256345959243533
+          ]
+        },
+        "sambanova": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.061867775931615056,
+            "mean_upper": 0.12369760488461226,
+            "confidence_lower": 0.042,
+            "confidence_upper": 0.15749999999999997,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.061867775931615056,
+            "mean_upper": 0.12369760488461226,
+            "confidence_lower": 0.042,
+            "confidence_upper": 0.15749999999999997,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 69,
+            "n": 200,
+            "fraction": 0.345,
+            "lower": 0.2793654759715668,
+            "upper": 0.4153072390103879,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 59,
+            "n": 200,
+            "fraction": 0.295,
+            "lower": 0.23276878422312497,
+            "upper": 0.3634231333179093,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.08690178868297438,
+            0.06501427666284014,
+            0.03451610108087138
+          ]
+        }
+      },
+      "wiki": {
+        "reference_self": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.001200024225433521,
+            "mean_upper": 0.056127926224772855,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.09050000000000002,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.001200024225433521,
+            "mean_upper": 0.056127926224772855,
+            "confidence_lower": 0.0,
+            "confidence_upper": 0.09050000000000002,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 1,
+            "n": 200,
+            "fraction": 0.005,
+            "lower": 0.00012658102786702755,
+            "upper": 0.027541898457205262,
+            "alpha": 0.05
+          }
+        },
+        "akashml-fp8": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.05194340856081501,
+            "mean_upper": 0.11200421495536954,
+            "confidence_lower": 0.036,
+            "confidence_upper": 0.14600000000000002,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.05194340856081501,
+            "mean_upper": 0.11200421495536954,
+            "confidence_lower": 0.036,
+            "confidence_upper": 0.14600000000000002,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 74,
+            "n": 200,
+            "fraction": 0.37,
+            "lower": 0.30296982427123775,
+            "upper": 0.44094648478473975,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 65,
+            "n": 200,
+            "fraction": 0.325,
+            "lower": 0.2606255147536155,
+            "upper": 0.39465370630480745,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.11963209534579904,
+            0.037289245816920356,
+            0.0004687234621106186
+          ]
+        },
+        "parasail-fp8": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.039395686283574684,
+            "mean_upper": 0.1000831234796637,
+            "confidence_lower": 0.026,
+            "confidence_upper": 0.134,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.039395686283574684,
+            "mean_upper": 0.1000831234796637,
+            "confidence_lower": 0.026,
+            "confidence_upper": 0.134,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 54,
+            "n": 200,
+            "fraction": 0.27,
+            "lower": 0.2098033374661456,
+            "upper": 0.3371525906873293,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 45,
+            "n": 200,
+            "fraction": 0.225,
+            "lower": 0.1691025471298262,
+            "upper": 0.28923960596876364,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.08787186135120023,
+            0.03122856047732856,
+            0.0002721972945887599
+          ]
+        },
+        "sambanova": {
+          "prompts": 200,
+          "assessable": 200,
+          "assessable_average": {
+            "prompts": 200,
+            "mean_lower": 0.020577697316032418,
+            "mean_upper": 0.08023837748318983,
+            "confidence_lower": 0.01,
+            "confidence_upper": 0.11399999999999999,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "conservative_average": {
+            "prompts": 200,
+            "mean_lower": 0.020577697316032418,
+            "mean_upper": 0.08023837748318983,
+            "confidence_lower": 0.01,
+            "confidence_upper": 0.11399999999999999,
+            "alpha": 0.05,
+            "method": "betting"
+          },
+          "fraction_lower_above_threshold": {
+            "successes": 25,
+            "n": 200,
+            "fraction": 0.125,
+            "lower": 0.08255234182881699,
+            "upper": 0.17897375007879934,
+            "alpha": 0.05
+          },
+          "fraction_beyond_reference_self_upper": {
+            "successes": 20,
+            "n": 200,
+            "fraction": 0.1,
+            "lower": 0.06215936625406654,
+            "upper": 0.150212787867755,
+            "alpha": 0.05
+          },
+          "mean_lower_by_reference_top2_margin_tercile": [
+            0.04573080220940022,
+            0.016538439001686472,
+            8.484622462885746e-05
+          ]
+        }
+      }
+    }
+  }
+}

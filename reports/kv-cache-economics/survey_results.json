@@ -1,0 +1,357 @@
+{
+ "collected_at": "2026-11-11T21:51:21.069643+00:00",
+ "coverage": {
+  "exact": {
+   "models": 881,
+   "download_share": 0.8817989571083312
+  },
+  "approximate": {
+   "models": 27,
+   "download_share": 0.015678690576790916
+  },
+  "unparsed": {
+   "models": 92,
+   "download_share": 0.10252235231487786
+  },
+  "unparsed_reasons": {
+   "no config (EntryNotFoundError)": 35,
+   "compressed KV (ratio-dependent storage) not modelled": 18,
+   "no config (GatedRepoError)": 16,
+   "not a decoder-only LLM": 10,
+   "no layer/head fields": 5,
+   "speculative-decoding draft head, not a standalone LLM": 5,
+   "sparse-attention KV layout not modelled": 3
+  }
+ },
+ "fits": [
+  {
+   "price": "prompt_min",
+   "family": "GQA",
+   "variant": "all layers",
+   "n": 59,
+   "slope": 1.193779529465369,
+   "intercept": -6.974239752296788,
+   "r2": 0.3856029933650543,
+   "x_min": 32768.0,
+   "x_max": 516096.00000000035
+  },
+  {
+   "price": "prompt_min",
+   "family": "MLA (latent)",
+   "variant": "all layers",
+   "n": 23,
+   "slope": 0.4136548868521016,
+   "intercept": -2.55099299251137,
+   "r2": 0.014043444433827101,
+   "x_min": 23039.999999999996,
+   "x_max": 99839.99999999999
+  },
+  {
+   "price": "prompt_min",
+   "family": "Sliding / chunked + global",
+   "variant": "all layers",
+   "n": 30,
+   "slope": 0.2334278561043139,
+   "intercept": -1.952211977771233,
+   "r2": 0.019814853299592206,
+   "x_min": 15155.999999999984,
+   "x_max": 211968.0000000001
+  },
+  {
+   "price": "prompt_min",
+   "family": "Sliding / chunked + global",
+   "variant": "full-attention layers only",
+   "n": 29,
+   "slope": 0.28195040727070814,
+   "intercept": -2.154906800777367,
+   "r2": 0.020669585113091804,
+   "x_min": 13311.999999999996,
+   "x_max": 188416.00000000003
+  },
+  {
+   "price": "prompt_min",
+   "family": "Linear attention + global",
+   "variant": "all layers",
+   "n": 27,
+   "slope": 1.1543503615103452,
+   "intercept": -6.172502611523439,
+   "r2": 0.3882864448287835,
+   "x_min": 7487.999999999999,
+   "x_max": 112130.74999999996
+  },
+  {
+   "price": "prompt_min",
+   "family": "SSM / conv hybrid",
+   "variant": "all layers",
+   "n": 8,
+   "slope": 1.536789420940046,
+   "intercept": -7.398224096176283,
+   "r2": 0.4532146255652385,
+   "x_min": 7641.874999999999,
+   "x_max": 24737.999999999985
+  },
+  {
+   "price": "cached_min",
+   "family": "GQA",
+   "variant": "all layers",
+   "n": 32,
+   "slope": 0.9280746985591211,
+   "intercept": -6.1835727458255505,
+   "r2": 0.12465589039357172,
+   "x_min": 57343.99999999999,
+   "x_max": 516096.00000000035
+  },
+  {
+   "price": "cached_min",
+   "family": "MLA (latent)",
+   "variant": "all layers",
+   "n": 18,
+   "slope": 1.3970058898280393,
+   "intercept": -8.047505428022138,
+   "r2": 0.16350837479743385,
+   "x_min": 23039.999999999996,
+   "x_max": 99839.99999999999
+  },
+  {
+   "price": "cached_min",
+   "family": "Sliding / chunked + global",
+   "variant": "all layers",
+   "n": 23,
+   "slope": 0.10490753082996875,
+   "intercept": -2.034703344042676,
+   "r2": 0.0022863686073345546,
+   "x_min": 15155.999999999984,
+   "x_max": 107519.99999999997
+  },
+  {
+   "price": "cached_min",
+   "family": "Sliding / chunked + global",
+   "variant": "full-attention layers only",
+   "n": 23,
+   "slope": -0.08425534530624525,
+   "intercept": -1.174363446058587,
+   "r2": 0.0012824648243044967,
+   "x_min": 13311.999999999996,
+   "x_max": 81919.99999999997
+  },
+  {
+   "price": "cached_min",
+   "family": "Linear attention + global",
+   "variant": "all layers",
+   "n": 27,
+   "slope": 1.032556278753308,
+   "intercept": -6.182854512845902,
+   "r2": 0.2518581829590212,
+   "x_min": 7487.999999999999,
+   "x_max": 112130.74999999996
+  },
+  {
+   "price": "cached_min",
+   "family": "SSM / conv hybrid",
+   "variant": "all layers",
+   "n": 7,
+   "slope": 1.4257894409173257,
+   "intercept": -7.561378071798151,
+   "r2": 0.6870955682786578,
+   "x_min": 7641.874999999999,
+   "x_max": 24737.999999999985
+  }
+ ],
+ "recompute_dollars_per_gb": {
+  "GQA: Llama-3.3-70B": 0.0008768992920973299,
+  "MLA: DeepSeek-V3": 0.0034611208576220184,
+  "Sliding: Gemma-4-31B": 0.0010708549110765154,
+  "Sliding: gpt-oss-120b": 0.0006353782012215879,
+  "Linear hybrid: Qwen3.5-27B": 0.0013478691409616697,
+  "Dense GQA small: Llama-3.1-8B": 0.0002927360104669887
+ },
+ "tiers": [
+  {
+   "tier": "HBM (rental opportunity cost)",
+   "dollars_per_gb_hour": 0.03125,
+   "reload_dollars_per_gb": 0.0,
+   "bandwidth_bytes_per_s": null,
+   "basis": "H100 $2.50/h / 80 GB; upper bound under memory pressure",
+   "breakeven_hours_GQA: Llama-3.3-70B": 0.028060777347114558,
+   "breakeven_hours_MLA: DeepSeek-V3": 0.11075586744390459,
+   "breakeven_hours_Sliding: Gemma-4-31B": 0.034267357154448494,
+   "breakeven_hours_Sliding: gpt-oss-120b": 0.020332102439090814,
+   "breakeven_hours_Linear hybrid: Qwen3.5-27B": 0.04313181251077343,
+   "breakeven_hours_Dense GQA small: Llama-3.1-8B": 0.009367552334943638
+  },
+  {
+   "tier": "Host DRAM (owned DDR5)",
+   "dollars_per_gb_hour": 0.00027495037645448324,
+   "reload_dollars_per_gb": 1.388888888888889e-05,
+   "bandwidth_bytes_per_s": 50000000000.0,
+   "basis": "$6/GB DDR5 RDIMM, 4 y, ~0.35 W/GB, 1.3x server share; 50 GB/s PCIe 5 to GPU",
+   "breakeven_hours_GQA: Llama-3.3-70B": 3.138786039637623,
+   "breakeven_hours_MLA: DeepSeek-V3": 12.537651387081489,
+   "breakeven_hours_Sliding: Gemma-4-31B": 3.8442064921580585,
+   "breakeven_hours_Sliding: gpt-oss-120b": 2.2603690176637516,
+   "breakeven_hours_Linear hybrid: Qwen3.5-27B": 4.8517127682260694,
+   "breakeven_hours_Dense GQA small: Llama-3.1-8B": 1.0141725396919457
+  },
+  {
+   "tier": "NVMe RAID x4 (owned)",
+   "dollars_per_gb_hour": 2.5245037645448326e-06,
+   "reload_dollars_per_gb": 2.7626763668430338e-05,
+   "bandwidth_bytes_per_s": 25200000000.0,
+   "basis": "$75/TB SN850X-class, 5 y; 4 drives x measured 6.3 GB/s",
+   "breakeven_hours_GQA: Llama-3.3-70B": 336.41167042665245,
+   "breakeven_hours_MLA: DeepSeek-V3": 1360.0669336187923,
+   "breakeven_hours_Sliding: Gemma-4-31B": 413.2408761118163,
+   "breakeven_hours_Sliding: gpt-oss-120b": 240.7409511875832,
+   "breakeven_hours_Linear hybrid: Qwen3.5-27B": 522.9710471559858,
+   "breakeven_hours_Dense GQA small: Llama-3.1-8B": 105.01439947203147
+  },
+  {
+   "tier": "NVMe single (owned)",
+   "dollars_per_gb_hour": 2.5245037645448326e-06,
+   "reload_dollars_per_gb": 0.000110298721340388,
+   "bandwidth_bytes_per_s": 6300000000.0,
+   "basis": "measured 6.3 GB/s sequential read (WD SN850X 4 TB, direct I/O)",
+   "breakeven_hours_GQA: Llama-3.3-70B": 303.66386516169837,
+   "breakeven_hours_MLA: DeepSeek-V3": 1327.319128353838,
+   "breakeven_hours_Sliding: Gemma-4-31B": 380.4930708468622,
+   "breakeven_hours_Sliding: gpt-oss-120b": 207.9931459226291,
+   "breakeven_hours_Linear hybrid: Qwen3.5-27B": 490.2232418910317,
+   "breakeven_hours_Dense GQA small: Llama-3.1-8B": 72.2665942070774
+  },
+  {
+   "tier": "HDD RAID5 x4 (owned)",
+   "dollars_per_gb_hour": 8.985398129135296e-07,
+   "reload_dollars_per_gb": 0.0018344298245614036,
+   "bandwidth_bytes_per_s": 380000000.0,
+   "basis": "$17.5/TB Exos 16 TB, RAID5 3/4 usable, 5 y; measured 380 MB/s",
+   "breakeven_hours_GQA: Llama-3.3-70B": 0.0,
+   "breakeven_hours_MLA: DeepSeek-V3": 1810.371682681531,
+   "breakeven_hours_Sliding: Gemma-4-31B": 0.0,
+   "breakeven_hours_Sliding: gpt-oss-120b": 0.0,
+   "breakeven_hours_Linear hybrid: Qwen3.5-27B": 0.0,
+   "breakeven_hours_Dense GQA small: Llama-3.1-8B": 0.0
+  },
+  {
+   "tier": "Cloud object storage (S3-class)",
+   "dollars_per_gb_hour": 3.150684931506849e-05,
+   "reload_dollars_per_gb": 0.00017361111111111112,
+   "bandwidth_bytes_per_s": 5000000000.0,
+   "basis": "$0.023/GB-month; ~5 GB/s per node with parallel GETs",
+   "breakeven_hours_GQA: Llama-3.3-70B": 22.321755309562597,
+   "breakeven_hours_MLA: DeepSeek-V3": 104.34270065012882,
+   "breakeven_hours_Sliding: Gemma-4-31B": 28.477737998901965,
+   "breakeven_hours_Sliding: gpt-oss-120b": 14.656085903506439,
+   "breakeven_hours_Linear hybrid: Qwen3.5-27B": 37.269928773517734,
+   "breakeven_hours_Dense GQA small: Llama-3.1-8B": 3.78092071868655
+  }
+ ],
+ "context": 32768,
+ "price_regression": {
+  "prompt_min": {
+   "n": 149,
+   "elasticity_active_params": 0.48053724491669014,
+   "elasticity_kv_bytes": 0.2218480943029388,
+   "kv_ci95": [
+    0.06156566730866037,
+    0.37998433674436627
+   ],
+   "active_ci95": [
+    0.35352483870999213,
+    0.6234527148102281
+   ],
+   "r2": 0.3650246787819251,
+   "r2_active_params_only": 0.33431679238250833
+  },
+  "cached_min": {
+   "n": 109,
+   "elasticity_active_params": 0.26562247872902267,
+   "elasticity_kv_bytes": 0.38085388194541037,
+   "kv_ci95": [
+    0.1802756030404359,
+    0.5702005810273787
+   ],
+   "active_ci95": [
+    0.06363150604119917,
+    0.45688667629993784
+   ],
+   "r2": 0.2312087767845349,
+   "r2_active_params_only": 0.1504466673795557
+  }
+ },
+ "compute_per_byte": [
+  {
+   "family": "MHA",
+   "models": 54,
+   "median_flops_per_kv_byte": 13272.0
+  },
+  {
+   "family": "GQA",
+   "models": 357,
+   "median_flops_per_kv_byte": 94208.0
+  },
+  {
+   "family": "MQA",
+   "models": 4,
+   "median_flops_per_kv_byte": 215040.0
+  },
+  {
+   "family": "MLA (latent)",
+   "models": 33,
+   "median_flops_per_kv_byte": 843521.0622406639
+  },
+  {
+   "family": "Sliding / chunked + global",
+   "models": 131,
+   "median_flops_per_kv_byte": 263794.96166484116
+  },
+  {
+   "family": "Linear attention + global",
+   "models": 291,
+   "median_flops_per_kv_byte": 395124.44496214326
+  },
+  {
+   "family": "SSM / conv hybrid",
+   "models": 38,
+   "median_flops_per_kv_byte": 223846.35418064962
+  }
+ ],
+ "storage_cost": [
+  {
+   "tier": "HBM (H100, rental share)",
+   "purchase_dollars_per_gb": null,
+   "dollars_per_gb_month": 22.8125,
+   "basis": "H100 $2.50/h / 80 GB"
+  },
+  {
+   "tier": "Host DRAM (DDR5 RDIMM)",
+   "purchase_dollars_per_gb": 6.0,
+   "dollars_per_gb_month": 0.20071377481177277,
+   "basis": "$6/GB, 4 y, 0.35 W/GB, 1.3x server share"
+  },
+  {
+   "tier": "NVMe SSD (SN850X-class)",
+   "purchase_dollars_per_gb": 0.075,
+   "dollars_per_gb_month": 0.0018428877481177278,
+   "basis": "$75/TB, 5 y"
+  },
+  {
+   "tier": "HDD RAID5 (Exos 16 TB)",
+   "purchase_dollars_per_gb": 0.023333333333333334,
+   "dollars_per_gb_month": 0.0006559340634268767,
+   "basis": "$17.5/TB, RAID5 3/4 usable, 5 y"
+  },
+  {
+   "tier": "Cloud block (gp3-class)",
+   "purchase_dollars_per_gb": null,
+   "dollars_per_gb_month": 0.08,
+   "basis": "$0.08/GB-month list"
+  },
+  {
+   "tier": "Cloud object (S3-class)",
+   "purchase_dollars_per_gb": null,
+   "dollars_per_gb_month": 0.023,
+   "basis": "$0.023/GB-month list"
+  }
+ ],
+ "cache_price_rows": 332
+}

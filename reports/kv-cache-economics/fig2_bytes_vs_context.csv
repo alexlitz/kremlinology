@@ -1,0 +1,56 @@
+model,family,context,bytes_per_token
+unsloth--Llama-3.3-70B-Instruct,Dense GQA,1024,327680
+unsloth--Llama-3.3-70B-Instruct,Dense GQA,2048,327680
+unsloth--Llama-3.3-70B-Instruct,Dense GQA,4096,327680
+unsloth--Llama-3.3-70B-Instruct,Dense GQA,8192,327680
+unsloth--Llama-3.3-70B-Instruct,Dense GQA,16384,327680
+unsloth--Llama-3.3-70B-Instruct,Dense GQA,32768,327680
+unsloth--Llama-3.3-70B-Instruct,Dense GQA,65536,327680
+unsloth--Llama-3.3-70B-Instruct,Dense GQA,131072,327680
+unsloth--Llama-3.3-70B-Instruct,Dense GQA,262144,327680
+unsloth--Llama-3.3-70B-Instruct,Dense GQA,524288,327680
+unsloth--Llama-3.3-70B-Instruct,Dense GQA,1048576,327680
+deepseek-ai--DeepSeek-V3,MLA (latent),1024,70272
+deepseek-ai--DeepSeek-V3,MLA (latent),2048,70272
+deepseek-ai--DeepSeek-V3,MLA (latent),4096,70272
+deepseek-ai--DeepSeek-V3,MLA (latent),8192,70272
+deepseek-ai--DeepSeek-V3,MLA (latent),16384,70272
+deepseek-ai--DeepSeek-V3,MLA (latent),32768,70272
+deepseek-ai--DeepSeek-V3,MLA (latent),65536,70272
+deepseek-ai--DeepSeek-V3,MLA (latent),131072,70272
+deepseek-ai--DeepSeek-V3,MLA (latent),262144,70272
+deepseek-ai--DeepSeek-V3,MLA (latent),524288,70272
+deepseek-ai--DeepSeek-V3,MLA (latent),1048576,70272
+google--gemma-3-27b-it,Sliding / chunked window + global,1024,507904
+google--gemma-3-27b-it,Sliding / chunked window + global,2048,294912
+google--gemma-3-27b-it,Sliding / chunked window + global,4096,188416
+google--gemma-3-27b-it,Sliding / chunked window + global,8192,135168
+google--gemma-3-27b-it,Sliding / chunked window + global,16384,108544
+google--gemma-3-27b-it,Sliding / chunked window + global,32768,95232
+google--gemma-3-27b-it,Sliding / chunked window + global,65536,88576
+google--gemma-3-27b-it,Sliding / chunked window + global,131072,85248
+google--gemma-3-27b-it,Sliding / chunked window + global,262144,83584
+google--gemma-3-27b-it,Sliding / chunked window + global,524288,82752
+google--gemma-3-27b-it,Sliding / chunked window + global,1048576,82336
+Qwen--Qwen3.5-27B,Linear attention + global,1024,215872
+Qwen--Qwen3.5-27B,Linear attention + global,2048,140704
+Qwen--Qwen3.5-27B,Linear attention + global,4096,103120
+Qwen--Qwen3.5-27B,Linear attention + global,8192,84328
+Qwen--Qwen3.5-27B,Linear attention + global,16384,74932
+Qwen--Qwen3.5-27B,Linear attention + global,32768,70234
+Qwen--Qwen3.5-27B,Linear attention + global,65536,67885
+Qwen--Qwen3.5-27B,Linear attention + global,131072,66710
+Qwen--Qwen3.5-27B,Linear attention + global,262144,66123
+Qwen--Qwen3.5-27B,Linear attention + global,524288,65830
+Qwen--Qwen3.5-27B,Linear attention + global,1048576,65683
+ibm-granite--granite-4.0-h-small,SSM (Mamba) / hybrid,1024,165622
+ibm-granite--granite-4.0-h-small,SSM (Mamba) / hybrid,2048,91003
+ibm-granite--granite-4.0-h-small,SSM (Mamba) / hybrid,4096,53694
+ibm-granite--granite-4.0-h-small,SSM (Mamba) / hybrid,8192,35039
+ibm-granite--granite-4.0-h-small,SSM (Mamba) / hybrid,16384,25711
+ibm-granite--granite-4.0-h-small,SSM (Mamba) / hybrid,32768,21048
+ibm-granite--granite-4.0-h-small,SSM (Mamba) / hybrid,65536,18716
+ibm-granite--granite-4.0-h-small,SSM (Mamba) / hybrid,131072,17550
+ibm-granite--granite-4.0-h-small,SSM (Mamba) / hybrid,262144,16967
+ibm-granite--granite-4.0-h-small,SSM (Mamba) / hybrid,524288,16675
+ibm-granite--granite-4.0-h-small,SSM (Mamba) / hybrid,1048576,16530

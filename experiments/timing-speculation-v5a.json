@@ -1,0 +1,137 @@
+{
+ "schema_version": 1,
+ "targets": [
+  {
+   "id": "deepseekv32@deepinfra-fp4",
+   "adapter": "openrouter",
+   "model": "deepseek/deepseek-v3.2",
+   "provider": "deepinfra/fp4",
+   "api_key_env": "OPENROUTER_API_KEY",
+   "parameters": {
+    "temperature": 0
+   },
+   "base_url": "https://openrouter.ai/api/v1"
+  },
+  {
+   "id": "gemma4-31b@parasail-fp8",
+   "adapter": "openrouter",
+   "model": "google/gemma-4-31b-it",
+   "provider": "parasail/fp8",
+   "api_key_env": "OPENROUTER_API_KEY",
+   "parameters": {
+    "temperature": 0
+   },
+   "base_url": "https://openrouter.ai/api/v1"
+  },
+  {
+   "id": "llama70b@coreweave-fp16",
+   "adapter": "openrouter",
+   "model": "meta-llama/llama-3.3-70b-instruct",
+   "provider": "coreweave/fp16",
+   "api_key_env": "OPENROUTER_API_KEY",
+   "parameters": {
+    "temperature": 0
+   },
+   "base_url": "https://openrouter.ai/api/v1"
+  }
+ ],
+ "probes": [
+  {
+   "id": "copy",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Copy the following text exactly, word for word, with no other output:\n\nember quiet mosaic stone lantern willow harbor thread beacon stone glacier maple stone lantern copper copper lantern orbit lantern willow copper stone beacon harbor orbit beacon stone beacon beacon mosaic stone orbit stone willow quiet canyon copper quiet willow harbor beacon canyon willow signal harbor beacon beacon maple thread harbor willow lantern beacon stone tundra maple cipher willow copper ember meadow beacon meadow thread canyon orbit signal orbit lantern beacon canyon glacier cipher ember meadow canyon tundra lantern harbor glacier copper signal ember quiet cipher copper stone lantern willow beacon ember ember thread tundra cipher beacon meadow lantern lantern velvet cipher lantern stone canyon beacon meadow canyon mosaic thread river meadow thread signal tundra harbor cipher stone maple canyon quiet orbit mosaic mosaic cipher lantern signal meadow mosaic willow velvet quiet copper willow velvet copper thread mosaic orbit quiet lantern signal quiet orbit orbit river cipher beacon signal velvet canyon river quiet copper willow thread tundra beacon ember quiet glacier tundra stone meadow willow mosaic mosaic mosaic mosaic harbor cipher mosaic stone maple lantern maple meadow signal harbor ember tundra stone harbor river beacon quiet willow harbor thread tundra river lantern maple tundra mosaic quiet velvet thread tundra thread cipher harbor harbor cipher meadow cipher cipher canyon lantern quiet harbor ember velvet cipher signal glacier river maple glacier thread quiet"
+    }
+   ],
+   "max_tokens": 256,
+   "stream": true,
+   "parameters": {}
+  },
+  {
+   "id": "count",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write the integers from 1 to 300 separated by single spaces, with no other output."
+    }
+   ],
+   "max_tokens": 256,
+   "stream": true,
+   "parameters": {}
+  },
+  {
+   "id": "story",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write an original short story about a lighthouse keeper who finds an unusual object. Do not use lists."
+    }
+   ],
+   "max_tokens": 256,
+   "stream": true,
+   "parameters": {}
+  },
+  {
+   "id": "story2",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write an original short story about a night-shift baker who receives a strange order. Do not use lists."
+    }
+   ],
+   "max_tokens": 256,
+   "stream": true,
+   "parameters": {}
+  },
+  {
+   "id": "random",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Write a long sequence of random characters: lowercase letters and digits chosen uniformly at random, in groups of five separated by single spaces. No words, no patterns, no other output."
+    }
+   ],
+   "max_tokens": 256,
+   "stream": true,
+   "parameters": {
+    "temperature": 1.0
+   }
+  }
+ ],
+ "repeats": 11,
+ "seed": 300,
+ "limits": {
+  "max_requests": 165,
+  "max_output_tokens": 42240,
+  "max_cost_usd": 0.05,
+  "deadline_s": 300,
+  "unknown_cost": "continue",
+  "min_interval_s": 0.3,
+  "retry_http_statuses": [
+   429,
+   502,
+   503,
+   504
+  ],
+  "max_retries": 3,
+  "max_total_retries": 150,
+  "retry_backoff_s": 10,
+  "max_response_bytes": 2000000,
+  "max_failed_requests": 40
+ },
+ "evidence": {
+  "catalog_snapshot": true,
+  "attachments": []
+ },
+ "analysis": {
+  "tv_budgets": [
+   0.01,
+   0.05,
+   0.1
+  ],
+  "logprob_error": 0.01,
+  "sampling_alpha": 0.001,
+  "sampling_permutations": 2000
+ }
+}

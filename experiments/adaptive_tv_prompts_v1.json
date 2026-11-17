@@ -1,0 +1,112 @@
+[
+ {
+  "probe": "code-0094",
+  "p1": 0.49574990654991696,
+  "p2": 0.49574990654991696,
+  "messages": [
+   {
+    "role": "user",
+    "content": "Use the list comprehension feature of Python to create a list of words with length more than 5"
+   }
+  ]
+ },
+ {
+  "probe": "wiki-0333",
+  "p1": 0.5259065365603418,
+  "p2": 0.4641108895634939,
+  "messages": [
+   {
+    "role": "user",
+    "content": "Continue the following passage. Reply with the continuation only.\n\nIn November 2008 , the government abandoned its attempts to ban Scientology , after finding insufficient evidence of illegal or unconstitutional activity . The report by the BfV cited knowledge gaps and noted several points that would make the success of any"
+   }
+  ]
+ },
+ {
+  "probe": "code-0034",
+  "p1": 0.5105798746944905,
+  "p2": 0.45058515793991866,
+  "messages": [
+   {
+    "role": "user",
+    "content": "Write a C# method that takes in an integer and multiplies it by 5"
+   }
+  ]
+ },
+ {
+  "probe": "code-0171",
+  "p1": 0.5604196305521644,
+  "p2": 0.436455247122613,
+  "messages": [
+   {
+    "role": "user",
+    "content": "Create a XML document to store information about books.\n\nBook Title: \"The Adventures of Tom Sawyer\"\nBook Author: Mark Twain\nBook Year: 1876\nThe Genre: Fiction"
+   }
+  ]
+ },
+ {
+  "probe": "code-0005",
+  "p1": 0.5594394580022877,
+  "p2": 0.435691887973224,
+  "messages": [
+   {
+    "role": "user",
+    "content": "Write a function to find the longest substring without repetition.\n\nstr = \"pwwkew\""
+   }
+  ]
+ },
+ {
+  "probe": "code-0172",
+  "p1": 0.5583800186902601,
+  "p2": 0.43486679580740023,
+  "messages": [
+   {
+    "role": "user",
+    "content": "Create a URL for the given information.\n\nProtocol: https\nSubdomain: mypage\nDomain: google\nPath: search"
+   }
+  ]
+ },
+ {
+  "probe": "code-0116",
+  "p1": 0.48629736158855985,
+  "p2": 0.42915591533696507,
+  "messages": [
+   {
+    "role": "user",
+    "content": "Train a Machine Learning model using scikit-learn that can solve a binary classification problem.\n\nDataset - number of samples 1000, number of features 5, target label - binary"
+   }
+  ]
+ },
+ {
+  "probe": "code-0137",
+  "p1": 0.5492097381463915,
+  "p2": 0.4277249741388509,
+  "messages": [
+   {
+    "role": "user",
+    "content": "Write a function that takes two strings and returns a boolean value indicating whether the two strings are anagrams or not."
+   }
+  ]
+ },
+ {
+  "probe": "code-0071",
+  "p1": 0.4161008098003977,
+  "p2": 0.4161008098003977,
+  "messages": [
+   {
+    "role": "user",
+    "content": "Rewrite the following code snippet in Python to multiply an array of two numbers with each element in the array.\n\nvar numbers = [3, 5];\n\nfor (var i = 0; i < numbers.length; i++) {\n  numbers[i] = numbers[i] * 2;\n}"
+   }
+  ]
+ },
+ {
+  "probe": "code-0087",
+  "p1": 0.4133823282411553,
+  "p2": 0.4133823282411553,
+  "messages": [
+   {
+    "role": "user",
+    "content": "Create a program using any scripting language to print the multiplication table of 5."
+   }
+  ]
+ }
+]

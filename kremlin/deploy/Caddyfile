@@ -1,0 +1,9 @@
+witness.example.com {
+	handle_path /witness/* {
+		reverse_proxy relay:8081
+	}
+	handle_path /hub/* {
+		reverse_proxy hub:8090
+	}
+	respond / "kremlin witness relay: GET /witness/pubkey; attested runs at /hub/" 200
+}
