@@ -1,0 +1,254 @@
+{
+ "conversation": {
+  "variant": "conversation",
+  "trace": "conversation",
+  "requests": 12031,
+  "blocks": 182790,
+  "reused_blocks": 22084,
+  "block_reuses": 46869,
+  "endpoints": {
+   "haiku4.5": {
+    "lifetime_s": 300,
+    "rho": 0.1,
+    "cap": 11,
+    "interval_s": 270,
+    "miss_cost_mtok": 0.304,
+    "fixed_mtok": 0.5633,
+    "hazard_mtok": 0.5633,
+    "hazard_age_only_mtok": 0.5633,
+    "oracle_mtok": 0.0405,
+    "fixed_pings": 5632.9,
+    "hazard_pings": 5632.9,
+    "fixed_wasted_pings": 0.92,
+    "hazard_wasted_pings": 0.92,
+    "hazard_note": "fitted on the train half; see json"
+   },
+   "kimi-k2.6": {
+    "lifetime_s": 600,
+    "rho": 0.168,
+    "cap": 4,
+    "interval_s": 540,
+    "miss_cost_mtok": 0.0676,
+    "fixed_mtok": 0.3195,
+    "hazard_mtok": 0.3195,
+    "hazard_age_only_mtok": 0.3195,
+    "oracle_mtok": 0.0169,
+    "fixed_pings": 1995.1,
+    "hazard_pings": 1995.1,
+    "fixed_wasted_pings": 0.945,
+    "hazard_wasted_pings": 0.945,
+    "hazard_note": "fitted on the train half; see json"
+   }
+  }
+ },
+ "conversation-x3": {
+  "variant": "conversation-x3",
+  "trace": "conversation x3",
+  "requests": 12031,
+  "blocks": 182790,
+  "reused_blocks": 22084,
+  "block_reuses": 46869,
+  "endpoints": {
+   "haiku4.5": {
+    "lifetime_s": 300,
+    "rho": 0.1,
+    "cap": 11,
+    "interval_s": 270,
+    "miss_cost_mtok": 0.7595,
+    "fixed_mtok": 0.7382,
+    "hazard_mtok": 0.7241,
+    "hazard_age_only_mtok": 0.7382,
+    "oracle_mtok": 0.1778,
+    "fixed_pings": 7096.5,
+    "hazard_pings": 6091.9,
+    "fixed_wasted_pings": 0.73,
+    "hazard_wasted_pings": 0.715,
+    "hazard_note": "fitted on the train half; see json"
+   },
+   "kimi-k2.6": {
+    "lifetime_s": 600,
+    "rho": 0.168,
+    "cap": 4,
+    "interval_s": 540,
+    "miss_cost_mtok": 0.3481,
+    "fixed_mtok": 0.4443,
+    "hazard_mtok": 0.4443,
+    "hazard_age_only_mtok": 0.4443,
+    "oracle_mtok": 0.1111,
+    "fixed_pings": 2583.5,
+    "hazard_pings": 2583.5,
+    "fixed_wasted_pings": 0.73,
+    "hazard_wasted_pings": 0.73,
+    "hazard_note": "fitted on the train half; see json"
+   }
+  }
+ },
+ "conversation-x8": {
+  "variant": "conversation-x8",
+  "trace": "conversation x8",
+  "requests": 12031,
+  "blocks": 182790,
+  "reused_blocks": 22084,
+  "block_reuses": 46869,
+  "endpoints": {
+   "haiku4.5": {
+    "lifetime_s": 300,
+    "rho": 0.1,
+    "cap": 11,
+    "interval_s": 270,
+    "miss_cost_mtok": 1.1581,
+    "fixed_mtok": 1.2074,
+    "hazard_mtok": 1.1185,
+    "hazard_age_only_mtok": 1.2074,
+    "oracle_mtok": 0.4696,
+    "fixed_pings": 10012.5,
+    "hazard_pings": 698.5,
+    "fixed_wasted_pings": 0.518,
+    "hazard_wasted_pings": 0.371,
+    "hazard_note": "fitted on the train half; see json"
+   },
+   "kimi-k2.6": {
+    "lifetime_s": 600,
+    "rho": 0.168,
+    "cap": 4,
+    "interval_s": 540,
+    "miss_cost_mtok": 0.6886,
+    "fixed_mtok": 0.7967,
+    "hazard_mtok": 0.7758,
+    "hazard_age_only_mtok": 0.7967,
+    "oracle_mtok": 0.3319,
+    "fixed_pings": 3741.5,
+    "hazard_pings": 3245.4,
+    "fixed_wasted_pings": 0.504,
+    "hazard_wasted_pings": 0.488,
+    "hazard_note": "fitted on the train half; see json"
+   }
+  }
+ },
+ "toolagent": {
+  "variant": "toolagent",
+  "trace": "toolagent",
+  "requests": 23608,
+  "blocks": 183300,
+  "reused_blocks": 19764,
+  "block_reuses": 106027,
+  "endpoints": {
+   "haiku4.5": {
+    "lifetime_s": 300,
+    "rho": 0.1,
+    "cap": 11,
+    "interval_s": 270,
+    "miss_cost_mtok": 0.0986,
+    "fixed_mtok": 0.2158,
+    "hazard_mtok": 0.2158,
+    "hazard_age_only_mtok": 0.2158,
+    "oracle_mtok": 0.0097,
+    "fixed_pings": 2158.5,
+    "hazard_pings": 2158.5,
+    "fixed_wasted_pings": 0.95,
+    "hazard_wasted_pings": 0.95,
+    "hazard_note": "fitted on the train half; see json"
+   },
+   "kimi-k2.6": {
+    "lifetime_s": 600,
+    "rho": 0.168,
+    "cap": 4,
+    "interval_s": 540,
+    "miss_cost_mtok": 0.0105,
+    "fixed_mtok": 0.1214,
+    "hazard_mtok": 0.1214,
+    "hazard_age_only_mtok": 0.1214,
+    "oracle_mtok": 0.0022,
+    "fixed_pings": 759.4,
+    "hazard_pings": 759.4,
+    "fixed_wasted_pings": 0.982,
+    "hazard_wasted_pings": 0.982,
+    "hazard_note": "fitted on the train half; see json"
+   }
+  }
+ },
+ "arxiv": {
+  "variant": "arxiv",
+  "trace": "arxiv",
+  "requests": 23608,
+  "blocks": 183166,
+  "reused_blocks": 19634,
+  "block_reuses": 105774,
+  "endpoints": {
+   "haiku4.5": {
+    "lifetime_s": 300,
+    "rho": 0.1,
+    "cap": 11,
+    "interval_s": 270,
+    "miss_cost_mtok": 0.1001,
+    "fixed_mtok": 0.2154,
+    "hazard_mtok": 0.2154,
+    "hazard_age_only_mtok": 0.2154,
+    "oracle_mtok": 0.0101,
+    "fixed_pings": 2153.7,
+    "hazard_pings": 2153.7,
+    "fixed_wasted_pings": 0.948,
+    "hazard_wasted_pings": 0.948,
+    "hazard_note": "fitted on the train half; see json"
+   },
+   "kimi-k2.6": {
+    "lifetime_s": 600,
+    "rho": 0.168,
+    "cap": 4,
+    "interval_s": 540,
+    "miss_cost_mtok": 0.0132,
+    "fixed_mtok": 0.1213,
+    "hazard_mtok": 0.1213,
+    "hazard_age_only_mtok": 0.1213,
+    "oracle_mtok": 0.0027,
+    "fixed_pings": 759.1,
+    "hazard_pings": 759.1,
+    "fixed_wasted_pings": 0.978,
+    "hazard_wasted_pings": 0.978,
+    "hazard_note": "fitted on the train half; see json"
+   }
+  }
+ },
+ "synthetic": {
+  "variant": "synthetic",
+  "trace": "synthetic",
+  "requests": 3993,
+  "blocks": 43924,
+  "reused_blocks": 9109,
+  "block_reuses": 38888,
+  "endpoints": {
+   "haiku4.5": {
+    "lifetime_s": 300,
+    "rho": 0.1,
+    "cap": 11,
+    "interval_s": 270,
+    "miss_cost_mtok": 0.1078,
+    "fixed_mtok": 0.2677,
+    "hazard_mtok": 0.1329,
+    "hazard_age_only_mtok": 0.174,
+    "oracle_mtok": 0.0095,
+    "fixed_pings": 2677.2,
+    "hazard_pings": 1329.3,
+    "fixed_wasted_pings": 0.962,
+    "hazard_wasted_pings": 0.924,
+    "hazard_note": "fitted on the train half; see json"
+   },
+   "kimi-k2.6": {
+    "lifetime_s": 600,
+    "rho": 0.168,
+    "cap": 4,
+    "interval_s": 540,
+    "miss_cost_mtok": 0.0085,
+    "fixed_mtok": 0.151,
+    "hazard_mtok": 0.1136,
+    "hazard_age_only_mtok": 0.1136,
+    "oracle_mtok": 0.0014,
+    "fixed_pings": 945.8,
+    "hazard_pings": 711.6,
+    "fixed_wasted_pings": 0.991,
+    "hazard_wasted_pings": 0.987,
+    "hazard_note": "fitted on the train half; see json"
+   }
+  }
+ }
+}

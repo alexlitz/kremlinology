@@ -1,0 +1,19 @@
+# systemd unit (bare metal). Put the control port behind an HTTPS reverse proxy.
+[Unit]
+Description=kremlin witness relay
+After=network-online.target
+
+[Service]
+User=witness
+ExecStart=/usr/local/bin/kremlin-witness --key /var/lib/kremlin-witness/witness.key \
+  --receipts /var/lib/kremlin-witness/receipts --tokens /var/lib/kremlin-witness/tokens.txt \
+  --tunnel 0.0.0.0:8443 --tunnel-cert /etc/letsencrypt/live/witness.example.com/fullchain.pem \
+  --tunnel-key /etc/letsencrypt/live/witness.example.com/privkey.pem \
+  --control 127.0.0.1:8081 --allow openrouter.ai --allow api.openai.com --allow api.anthropic.com
+Restart=on-failure
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/kremlin-witness
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,514 @@
+[
+ {
+  "provider": "anthropic",
+  "model": "anthropic/claude-haiku-4.5",
+  "arm": "control",
+  "ping_s": 240,
+  "probe_s": 420,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 20,
+   "none_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": 1.0386871099472046
+  }
+ },
+ {
+  "provider": "anthropic",
+  "model": "anthropic/claude-haiku-4.5",
+  "arm": "near",
+  "ping_s": 240,
+  "probe_s": 420,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 20,
+   "head_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": null,
+   "head_latency": 1.0520861148834229,
+   "none_latency": null
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 20,
+   "head_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": null,
+   "head_latency": 1.0520861148834229,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "anthropic",
+  "model": "anthropic/claude-haiku-4.5",
+  "arm": "samectx",
+  "ping_s": 240,
+  "probe_s": 420,
+  "all": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 1.0317094326019287,
+   "head_latency": null,
+   "none_latency": null
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 1.0317094326019287,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "moonshotai",
+  "model": "moonshotai/kimi-k2.6",
+  "arm": "control",
+  "ping_s": 300,
+  "probe_s": 600,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 20,
+   "none_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": 1.5991456508636475
+  }
+ },
+ {
+  "provider": "moonshotai",
+  "model": "moonshotai/kimi-k2.6",
+  "arm": "near",
+  "ping_s": 300,
+  "probe_s": 600,
+  "all": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 1.4180123805999756,
+   "head_latency": null,
+   "none_latency": null
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 1.4180123805999756,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "moonshotai",
+  "model": "moonshotai/kimi-k2.6",
+  "arm": "samectx",
+  "ping_s": 300,
+  "probe_s": 600,
+  "all": {
+   "n": 20,
+   "whole": 19,
+   "whole_ci": [
+    0.7638641064874331,
+    0.9911187805671268
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 1,
+   "none_ci": [
+    0.008881219432873136,
+    0.23613589351256675
+   ],
+   "whole_latency": 1.366889238357544,
+   "head_latency": null,
+   "none_latency": 4.159955739974976
+  },
+  "ping_hits": 19,
+  "given_ping_hit": {
+   "n": 19,
+   "whole": 18,
+   "whole_ci": [
+    0.7536078466345479,
+    0.99064824750947
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "none": 1,
+   "none_ci": [
+    0.009351752490529969,
+    0.2463921533654521
+   ],
+   "whole_latency": 1.3578641414642334,
+   "head_latency": null,
+   "none_latency": 4.159955739974976
+  }
+ },
+ {
+  "provider": "novita",
+  "model": "moonshotai/kimi-k2.5",
+  "arm": "control",
+  "ping_s": 20,
+  "probe_s": 300,
+  "all": {
+   "n": 19,
+   "whole": 19,
+   "whole_ci": [
+    0.8318156346315496,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "whole_latency": 1.7871463298797607,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "novita",
+  "model": "moonshotai/kimi-k2.5",
+  "arm": "near",
+  "ping_s": 20,
+  "probe_s": 300,
+  "all": {
+   "n": 19,
+   "whole": 18,
+   "whole_ci": [
+    0.7536078466345479,
+    0.99064824750947
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "none": 1,
+   "none_ci": [
+    0.009351752490529969,
+    0.2463921533654521
+   ],
+   "whole_latency": 1.8603174686431885,
+   "head_latency": null,
+   "none_latency": 1.429509162902832
+  },
+  "ping_hits": 15,
+  "given_ping_hit": {
+   "n": 15,
+   "whole": 14,
+   "whole_ci": [
+    0.7018292244757601,
+    0.9881334113938051
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.20388926630434784
+   ],
+   "none": 1,
+   "none_ci": [
+    0.011866588606194856,
+    0.2981707755242399
+   ],
+   "whole_latency": 1.8004045486450195,
+   "head_latency": null,
+   "none_latency": 1.429509162902832
+  }
+ },
+ {
+  "provider": "novita",
+  "model": "moonshotai/kimi-k2.5",
+  "arm": "samectx",
+  "ping_s": 20,
+  "probe_s": 300,
+  "all": {
+   "n": 18,
+   "whole": 17,
+   "whole_ci": [
+    0.7424220019799247,
+    0.9901250641690756
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.1758845505823749
+   ],
+   "none": 1,
+   "none_ci": [
+    0.009874935830924525,
+    0.2575779980200754
+   ],
+   "whole_latency": 1.7873928546905518,
+   "head_latency": null,
+   "none_latency": 1.9281079769134521
+  },
+  "ping_hits": 12,
+  "given_ping_hit": {
+   "n": 12,
+   "whole": 12,
+   "whole_ci": [
+    0.7574992425007574,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.2425007574992425
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.2425007574992425
+   ],
+   "whole_latency": 1.7887535095214844,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "openai",
+  "model": "openai/gpt-5.4-nano",
+  "arm": "control",
+  "ping_s": 300,
+  "probe_s": 660,
+  "all": {
+   "n": 20,
+   "whole": 5,
+   "whole_ci": [
+    0.11186005278940309,
+    0.4687050099580636
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 15,
+   "none_ci": [
+    0.5312949900419365,
+    0.888139947210597
+   ],
+   "whole_latency": 1.103820562362671,
+   "head_latency": null,
+   "none_latency": 1.2294952869415283
+  }
+ },
+ {
+  "provider": "openai",
+  "model": "openai/gpt-5.4-nano",
+  "arm": "near",
+  "ping_s": 300,
+  "probe_s": 660,
+  "all": {
+   "n": 20,
+   "whole": 3,
+   "whole_ci": [
+    0.05236779195949584,
+    0.36042329588695743
+   ],
+   "head": 15,
+   "head_ci": [
+    0.5312949900419365,
+    0.888139947210597
+   ],
+   "none": 2,
+   "none_ci": [
+    0.027865893984153206,
+    0.30103820641179335
+   ],
+   "whole_latency": 0.9706487655639648,
+   "head_latency": 1.0418078899383545,
+   "none_latency": 1.059605598449707
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 3,
+   "whole_ci": [
+    0.05236779195949584,
+    0.36042329588695743
+   ],
+   "head": 15,
+   "head_ci": [
+    0.5312949900419365,
+    0.888139947210597
+   ],
+   "none": 2,
+   "none_ci": [
+    0.027865893984153206,
+    0.30103820641179335
+   ],
+   "whole_latency": 0.9706487655639648,
+   "head_latency": 1.0418078899383545,
+   "none_latency": 1.059605598449707
+  }
+ },
+ {
+  "provider": "openai",
+  "model": "openai/gpt-5.4-nano",
+  "arm": "samectx",
+  "ping_s": 300,
+  "probe_s": 660,
+  "all": {
+   "n": 20,
+   "whole": 19,
+   "whole_ci": [
+    0.7638641064874331,
+    0.9911187805671268
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 1,
+   "none_ci": [
+    0.008881219432873136,
+    0.23613589351256675
+   ],
+   "whole_latency": 1.0799448490142822,
+   "head_latency": null,
+   "none_latency": 1.142308235168457
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 19,
+   "whole_ci": [
+    0.7638641064874331,
+    0.9911187805671268
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 1,
+   "none_ci": [
+    0.008881219432873136,
+    0.23613589351256675
+   ],
+   "whole_latency": 1.0799448490142822,
+   "head_latency": null,
+   "none_latency": 1.142308235168457
+  }
+ }
+]

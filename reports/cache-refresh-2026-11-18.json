@@ -1,0 +1,1154 @@
+[
+ {
+  "provider": "anthropic",
+  "model": "anthropic/claude-haiku-4.5",
+  "arm": "control",
+  "ping_s": 240,
+  "probe_s": 420,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 20,
+   "none_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": 0.5065175294876099
+  }
+ },
+ {
+  "provider": "anthropic",
+  "model": "anthropic/claude-haiku-4.5",
+  "arm": "full",
+  "ping_s": 240,
+  "probe_s": 420,
+  "all": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 0.439444899559021,
+   "head_latency": null,
+   "none_latency": null
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 0.439444899559021,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "anthropic",
+  "model": "anthropic/claude-haiku-4.5",
+  "arm": "partial",
+  "ping_s": 240,
+  "probe_s": 420,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 20,
+   "head_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": null,
+   "head_latency": 0.42950570583343506,
+   "none_latency": null
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 20,
+   "head_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": null,
+   "head_latency": 0.42950570583343506,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "chutes/fp4",
+  "model": "google/gemma-4-31b-it",
+  "arm": "control",
+  "ping_s": 30,
+  "probe_s": 300,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 20,
+   "none_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": 2.700873017311096
+  }
+ },
+ {
+  "provider": "chutes/fp4",
+  "model": "google/gemma-4-31b-it",
+  "arm": "full",
+  "ping_s": 30,
+  "probe_s": 300,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 1,
+   "head_ci": [
+    0.008881219432873136,
+    0.23613589351256675
+   ],
+   "none": 19,
+   "none_ci": [
+    0.7638641064874331,
+    0.9911187805671268
+   ],
+   "whole_latency": null,
+   "head_latency": 1.7189257144927979,
+   "none_latency": 2.9490394592285156
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 1,
+   "head_ci": [
+    0.008881219432873136,
+    0.23613589351256675
+   ],
+   "none": 19,
+   "none_ci": [
+    0.7638641064874331,
+    0.9911187805671268
+   ],
+   "whole_latency": null,
+   "head_latency": 1.7189257144927979,
+   "none_latency": 2.9490394592285156
+  }
+ },
+ {
+  "provider": "chutes/fp4",
+  "model": "google/gemma-4-31b-it",
+  "arm": "partial",
+  "ping_s": 30,
+  "probe_s": 300,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 20,
+   "none_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": 3.105012893676758
+  },
+  "ping_hits": 1,
+  "given_ping_hit": {
+   "n": 1,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.7934567085261071
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.7934567085261071
+   ],
+   "none": 1,
+   "none_ci": [
+    0.20654329147389294,
+    1.0
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": 3.5467400550842285
+  }
+ },
+ {
+  "provider": "coreweave/fp16",
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "arm": "control",
+  "ping_s": 1800,
+  "probe_s": 3600,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 20,
+   "none_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": 0.4718095064163208
+  }
+ },
+ {
+  "provider": "coreweave/fp16",
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "arm": "full",
+  "ping_s": 1800,
+  "probe_s": 3600,
+  "all": {
+   "n": 20,
+   "whole": 4,
+   "whole_ci": [
+    0.0806563532712,
+    0.41602172202575993
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 16,
+   "none_ci": [
+    0.5839782779742401,
+    0.9193436467288
+   ],
+   "whole_latency": 0.26512789726257324,
+   "head_latency": null,
+   "none_latency": 0.47614967823028564
+  },
+  "ping_hits": 0,
+  "given_ping_hit": {
+   "n": 0,
+   "whole": 0,
+   "whole_ci": [
+    null,
+    null
+   ],
+   "head": 0,
+   "head_ci": [
+    null,
+    null
+   ],
+   "none": 0,
+   "none_ci": [
+    null,
+    null
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "coreweave/fp16",
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "arm": "partial",
+  "ping_s": 1800,
+  "probe_s": 3600,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 20,
+   "none_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": 0.4734055995941162
+  },
+  "ping_hits": 0,
+  "given_ping_hit": {
+   "n": 0,
+   "whole": 0,
+   "whole_ci": [
+    null,
+    null
+   ],
+   "head": 0,
+   "head_ci": [
+    null,
+    null
+   ],
+   "none": 0,
+   "none_ci": [
+    null,
+    null
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "deepinfra/fp4",
+  "model": "deepseek/deepseek-v3.2",
+  "arm": "control",
+  "ping_s": 60,
+  "probe_s": 600,
+  "all": {
+   "n": 20,
+   "whole": 18,
+   "whole_ci": [
+    0.6989617935882066,
+    0.9721341060158468
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 2,
+   "none_ci": [
+    0.027865893984153206,
+    0.30103820641179335
+   ],
+   "whole_latency": 0.7580491304397583,
+   "head_latency": null,
+   "none_latency": 0.8673295974731445
+  }
+ },
+ {
+  "provider": "deepinfra/fp4",
+  "model": "deepseek/deepseek-v3.2",
+  "arm": "full",
+  "ping_s": 60,
+  "probe_s": 600,
+  "all": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 0.8093371391296387,
+   "head_latency": null,
+   "none_latency": null
+  },
+  "ping_hits": 19,
+  "given_ping_hit": {
+   "n": 19,
+   "whole": 19,
+   "whole_ci": [
+    0.8318156346315496,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "whole_latency": 0.8290979862213135,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "deepinfra/fp4",
+  "model": "deepseek/deepseek-v3.2",
+  "arm": "partial",
+  "ping_s": 60,
+  "probe_s": 600,
+  "all": {
+   "n": 20,
+   "whole": 19,
+   "whole_ci": [
+    0.7638641064874331,
+    0.9911187805671268
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 1,
+   "none_ci": [
+    0.008881219432873136,
+    0.23613589351256675
+   ],
+   "whole_latency": 0.7654266357421875,
+   "head_latency": null,
+   "none_latency": 0.5824036598205566
+  },
+  "ping_hits": 12,
+  "given_ping_hit": {
+   "n": 12,
+   "whole": 11,
+   "whole_ci": [
+    0.6461140782014047,
+    0.9851352905492264
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.2425007574992425
+   ],
+   "none": 1,
+   "none_ci": [
+    0.014864709450773478,
+    0.35388592179859524
+   ],
+   "whole_latency": 0.7523610591888428,
+   "head_latency": null,
+   "none_latency": 0.5824036598205566
+  }
+ },
+ {
+  "provider": "gmicloud/fp8",
+  "model": "deepseek/deepseek-v3.2",
+  "arm": "control",
+  "ping_s": 30,
+  "probe_s": 300,
+  "all": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 2.0916324853897095,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "gmicloud/fp8",
+  "model": "deepseek/deepseek-v3.2",
+  "arm": "full",
+  "ping_s": 30,
+  "probe_s": 300,
+  "all": {
+   "n": 19,
+   "whole": 19,
+   "whole_ci": [
+    0.8318156346315496,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "whole_latency": 2.2230420112609863,
+   "head_latency": null,
+   "none_latency": null
+  },
+  "ping_hits": 19,
+  "given_ping_hit": {
+   "n": 19,
+   "whole": 19,
+   "whole_ci": [
+    0.8318156346315496,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "whole_latency": 2.2230420112609863,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "gmicloud/fp8",
+  "model": "deepseek/deepseek-v3.2",
+  "arm": "partial",
+  "ping_s": 30,
+  "probe_s": 300,
+  "all": {
+   "n": 20,
+   "whole": 19,
+   "whole_ci": [
+    0.7638641064874331,
+    0.9911187805671268
+   ],
+   "head": 1,
+   "head_ci": [
+    0.008881219432873136,
+    0.23613589351256675
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 2.1408350467681885,
+   "head_latency": 2.3691039085388184,
+   "none_latency": null
+  },
+  "ping_hits": 19,
+  "given_ping_hit": {
+   "n": 19,
+   "whole": 18,
+   "whole_ci": [
+    0.7536078466345479,
+    0.99064824750947
+   ],
+   "head": 1,
+   "head_ci": [
+    0.009351752490529969,
+    0.2463921533654521
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "whole_latency": 2.1676450967788696,
+   "head_latency": 2.3691039085388184,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "moonshotai",
+  "model": "moonshotai/kimi-k2.6",
+  "arm": "control",
+  "ping_s": 300,
+  "probe_s": 600,
+  "all": {
+   "n": 20,
+   "whole": 1,
+   "whole_ci": [
+    0.008881219432873136,
+    0.23613589351256675
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 19,
+   "none_ci": [
+    0.7638641064874331,
+    0.9911187805671268
+   ],
+   "whole_latency": 2.94206166267395,
+   "head_latency": null,
+   "none_latency": 1.1617231369018555
+  }
+ },
+ {
+  "provider": "moonshotai",
+  "model": "moonshotai/kimi-k2.6",
+  "arm": "full",
+  "ping_s": 300,
+  "probe_s": 600,
+  "all": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 0.9967641830444336,
+   "head_latency": null,
+   "none_latency": null
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 0.9967641830444336,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "moonshotai",
+  "model": "moonshotai/kimi-k2.6",
+  "arm": "partial",
+  "ping_s": 300,
+  "probe_s": 600,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 20,
+   "head_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": null,
+   "head_latency": 1.0080691576004028,
+   "none_latency": null
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 20,
+   "head_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": null,
+   "head_latency": 1.0080691576004028,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "nebius/fp4",
+  "model": "openai/gpt-oss-120b",
+  "arm": "control",
+  "ping_s": 600,
+  "probe_s": 1800,
+  "all": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 0.4225902557373047,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "nebius/fp4",
+  "model": "openai/gpt-oss-120b",
+  "arm": "full",
+  "ping_s": 600,
+  "probe_s": 1800,
+  "all": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 0.42928171157836914,
+   "head_latency": null,
+   "none_latency": null
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 0.42928171157836914,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "nebius/fp4",
+  "model": "openai/gpt-oss-120b",
+  "arm": "partial",
+  "ping_s": 600,
+  "probe_s": 1800,
+  "all": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 0.39546120166778564,
+   "head_latency": null,
+   "none_latency": null
+  },
+  "ping_hits": 20,
+  "given_ping_hit": {
+   "n": 20,
+   "whole": 20,
+   "whole_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 0.39546120166778564,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "novita",
+  "model": "moonshotai/kimi-k2.5",
+  "arm": "control",
+  "ping_s": 20,
+  "probe_s": 300,
+  "all": {
+   "n": 20,
+   "whole": 11,
+   "whole_ci": [
+    0.3420820083075997,
+    0.7418049791429071
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 9,
+   "none_ci": [
+    0.25819502085709295,
+    0.6579179916924003
+   ],
+   "whole_latency": 8.107728719711304,
+   "head_latency": null,
+   "none_latency": 10.97645354270935
+  }
+ },
+ {
+  "provider": "novita",
+  "model": "moonshotai/kimi-k2.5",
+  "arm": "full",
+  "ping_s": 20,
+  "probe_s": 300,
+  "all": {
+   "n": 19,
+   "whole": 18,
+   "whole_ci": [
+    0.7536078466345479,
+    0.99064824750947
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16818436536845052
+   ],
+   "none": 1,
+   "none_ci": [
+    0.009351752490529969,
+    0.2463921533654521
+   ],
+   "whole_latency": 8.444077610969543,
+   "head_latency": null,
+   "none_latency": 8.993961572647095
+  },
+  "ping_hits": 17,
+  "given_ping_hit": {
+   "n": 17,
+   "whole": 16,
+   "whole_ci": [
+    0.730174547964372,
+    0.9895398693548358
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.18432366037156456
+   ],
+   "none": 1,
+   "none_ci": [
+    0.01046013064516424,
+    0.269825452035628
+   ],
+   "whole_latency": 8.36704707145691,
+   "head_latency": null,
+   "none_latency": 8.993961572647095
+  }
+ },
+ {
+  "provider": "novita",
+  "model": "moonshotai/kimi-k2.5",
+  "arm": "partial",
+  "ping_s": 20,
+  "probe_s": 300,
+  "all": {
+   "n": 20,
+   "whole": 19,
+   "whole_ci": [
+    0.7638641064874331,
+    0.9911187805671268
+   ],
+   "head": 1,
+   "head_ci": [
+    0.008881219432873136,
+    0.23613589351256675
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "whole_latency": 9.604370832443237,
+   "head_latency": 6.1988489627838135,
+   "none_latency": null
+  },
+  "ping_hits": 14,
+  "given_ping_hit": {
+   "n": 14,
+   "whole": 14,
+   "whole_ci": [
+    0.7846829880728186,
+    1.0
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.21531701192718142
+   ],
+   "none": 0,
+   "none_ci": [
+    0.0,
+    0.21531701192718142
+   ],
+   "whole_latency": 9.67112398147583,
+   "head_latency": null,
+   "none_latency": null
+  }
+ },
+ {
+  "provider": "openai",
+  "model": "openai/gpt-5.4-nano",
+  "arm": "control",
+  "ping_s": 450,
+  "probe_s": 900,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 20,
+   "none_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": 0.6890779733657837
+  }
+ },
+ {
+  "provider": "openai",
+  "model": "openai/gpt-5.4-nano",
+  "arm": "full",
+  "ping_s": 450,
+  "probe_s": 900,
+  "all": {
+   "n": 20,
+   "whole": 13,
+   "whole_ci": [
+    0.43285051021946463,
+    0.8188104521320554
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 7,
+   "none_ci": [
+    0.18118954786794464,
+    0.5671494897805354
+   ],
+   "whole_latency": 0.6432673931121826,
+   "head_latency": null,
+   "none_latency": 0.7099590301513672
+  },
+  "ping_hits": 13,
+  "given_ping_hit": {
+   "n": 13,
+   "whole": 11,
+   "whole_ci": [
+    0.5776482949136899,
+    0.9567427368172621
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.22810184305529166
+   ],
+   "none": 2,
+   "none_ci": [
+    0.04325726318273798,
+    0.4223517050863101
+   ],
+   "whole_latency": 0.6432673931121826,
+   "head_latency": null,
+   "none_latency": 0.7223467826843262
+  }
+ },
+ {
+  "provider": "openai",
+  "model": "openai/gpt-5.4-nano",
+  "arm": "partial",
+  "ping_s": 450,
+  "probe_s": 900,
+  "all": {
+   "n": 20,
+   "whole": 0,
+   "whole_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "head": 0,
+   "head_ci": [
+    0.0,
+    0.16113012549493322
+   ],
+   "none": 20,
+   "none_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": 0.7381658554077148
+  },
+  "ping_hits": 0,
+  "given_ping_hit": {
+   "n": 0,
+   "whole": 0,
+   "whole_ci": [
+    null,
+    null
+   ],
+   "head": 0,
+   "head_ci": [
+    null,
+    null
+   ],
+   "none": 0,
+   "none_ci": [
+    null,
+    null
+   ],
+   "whole_latency": null,
+   "head_latency": null,
+   "none_latency": null
+  }
+ }
+]

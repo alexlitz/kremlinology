@@ -1,0 +1,426 @@
+{
+ "slopes": [
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "baseten",
+   "miss_us_per_token": 16.996992569685087,
+   "miss_ci": [
+    14.792154078637585,
+    22.94079847972644
+   ],
+   "hit_us_per_token": 4.311030455119586,
+   "hit_ci": [
+    1.415740151224674,
+    15.11321040193496
+   ],
+   "ratio": 0.2536348967292312,
+   "hit_intercept_s": 0.21175434335566065,
+   "miss_intercept_s": 0.18843148615886676,
+   "sizes": 6,
+   "max_size": 32000,
+   "hit_tokens_per_s": 231963.1026527416,
+   "hit_gb_per_s": 18.111679055126064,
+   "resident": false
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "coreweave/fp8",
+   "miss_us_per_token": 11.184333734873794,
+   "miss_ci": [
+    7.340156221010341,
+    14.702274292556089
+   ],
+   "hit_us_per_token": 3.049835775810428,
+   "hit_ci": [
+    -9.852347409823913,
+    9.013019817478085
+   ],
+   "ratio": 0.27268819476485723,
+   "hit_intercept_s": 0.45644891396646436,
+   "miss_intercept_s": 0.513672160857111,
+   "sizes": 3,
+   "max_size": 32000,
+   "hit_tokens_per_s": 327886.50717898784,
+   "hit_gb_per_s": 25.60137848053537,
+   "resident": true
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "deepinfra/fp8",
+   "miss_us_per_token": 14.214577901097767,
+   "miss_ci": [
+    12.648984186722137,
+    15.521326771392916
+   ],
+   "hit_us_per_token": 1.714912589554993,
+   "hit_ci": [
+    -0.05892292094410898,
+    3.2176200119604403
+   ],
+   "ratio": 0.12064463689931682,
+   "hit_intercept_s": 0.5367664674033623,
+   "miss_intercept_s": 0.39804220193482337,
+   "sizes": 7,
+   "max_size": 64000,
+   "hit_tokens_per_s": 583120.0995844882,
+   "hit_gb_per_s": 45.53001737555684,
+   "resident": true
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "deepseek",
+   "miss_us_per_token": 6.927282464637549,
+   "miss_ci": [
+    6.414900320247582,
+    7.862825478311556
+   ],
+   "hit_us_per_token": 4.662119753497754,
+   "hit_ci": [
+    4.087496200231299,
+    5.074639969105444
+   ],
+   "ratio": 0.6730084672159656,
+   "hit_intercept_s": 0.7827436053142299,
+   "miss_intercept_s": 0.7251711295221107,
+   "sizes": 9,
+   "max_size": 256000,
+   "hit_tokens_per_s": 214494.70474235466,
+   "hit_gb_per_s": 16.747746546283054,
+   "resident": false
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "fireworks",
+   "miss_us_per_token": 15.86884478915226,
+   "miss_ci": [
+    14.184703901872844,
+    17.50313691550998
+   ],
+   "hit_us_per_token": 1.7805080036694578,
+   "hit_ci": [
+    0.20096162190716838,
+    7.758952650977138
+   ],
+   "ratio": 0.11220148834567911,
+   "hit_intercept_s": 0.3841948080657305,
+   "miss_intercept_s": 0.34222886402097175,
+   "sizes": 6,
+   "max_size": 32000,
+   "hit_tokens_per_s": 561637.4641052413,
+   "hit_gb_per_s": 43.85265319733724,
+   "resident": false
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "gmicloud/fp8",
+   "miss_us_per_token": 44.913750643092285,
+   "miss_ci": [
+    33.87231241479571,
+    49.52250926451188
+   ],
+   "hit_us_per_token": 19.87979864158813,
+   "hit_ci": [
+    7.977225049169375,
+    34.45547035797087
+   ],
+   "ratio": 0.4426216549929935,
+   "hit_intercept_s": 1.7490425853804097,
+   "miss_intercept_s": 1.4803283374433782,
+   "sizes": 6,
+   "max_size": 32000,
+   "hit_tokens_per_s": 50302.3203619387,
+   "hit_gb_per_s": 3.9276051738601736,
+   "resident": false
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "novita/fp8",
+   "miss_us_per_token": 31.609933340825066,
+   "miss_ci": [
+    29.169988048839897,
+    33.595219139400115
+   ],
+   "hit_us_per_token": 18.549281950462976,
+   "hit_ci": [
+    16.823663004381764,
+    20.72026254396921
+   ],
+   "ratio": 0.5868181293032366,
+   "hit_intercept_s": 0.9064650604733198,
+   "miss_intercept_s": 0.7956272538893814,
+   "sizes": 7,
+   "max_size": 64000,
+   "hit_tokens_per_s": 53910.4426074585,
+   "hit_gb_per_s": 4.209327358790359,
+   "resident": false
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "parasail/fp8",
+   "miss_us_per_token": 23.49305128842901,
+   "miss_ci": [
+    21.56054596199669,
+    25.058782425325923
+   ],
+   "hit_us_per_token": 9.46603662420114,
+   "hit_ci": [
+    8.15356663093346,
+    11.630736003085193
+   ],
+   "ratio": 0.4029292111946066,
+   "hit_intercept_s": 0.28930904120756473,
+   "miss_intercept_s": 0.27458900285896926,
+   "sizes": 6,
+   "max_size": 32000,
+   "hit_tokens_per_s": 105640.83361386659,
+   "hit_gb_per_s": 8.248436288570703,
+   "resident": false
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "together",
+   "miss_us_per_token": 8.263158034149079,
+   "miss_ci": [
+    7.635403035960841,
+    9.022533869351978
+   ],
+   "hit_us_per_token": 1.2238721788428533,
+   "hit_ci": [
+    0.45982819193348945,
+    2.2276961254594
+   ],
+   "ratio": 0.14811191723369777,
+   "hit_intercept_s": 0.11331515981920322,
+   "miss_intercept_s": 0.12002055475880898,
+   "sizes": 6,
+   "max_size": 32000,
+   "hit_tokens_per_s": 817078.790814152,
+   "hit_gb_per_s": 63.79751198676899,
+   "resident": false
+  },
+  {
+   "model": "moonshotai/kimi-k2.6",
+   "provider": "deepinfra/fp4",
+   "miss_us_per_token": 31.266874991752402,
+   "miss_ci": [
+    26.952440829599286,
+    39.03800983867256
+   ],
+   "hit_us_per_token": 10.144598526287751,
+   "hit_ci": [
+    6.7038485379301065,
+    13.39078058012091
+   ],
+   "ratio": 0.3244519488744462,
+   "hit_intercept_s": 0.5520962530539975,
+   "miss_intercept_s": 0.6081583778267837,
+   "sizes": 4,
+   "max_size": 32000,
+   "hit_tokens_per_s": 98574.62544315527,
+   "hit_gb_per_s": 6.927036079141407,
+   "resident": false
+  },
+  {
+   "model": "moonshotai/kimi-k2.6",
+   "provider": "moonshotai",
+   "miss_us_per_token": 268.561072407814,
+   "miss_ci": [
+    259.6886766541958,
+    300.79329035722486
+   ],
+   "hit_us_per_token": 20.82959125914678,
+   "hit_ci": [
+    -9.942684385709,
+    69.48612625103347
+   ],
+   "ratio": 0.07755997945791913,
+   "hit_intercept_s": 1.146886076265576,
+   "miss_intercept_s": 1.2954165390662495,
+   "sizes": 4,
+   "max_size": 32000,
+   "hit_tokens_per_s": 48008.62328783699,
+   "hit_gb_per_s": 3.373661975682881,
+   "resident": true
+  },
+  {
+   "model": "moonshotai/kimi-k2.6",
+   "provider": "parasail/int4",
+   "miss_us_per_token": 69.28070768429916,
+   "miss_ci": [
+    67.64089047183441,
+    71.73533395018158
+   ],
+   "hit_us_per_token": 14.00573151770533,
+   "hit_ci": [
+    9.325883759425656,
+    21.055310416062333
+   ],
+   "ratio": 0.20215918667469673,
+   "hit_intercept_s": 0.32330789635055596,
+   "miss_intercept_s": 0.33807789701643154,
+   "sizes": 4,
+   "max_size": 32000,
+   "hit_tokens_per_s": 71399.34095808213,
+   "hit_gb_per_s": 5.0173744878063475,
+   "resident": false
+  }
+ ],
+ "age": [
+  {
+   "model": "deepseek-v3.2",
+   "provider": "deepinfra/fp4",
+   "miss_median": 0.4939744472503662,
+   "by_delay": {
+    "2": {
+     "n": 15,
+     "median": 0.5797085762023926
+    },
+    "60": {
+     "n": 13,
+     "median": 0.668524980545044
+    },
+    "300": {
+     "n": 5,
+     "median": 0.8433833122253418
+    },
+    "900": {
+     "n": 4,
+     "median": 0.5491071939468384
+    }
+   }
+  },
+  {
+   "model": "deepseek-v3.2",
+   "provider": "gmicloud/fp8",
+   "miss_median": 1.9916224479675293,
+   "by_delay": {
+    "2": {
+     "n": 19,
+     "median": 1.9698455333709717
+    },
+    "60": {
+     "n": 8,
+     "median": 1.9361294507980347
+    },
+    "300": {
+     "n": 4,
+     "median": 2.331789970397949
+    }
+   }
+  },
+  {
+   "model": "gemma-4-31b-it",
+   "provider": "chutes/fp4",
+   "miss_median": 1.6758708953857422,
+   "by_delay": {
+    "2": {
+     "n": 20,
+     "median": 1.5126330852508545
+    },
+    "60": {
+     "n": 12,
+     "median": 1.8016180992126465
+    },
+    "300": {
+     "n": 5,
+     "median": 1.7358081340789795
+    }
+   }
+  },
+  {
+   "model": "gemma-4-31b-it",
+   "provider": "deepinfra/turbo",
+   "miss_median": 0.28733301162719727,
+   "by_delay": {
+    "2": {
+     "n": 18,
+     "median": 0.2520688772201538
+    },
+    "60": {
+     "n": 5,
+     "median": 0.4279618263244629
+    }
+   }
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "nebius/fp4",
+   "miss_median": 0.34670186042785645,
+   "by_delay": {
+    "2": {
+     "n": 20,
+     "median": 0.26418352127075195
+    },
+    "60": {
+     "n": 19,
+     "median": 0.2771873474121094
+    },
+    "300": {
+     "n": 11,
+     "median": 0.39237403869628906
+    },
+    "900": {
+     "n": 7,
+     "median": 0.35857677459716797
+    }
+   }
+  },
+  {
+   "model": "kimi-k2.5",
+   "provider": "novita",
+   "miss_median": 7.069679379463196,
+   "by_delay": {
+    "2": {
+     "n": 15,
+     "median": 6.931836843490601
+    },
+    "60": {
+     "n": 7,
+     "median": 7.849806785583496
+    }
+   }
+  },
+  {
+   "model": "llama-3.3-70b-instruct",
+   "provider": "akashml/fp8",
+   "miss_median": 0.5240606069564819,
+   "by_delay": {
+    "2": {
+     "n": 4,
+     "median": 0.34615516662597656
+    },
+    "300": {
+     "n": 4,
+     "median": 0.5410431623458862
+    }
+   }
+  },
+  {
+   "model": "llama-3.3-70b-instruct",
+   "provider": "coreweave/fp16",
+   "miss_median": 0.21598446369171143,
+   "by_delay": {
+    "2": {
+     "n": 16,
+     "median": 0.16704583168029785
+    },
+    "60": {
+     "n": 16,
+     "median": 0.17356300354003906
+    },
+    "300": {
+     "n": 15,
+     "median": 0.1777353286743164
+    },
+    "900": {
+     "n": 14,
+     "median": 0.17315244674682617
+    },
+    "1800": {
+     "n": 15,
+     "median": 0.17390227317810059
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+[
+ {
+  "run": "kremlinology-gemma4-31b-dataset-tv-v3",
+  "target": "coreweave-fp4",
+  "responses": 792,
+  "share_on_grid": 0.98989898989899,
+  "common_steps": {
+   "1/16": 593,
+   "1/32": 123
+  }
+ },
+ {
+  "run": "kremlinology-gemma4-31b-dataset-tv-v3",
+  "target": "dekallm",
+  "responses": 793,
+  "share_on_grid": 0.0,
+  "common_steps": {}
+ },
+ {
+  "run": "kremlinology-gemma4-31b-dataset-tv-v3",
+  "target": "modal",
+  "responses": 791,
+  "share_on_grid": 0.0,
+  "common_steps": {}
+ },
+ {
+  "run": "kremlinology-gemma4-31b-dataset-tv-v3",
+  "target": "nextbit-fp4",
+  "responses": 777,
+  "share_on_grid": 0.9935649935649936,
+  "common_steps": {
+   "1/16": 602,
+   "1/32": 86
+  }
+ },
+ {
+  "run": "kremlinology-gemma4-31b-dataset-tv-v3",
+  "target": "novita-bf16",
+  "responses": 754,
+  "share_on_grid": 0.9960212201591512,
+  "common_steps": {
+   "1/16": 583,
+   "1/32": 99
+  }
+ },
+ {
+  "run": "kremlinology-gemma4-31b-dataset-tv-v3",
+  "target": "parasail-fp8",
+  "responses": 756,
+  "share_on_grid": 0.9933862433862434,
+  "common_steps": {
+   "1/16": 591,
+   "1/32": 91
+  }
+ },
+ {
+  "run": "kremlinology-llama70b-dataset-tv-v2",
+  "target": "akashml-fp8",
+  "responses": 800,
+  "share_on_grid": 0.99875,
+  "common_steps": {
+   "1/16": 430,
+   "1/8": 369
+  }
+ },
+ {
+  "run": "kremlinology-llama70b-dataset-tv-v2",
+  "target": "coreweave-fp16",
+  "responses": 800,
+  "share_on_grid": 0.9975,
+  "common_steps": {
+   "1/16": 420,
+   "1/8": 378
+  }
+ },
+ {
+  "run": "kremlinology-llama70b-dataset-tv-v2",
+  "target": "parasail-fp8",
+  "responses": 800,
+  "share_on_grid": 1.0,
+  "common_steps": {
+   "1/16": 428,
+   "1/8": 371
+  }
+ },
+ {
+  "run": "kremlinology-llama70b-dataset-tv-v2",
+  "target": "sambanova",
+  "responses": 800,
+  "share_on_grid": 0.0,
+  "common_steps": {}
+ },
+ {
+  "run": "kremlinology-qwen35-dataset-tv-v2",
+  "target": "alibaba",
+  "responses": 672,
+  "share_on_grid": 1.0,
+  "common_steps": {
+   "1/8": 516,
+   "1/16": 122
+  }
+ },
+ {
+  "run": "kremlinology-qwen35-dataset-tv-v2",
+  "target": "novita",
+  "responses": 668,
+  "share_on_grid": 1.0,
+  "common_steps": {
+   "1/8": 526,
+   "1/16": 115
+  }
+ },
+ {
+  "run": "kremlinology-qwen35-dataset-tv-v2",
+  "target": "parasail-fp8",
+  "responses": 692,
+  "share_on_grid": 0.976878612716763,
+  "common_steps": {
+   "1/8": 492,
+   "1/16": 138
+  }
+ },
+ {
+  "run": "kremlinology-qwen35-dataset-tv-v2",
+  "target": "streamlake",
+  "responses": 689,
+  "share_on_grid": 1.0,
+  "common_steps": {
+   "1/8": 529,
+   "1/16": 124
+  }
+ },
+ {
+  "run": "kremlinology-qwen35-dataset-tv-v2",
+  "target": "venice",
+  "responses": 675,
+  "share_on_grid": 0.9674074074074074,
+  "common_steps": {
+   "1/8": 492,
+   "1/16": 121
+  }
+ }
+]

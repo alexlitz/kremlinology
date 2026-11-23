@@ -1,0 +1,182 @@
+[
+ {
+  "model": "gemma4-31b",
+  "dataset": "wiki",
+  "target": "nextbit-fp4",
+  "tv": 0.2318
+ },
+ {
+  "model": "gemma4-31b",
+  "dataset": "wiki",
+  "target": "coreweave-fp4",
+  "tv": 0.2202
+ },
+ {
+  "model": "gemma4-31b",
+  "dataset": "wiki",
+  "target": "modal",
+  "tv": 0.2007
+ },
+ {
+  "model": "gemma4-31b",
+  "dataset": "wiki",
+  "target": "dekallm",
+  "tv": 0.1997
+ },
+ {
+  "model": "gemma4-31b",
+  "dataset": "code",
+  "target": "nextbit-fp4",
+  "tv": 0.1296
+ },
+ {
+  "model": "gemma4-31b",
+  "dataset": "code",
+  "target": "modal",
+  "tv": 0.1045
+ },
+ {
+  "model": "gemma4-31b",
+  "dataset": "code",
+  "target": "coreweave-fp4",
+  "tv": 0.0992
+ },
+ {
+  "model": "gemma4-31b",
+  "dataset": "code",
+  "target": "dekallm",
+  "tv": 0.0886
+ },
+ {
+  "model": "gemma4-31b",
+  "dataset": "wiki",
+  "target": "parasail-fp8",
+  "tv": 0.0718
+ },
+ {
+  "model": "gemma4-31b",
+  "dataset": "wiki",
+  "target": "reference_self",
+  "tv": 0.0527
+ },
+ {
+  "model": "gemma4-31b",
+  "dataset": "code",
+  "target": "parasail-fp8",
+  "tv": 0.0257
+ },
+ {
+  "model": "gemma4-31b",
+  "dataset": "code",
+  "target": "reference_self",
+  "tv": 0.0179
+ },
+ {
+  "model": "llama3.3-70b",
+  "dataset": "code",
+  "target": "sambanova",
+  "tv": 0.0749
+ },
+ {
+  "model": "llama3.3-70b",
+  "dataset": "wiki",
+  "target": "akashml-fp8",
+  "tv": 0.061
+ },
+ {
+  "model": "llama3.3-70b",
+  "dataset": "code",
+  "target": "akashml-fp8",
+  "tv": 0.0544
+ },
+ {
+  "model": "llama3.3-70b",
+  "dataset": "wiki",
+  "target": "parasail-fp8",
+  "tv": 0.0485
+ },
+ {
+  "model": "llama3.3-70b",
+  "dataset": "code",
+  "target": "parasail-fp8",
+  "tv": 0.0459
+ },
+ {
+  "model": "llama3.3-70b",
+  "dataset": "wiki",
+  "target": "sambanova",
+  "tv": 0.0278
+ },
+ {
+  "model": "llama3.3-70b",
+  "dataset": "code",
+  "target": "reference_self",
+  "tv": 0.0044
+ },
+ {
+  "model": "llama3.3-70b",
+  "dataset": "wiki",
+  "target": "reference_self",
+  "tv": 0.0041
+ },
+ {
+  "model": "qwen3.5-397b",
+  "dataset": "wiki",
+  "target": "streamlake",
+  "tv": 0.1412
+ },
+ {
+  "model": "qwen3.5-397b",
+  "dataset": "code",
+  "target": "streamlake",
+  "tv": 0.0865
+ },
+ {
+  "model": "qwen3.5-397b",
+  "dataset": "wiki",
+  "target": "parasail-fp8",
+  "tv": 0.0817
+ },
+ {
+  "model": "qwen3.5-397b",
+  "dataset": "wiki",
+  "target": "venice",
+  "tv": 0.0798
+ },
+ {
+  "model": "qwen3.5-397b",
+  "dataset": "code",
+  "target": "venice",
+  "tv": 0.0679
+ },
+ {
+  "model": "qwen3.5-397b",
+  "dataset": "wiki",
+  "target": "novita",
+  "tv": 0.0637
+ },
+ {
+  "model": "qwen3.5-397b",
+  "dataset": "code",
+  "target": "parasail-fp8",
+  "tv": 0.0635
+ },
+ {
+  "model": "qwen3.5-397b",
+  "dataset": "wiki",
+  "target": "reference_self",
+  "tv": 0.0587
+ },
+ {
+  "model": "qwen3.5-397b",
+  "dataset": "code",
+  "target": "reference_self",
+  "tv": 0.0452
+ },
+ {
+  "model": "qwen3.5-397b",
+  "dataset": "code",
+  "target": "novita",
+  "tv": 0.0408
+ }
+]

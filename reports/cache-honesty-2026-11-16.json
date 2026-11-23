@@ -1,0 +1,389 @@
+{
+ "run_id": "e47146f2243c",
+ "spent_usd": 0.1277,
+ "calls": 168,
+ "witnessed_records": 168,
+ "routing": {
+  "prompts": 12,
+  "repeats": 36,
+  "providers_seen": {
+   "Crusoe": 27,
+   "Google": 18,
+   "Venice": 2,
+   "Near AI": 1
+  },
+  "first_request_providers": {
+   "Crusoe": 7,
+   "Google": 5
+  },
+  "repeats_on_first_provider": 15,
+  "share_on_first_provider": 0.417,
+  "share_expected_without_stickiness": 0.459,
+  "median_cached_tokens_same_provider": 2608,
+  "median_cached_tokens_other_provider": 64,
+  "median_prompt_tokens": 2633.5,
+  "sequences": [
+   [
+    "Crusoe (48 cached)",
+    "Crusoe (2608 cached)",
+    "Crusoe (2608 cached)",
+    "Crusoe (2608 cached)"
+   ],
+   [
+    "Google (64 cached)",
+    "Crusoe (48 cached)",
+    "Crusoe (48 cached)",
+    "Venice"
+   ],
+   [
+    "Google (64 cached)",
+    "Google (64 cached)",
+    "Crusoe (48 cached)",
+    "Crusoe (48 cached)"
+   ],
+   [
+    "Crusoe (48 cached)",
+    "Near AI (48 cached)",
+    "Crusoe (48 cached)",
+    "Google (64 cached)"
+   ],
+   [
+    "Google (64 cached)",
+    "Venice",
+    "Google (64 cached)",
+    "Crusoe (48 cached)"
+   ],
+   [
+    "Crusoe (48 cached)",
+    "Crusoe (2608 cached)",
+    "Crusoe (2608 cached)",
+    "Google (64 cached)"
+   ],
+   [
+    "Crusoe (48 cached)",
+    "Google (64 cached)",
+    "Crusoe (48 cached)",
+    "Google (64 cached)"
+   ],
+   [
+    "Google",
+    "Crusoe (48 cached)",
+    "Crusoe (2608 cached)",
+    "Google"
+   ],
+   [
+    "Crusoe (48 cached)",
+    "Crusoe (2624 cached)",
+    "Crusoe (2624 cached)",
+    "Crusoe (2624 cached)"
+   ],
+   [
+    "Google (73 cached)",
+    "Crusoe (48 cached)",
+    "Google (64 cached)",
+    "Crusoe (2592 cached)"
+   ],
+   [
+    "Crusoe (48 cached)",
+    "Google (64 cached)",
+    "Google (73 cached)",
+    "Crusoe (2608 cached)"
+   ],
+   [
+    "Crusoe (48 cached)",
+    "Google (64 cached)",
+    "Google (64 cached)",
+    "Google (73 cached)"
+   ]
+  ]
+ },
+ "honesty": [
+  {
+   "model": "deepseek/deepseek-v3.2",
+   "provider": "baidu/fp8",
+   "n": 0
+  },
+  {
+   "model": "deepseek/deepseek-v3.2",
+   "provider": "deepinfra/fp4",
+   "n": 3,
+   "prompt_tokens": 6952,
+   "cold_ttft_s": 0.734,
+   "warm_ttft_s": 1.028,
+   "speedup": 0.88,
+   "faster_trials": 0,
+   "cached_share": 0.985,
+   "reported_trials": 2,
+   "both_trials": 0,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 0.508,
+   "verdict": "cache reported, speed-up not visible"
+  },
+  {
+   "model": "deepseek/deepseek-v3.2",
+   "provider": "gmicloud/fp8",
+   "n": 3,
+   "prompt_tokens": 7153,
+   "cold_ttft_s": 1.617,
+   "warm_ttft_s": 1.323,
+   "speedup": 1.08,
+   "faster_trials": 1,
+   "cached_share": 0.997,
+   "reported_trials": 3,
+   "both_trials": 1,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 0.114,
+   "verdict": "cache reported, speed-up not visible"
+  },
+  {
+   "model": "meta-llama/llama-3.3-70b-instruct",
+   "provider": "akashml/fp8",
+   "n": 3,
+   "prompt_tokens": 5372,
+   "cold_ttft_s": 0.777,
+   "warm_ttft_s": 2.12,
+   "speedup": 0.37,
+   "faster_trials": 1,
+   "cached_share": 0.003,
+   "reported_trials": 1,
+   "both_trials": 1,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 1.0,
+   "verdict": "cache reported and used"
+  },
+  {
+   "model": "meta-llama/llama-3.3-70b-instruct",
+   "provider": "coreweave/fp16",
+   "n": 3,
+   "prompt_tokens": 5377,
+   "cold_ttft_s": 0.351,
+   "warm_ttft_s": 0.153,
+   "speedup": 2.3,
+   "faster_trials": 3,
+   "cached_share": 0.995,
+   "reported_trials": 3,
+   "both_trials": 3,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 1.0,
+   "verdict": "cache reported and used"
+  },
+  {
+   "model": "meta-llama/llama-3.3-70b-instruct",
+   "provider": "deepinfra/turbo",
+   "n": 3,
+   "prompt_tokens": 5380,
+   "cold_ttft_s": 0.901,
+   "warm_ttft_s": 1.47,
+   "speedup": 0.61,
+   "faster_trials": 0,
+   "cached_share": 0.0,
+   "reported_trials": 0,
+   "both_trials": 0,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 1.0,
+   "verdict": "no cache"
+  },
+  {
+   "model": "meta-llama/llama-3.3-70b-instruct",
+   "provider": "groq",
+   "n": 3,
+   "prompt_tokens": 5373,
+   "cold_ttft_s": 0.558,
+   "warm_ttft_s": 0.96,
+   "speedup": 0.74,
+   "faster_trials": 0,
+   "cached_share": 0.0,
+   "reported_trials": 0,
+   "both_trials": 0,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 1.0,
+   "verdict": "no cache"
+  },
+  {
+   "model": "meta-llama/llama-3.3-70b-instruct",
+   "provider": "parasail/fp8",
+   "n": 3,
+   "prompt_tokens": 5329,
+   "cold_ttft_s": 1.262,
+   "warm_ttft_s": 0.478,
+   "speedup": 2.65,
+   "faster_trials": 2,
+   "cached_share": 0.996,
+   "reported_trials": 2,
+   "both_trials": 2,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 0.503,
+   "verdict": "cache reported and used"
+  },
+  {
+   "model": "meta-llama/llama-3.3-70b-instruct",
+   "provider": "sambanova-turbo",
+   "n": 0
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "akashml/fp4",
+   "n": 2,
+   "prompt_tokens": 10052,
+   "cold_ttft_s": 1.816,
+   "warm_ttft_s": 1.42,
+   "speedup": 1.27,
+   "faster_trials": 1,
+   "cached_share": 0.006,
+   "reported_trials": 0,
+   "both_trials": 0,
+   "hidden_trials": 1,
+   "warm_over_cold_cost": 1.0,
+   "verdict": "no cache"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "amazon-bedrock",
+   "n": 3,
+   "prompt_tokens": 10050,
+   "cold_ttft_s": 0.847,
+   "warm_ttft_s": 0.784,
+   "speedup": 1.13,
+   "faster_trials": 1,
+   "cached_share": 0.0,
+   "reported_trials": 0,
+   "both_trials": 0,
+   "hidden_trials": 1,
+   "warm_over_cold_cost": 1.0,
+   "verdict": "no cache"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "baseten/fp4",
+   "n": 3,
+   "prompt_tokens": 10071,
+   "cold_ttft_s": 0.249,
+   "warm_ttft_s": 0.2,
+   "speedup": 1.08,
+   "faster_trials": 0,
+   "cached_share": 0.998,
+   "reported_trials": 2,
+   "both_trials": 0,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 1.0,
+   "verdict": "cache reported, speed-up not visible"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "coreweave/fp4",
+   "n": 2,
+   "prompt_tokens": 10036,
+   "cold_ttft_s": 0.741,
+   "warm_ttft_s": 0.256,
+   "speedup": 2.89,
+   "faster_trials": 2,
+   "cached_share": 0.998,
+   "reported_trials": 2,
+   "both_trials": 2,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 1.0,
+   "verdict": "cache reported and used"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "crusoe/bf16",
+   "n": 2,
+   "prompt_tokens": 10032,
+   "cold_ttft_s": 0.753,
+   "warm_ttft_s": 0.495,
+   "speedup": 1.69,
+   "faster_trials": 2,
+   "cached_share": 0.997,
+   "reported_trials": 2,
+   "both_trials": 2,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 1.0,
+   "verdict": "cache reported and used"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "deepinfra/bf16",
+   "n": 0
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "google-vertex/global",
+   "n": 3,
+   "prompt_tokens": 10052,
+   "cold_ttft_s": 0.421,
+   "warm_ttft_s": 0.42,
+   "speedup": 1.18,
+   "faster_trials": 1,
+   "cached_share": 0.006,
+   "reported_trials": 0,
+   "both_trials": 0,
+   "hidden_trials": 1,
+   "warm_over_cold_cost": 1.0,
+   "verdict": "no cache"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "near-ai/fp4",
+   "n": 3,
+   "prompt_tokens": 10077,
+   "cold_ttft_s": 1.511,
+   "warm_ttft_s": 1.135,
+   "speedup": 1.33,
+   "faster_trials": 3,
+   "cached_share": 0.998,
+   "reported_trials": 3,
+   "both_trials": 3,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 0.506,
+   "verdict": "cache reported and used"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "nebius/fp4",
+   "n": 3,
+   "prompt_tokens": 10054,
+   "cold_ttft_s": 0.524,
+   "warm_ttft_s": 0.429,
+   "speedup": 1.41,
+   "faster_trials": 2,
+   "cached_share": 0.999,
+   "reported_trials": 3,
+   "both_trials": 2,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 0.67,
+   "verdict": "cache reported and used"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "parasail/fp4",
+   "n": 3,
+   "prompt_tokens": 10058,
+   "cold_ttft_s": 0.702,
+   "warm_ttft_s": 0.52,
+   "speedup": 1.44,
+   "faster_trials": 2,
+   "cached_share": 1.0,
+   "reported_trials": 3,
+   "both_trials": 2,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 0.557,
+   "verdict": "cache reported and used"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "sambanova",
+   "n": 3,
+   "prompt_tokens": 10053,
+   "cold_ttft_s": 1.105,
+   "warm_ttft_s": 1.027,
+   "speedup": 1.16,
+   "faster_trials": 0,
+   "cached_share": 0.0,
+   "reported_trials": 0,
+   "both_trials": 0,
+   "hidden_trials": 0,
+   "warm_over_cold_cost": 1.0,
+   "verdict": "no cache"
+  }
+ ]
+}

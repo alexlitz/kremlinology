@@ -1,0 +1,217 @@
+trace,model,tier,hardware,pressure,overlapped,kv_fp8,checkpoint,best_ttl_s,best_saving,hit_rate
+conversation,Llama-3.3-70B (GQA),HBM,H100 bf16,1.0,False,False,True,1.0,0.01947029384841037,0.03761525129982669
+conversation,Llama-3.3-70B (GQA),Host DRAM,H100 bf16,1.0,False,False,True,562.341325190349,0.282111991298685,0.33759792027729635
+conversation,Llama-3.3-70B (GQA),NVMe RAID x4,H100 bf16,1.0,False,False,True,3162.2776601683795,0.251250321370885,0.3664124783362218
+conversation,Llama-3.3-70B (GQA),HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+conversation,Llama-3.3-70B (GQA),S3-class object store,H100 bf16,1.0,False,False,True,1000.0,0.28215324504610073,0.35783015597920276
+conversation,Llama-3.3-70B (GQA),HBM,H100 bf16,0.1,False,False,True,177.82794100389228,0.07082398052284344,0.23548700173310225
+conversation,DeepSeek-V3 (MLA),HBM,H100 bf16,1.0,False,False,True,1.0,0.015785207373228305,0.03761525129982669
+conversation,DeepSeek-V3 (MLA),Host DRAM,H100 bf16,1.0,False,False,True,1000.0,0.31395143183533414,0.35783015597920276
+conversation,DeepSeek-V3 (MLA),NVMe RAID x4,H100 bf16,1.0,False,False,True,3162.2776601683795,0.31404342910518046,0.3664124783362218
+conversation,DeepSeek-V3 (MLA),HDD RAID5 x4,H100 bf16,1.0,False,False,True,3162.2776601683795,0.14629568658659364,0.3664124783362218
+conversation,DeepSeek-V3 (MLA),S3-class object store,H100 bf16,1.0,False,False,True,3162.2776601683795,0.3203112685207923,0.3664124783362218
+conversation,DeepSeek-V3 (MLA),HBM,H100 bf16,0.1,False,False,True,562.341325190349,0.20145389702879768,0.33759792027729635
+conversation,gpt-oss-120b (sliding),HBM,H100 bf16,1.0,False,False,True,1.0,0.009370324929489082,0.03761525129982669
+conversation,gpt-oss-120b (sliding),Host DRAM,H100 bf16,1.0,False,False,True,562.341325190349,0.24678500448328056,0.33759792027729635
+conversation,gpt-oss-120b (sliding),NVMe RAID x4,H100 bf16,1.0,False,False,True,3162.2776601683795,0.1724119280983517,0.3664124783362218
+conversation,gpt-oss-120b (sliding),HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+conversation,gpt-oss-120b (sliding),S3-class object store,H100 bf16,1.0,False,False,True,1000.0,0.23181926803742103,0.35783015597920276
+conversation,gpt-oss-120b (sliding),HBM,H100 bf16,0.1,False,False,True,1.0,0.02412340307538352,0.03761525129982669
+conversation,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,1.0,False,False,True,1.0,0.0013669134991786125,0.03761525129982669
+conversation,Qwen3.5-27B (linear hybrid),Host DRAM,H100 bf16,1.0,False,False,True,316.22776601683796,0.19393883025065928,0.29149740034662047
+conversation,Qwen3.5-27B (linear hybrid),NVMe RAID x4,H100 bf16,1.0,False,False,True,3162.2776601683795,0.009927846731641377,0.3664124783362218
+conversation,Qwen3.5-27B (linear hybrid),HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+conversation,Qwen3.5-27B (linear hybrid),S3-class object store,H100 bf16,1.0,False,False,True,1000.0,0.1361800122035236,0.35783015597920276
+conversation,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,0.1,False,False,True,1.0,0.030464382268244994,0.03761525129982669
+conversation,"Llama-3.1-8B (GQA, small)",HBM,H100 bf16,1.0,False,False,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",Host DRAM,H100 bf16,1.0,False,False,True,562.341325190349,0.19127354044647782,0.33759792027729635
+conversation,"Llama-3.1-8B (GQA, small)",NVMe RAID x4,H100 bf16,1.0,False,False,True,3162.2776601683795,0.038622692435204775,0.3664124783362218
+conversation,"Llama-3.1-8B (GQA, small)",HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",S3-class object store,H100 bf16,1.0,False,False,True,1000.0,0.14886449276273817,0.35783015597920276
+conversation,"Llama-3.1-8B (GQA, small)",HBM,H100 bf16,0.1,False,False,True,1.0,0.021856806457018485,0.03761525129982669
+toolagent,Llama-3.3-70B (GQA),HBM,H100 bf16,1.0,False,False,True,3.1622776601683795,0.2687486257084768,0.3373354556462638
+toolagent,Llama-3.3-70B (GQA),Host DRAM,H100 bf16,1.0,False,False,True,562.341325190349,0.4742324065644393,0.5431306394281473
+toolagent,Llama-3.3-70B (GQA),NVMe RAID x4,H100 bf16,1.0,False,False,True,1778.2794100389228,0.43257396208241317,0.552178137572751
+toolagent,Llama-3.3-70B (GQA),HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+toolagent,Llama-3.3-70B (GQA),S3-class object store,H100 bf16,1.0,False,False,True,1000.0,0.42075368608951447,0.5515678098511777
+toolagent,Llama-3.3-70B (GQA),HBM,H100 bf16,0.1,False,False,True,177.82794100389228,0.3261730387813334,0.4756894261942893
+toolagent,DeepSeek-V3 (MLA),HBM,H100 bf16,1.0,False,False,True,3.1622776601683795,0.2190907531836166,0.3373354556462638
+toolagent,DeepSeek-V3 (MLA),Host DRAM,H100 bf16,1.0,False,False,True,1000.0,0.4577899052897343,0.5515678098511777
+toolagent,DeepSeek-V3 (MLA),NVMe RAID x4,H100 bf16,1.0,False,False,True,3162.2776601683795,0.4493379129724917,0.5525077145424007
+toolagent,DeepSeek-V3 (MLA),HDD RAID5 x4,H100 bf16,1.0,False,False,True,3162.2776601683795,0.12493558752342526,0.5525077145424007
+toolagent,DeepSeek-V3 (MLA),S3-class object store,H100 bf16,1.0,False,False,True,1000.0,0.44534022406342755,0.5515678098511777
+toolagent,DeepSeek-V3 (MLA),HBM,H100 bf16,0.1,False,False,True,562.341325190349,0.37517361441562613,0.5431306394281473
+toolagent,gpt-oss-120b (sliding),HBM,H100 bf16,1.0,False,False,True,3.1622776601683795,0.2316688417342464,0.3373354556462638
+toolagent,gpt-oss-120b (sliding),Host DRAM,H100 bf16,1.0,False,False,True,562.341325190349,0.4325663888256869,0.5431306394281473
+toolagent,gpt-oss-120b (sliding),NVMe RAID x4,H100 bf16,1.0,False,False,True,1778.2794100389228,0.3514514692732742,0.552178137572751
+toolagent,gpt-oss-120b (sliding),HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+toolagent,gpt-oss-120b (sliding),S3-class object store,H100 bf16,1.0,False,False,True,1000.0,0.3309994287249679,0.5515678098511777
+toolagent,gpt-oss-120b (sliding),HBM,H100 bf16,0.1,False,False,True,3.1622776601683795,0.26986215787812595,0.3373354556462638
+toolagent,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,1.0,False,False,True,1.0,0.2465876807894537,0.28790135150970664
+toolagent,Qwen3.5-27B (linear hybrid),Host DRAM,H100 bf16,1.0,False,False,True,316.22776601683796,0.4169275267108036,0.5143500253896333
+toolagent,Qwen3.5-27B (linear hybrid),NVMe RAID x4,H100 bf16,1.0,False,False,True,1000.0,0.2514001640903468,0.5515678098511777
+toolagent,Qwen3.5-27B (linear hybrid),HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+toolagent,Qwen3.5-27B (linear hybrid),S3-class object store,H100 bf16,1.0,False,False,True,562.341325190349,0.21698750718483673,0.5431306394281473
+toolagent,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,0.1,False,False,True,3.1622776601683795,0.3100618542086502,0.3373354556462638
+toolagent,"Llama-3.1-8B (GQA, small)",HBM,H100 bf16,1.0,False,False,True,1.0,0.2049842073859396,0.28790135150970664
+toolagent,"Llama-3.1-8B (GQA, small)",Host DRAM,H100 bf16,1.0,False,False,True,316.22776601683796,0.38066695148105545,0.5143500253896333
+toolagent,"Llama-3.1-8B (GQA, small)",NVMe RAID x4,H100 bf16,1.0,False,False,True,1000.0,0.22809287551378798,0.5515678098511777
+toolagent,"Llama-3.1-8B (GQA, small)",HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+toolagent,"Llama-3.1-8B (GQA, small)",S3-class object store,H100 bf16,1.0,False,False,True,562.341325190349,0.19358841554556605,0.5431306394281473
+toolagent,"Llama-3.1-8B (GQA, small)",HBM,H100 bf16,0.1,False,False,True,3.1622776601683795,0.2602975934341639,0.3373354556462638
+synthetic,Llama-3.3-70B (GQA),HBM,H100 bf16,1.0,False,False,True,5.623413251903491,0.017209568535524467,0.06943886049049451
+synthetic,Llama-3.3-70B (GQA),Host DRAM,H100 bf16,1.0,False,False,True,562.341325190349,0.6120610897046468,0.6311445145515561
+synthetic,Llama-3.3-70B (GQA),NVMe RAID x4,H100 bf16,1.0,False,False,True,1000.0,0.5833145745090472,0.6396038629109676
+synthetic,Llama-3.3-70B (GQA),HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+synthetic,Llama-3.3-70B (GQA),S3-class object store,H100 bf16,1.0,False,False,True,1000.0,0.550552580156067,0.6396038629109676
+synthetic,Llama-3.3-70B (GQA),HBM,H100 bf16,0.1,False,False,True,316.22776601683796,0.43402745242933216,0.5902015966917465
+synthetic,DeepSeek-V3 (MLA),HBM,H100 bf16,1.0,False,False,True,177.82794100389228,0.2670483386208383,0.5029414901909302
+synthetic,DeepSeek-V3 (MLA),Host DRAM,H100 bf16,1.0,False,False,True,1000.0,0.6573166495964555,0.6396038629109676
+synthetic,DeepSeek-V3 (MLA),NVMe RAID x4,H100 bf16,1.0,False,False,True,1000.0,0.6515898314286559,0.6396038629109676
+synthetic,DeepSeek-V3 (MLA),HDD RAID5 x4,H100 bf16,1.0,False,False,True,1000.0,0.3529849249513429,0.6396038629109676
+synthetic,DeepSeek-V3 (MLA),S3-class object store,H100 bf16,1.0,False,False,True,1000.0,0.6435918129926002,0.6396038629109676
+synthetic,DeepSeek-V3 (MLA),HBM,H100 bf16,0.1,False,False,True,562.341325190349,0.5968819495612503,0.6311445145515561
+synthetic,gpt-oss-120b (sliding),HBM,H100 bf16,1.0,False,False,True,0,0.0,0.0
+synthetic,gpt-oss-120b (sliding),Host DRAM,H100 bf16,1.0,False,False,True,562.341325190349,0.5940978609824914,0.6311445145515561
+synthetic,gpt-oss-120b (sliding),NVMe RAID x4,H100 bf16,1.0,False,False,True,1000.0,0.5394183419393289,0.6396038629109676
+synthetic,gpt-oss-120b (sliding),HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+synthetic,gpt-oss-120b (sliding),S3-class object store,H100 bf16,1.0,False,False,True,1000.0,0.4837486006257623,0.6396038629109676
+synthetic,gpt-oss-120b (sliding),HBM,H100 bf16,0.1,False,False,True,177.82794100389228,0.336322456123455,0.5029414901909302
+synthetic,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,1.0,False,False,True,0,0.0,0.0
+synthetic,Qwen3.5-27B (linear hybrid),Host DRAM,H100 bf16,1.0,False,False,True,562.341325190349,0.524716618770724,0.6311445145515561
+synthetic,Qwen3.5-27B (linear hybrid),NVMe RAID x4,H100 bf16,1.0,False,False,True,1000.0,0.4055747127249779,0.6396038629109676
+synthetic,Qwen3.5-27B (linear hybrid),HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+synthetic,Qwen3.5-27B (linear hybrid),S3-class object store,H100 bf16,1.0,False,False,True,562.341325190349,0.29399842040206003,0.6311445145515561
+synthetic,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,0.1,False,False,True,100.0,0.16631824631406567,0.4023154491823724
+synthetic,"Llama-3.1-8B (GQA, small)",HBM,H100 bf16,1.0,False,False,True,0,0.0,0.0
+synthetic,"Llama-3.1-8B (GQA, small)",Host DRAM,H100 bf16,1.0,False,False,True,562.341325190349,0.5547583716818008,0.6311445145515561
+synthetic,"Llama-3.1-8B (GQA, small)",NVMe RAID x4,H100 bf16,1.0,False,False,True,1000.0,0.4537730113637045,0.6396038629109676
+synthetic,"Llama-3.1-8B (GQA, small)",HDD RAID5 x4,H100 bf16,1.0,False,False,True,0,0.0,0.0
+synthetic,"Llama-3.1-8B (GQA, small)",S3-class object store,H100 bf16,1.0,False,False,True,562.341325190349,0.3573399349243964,0.6311445145515561
+synthetic,"Llama-3.1-8B (GQA, small)",HBM,H100 bf16,0.1,False,False,True,100.0,0.21666265149829322,0.4023154491823724
+conversation,Llama-3.3-70B (GQA),HBM,H100 fp8,1.0,False,False,True,1.0,0.009925003780246966,0.03761525129982669
+conversation,Llama-3.3-70B (GQA),Host DRAM,H100 fp8,1.0,False,False,True,562.341325190349,0.23990533545306192,0.33759792027729635
+conversation,Llama-3.3-70B (GQA),NVMe RAID x4,H100 fp8,1.0,False,False,True,3162.2776601683795,0.14755637891126683,0.3664124783362218
+conversation,Llama-3.3-70B (GQA),HDD RAID5 x4,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,Llama-3.3-70B (GQA),S3-class object store,H100 fp8,1.0,False,False,True,1000.0,0.2183118960835264,0.35783015597920276
+conversation,Llama-3.3-70B (GQA),HBM,H100 fp8,0.1,False,False,True,1.0,0.027097848366466226,0.03761525129982669
+conversation,Llama-3.3-70B (GQA),HBM,B200 fp8,1.0,False,False,True,1.0,0.010927741322793838,0.03761525129982669
+conversation,Llama-3.3-70B (GQA),Host DRAM,B200 fp8,1.0,False,False,True,562.341325190349,0.2161757170423303,0.33759792027729635
+conversation,Llama-3.3-70B (GQA),NVMe RAID x4,B200 fp8,1.0,False,False,True,3162.2776601683795,0.09295058172872916,0.3664124783362218
+conversation,Llama-3.3-70B (GQA),HDD RAID5 x4,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,Llama-3.3-70B (GQA),S3-class object store,B200 fp8,1.0,False,False,True,1000.0,0.07177821849549859,0.35783015597920276
+conversation,Llama-3.3-70B (GQA),HBM,B200 fp8,0.1,False,False,True,1.0,0.027198122120749013,0.03761525129982669
+conversation,Llama-3.3-70B (GQA),HBM,H100 bf16,1.0,False,True,True,1.0,0.02423811802890896,0.03761525129982669
+conversation,Llama-3.3-70B (GQA),Host DRAM,H100 bf16,1.0,False,True,True,1000.0,0.3123253943272605,0.35783015597920276
+conversation,Llama-3.3-70B (GQA),NVMe RAID x4,H100 bf16,1.0,False,True,True,3162.2776601683795,0.303044921924979,0.3664124783362218
+conversation,Llama-3.3-70B (GQA),HDD RAID5 x4,H100 bf16,1.0,False,True,True,0,0.0,0.0
+conversation,Llama-3.3-70B (GQA),S3-class object store,H100 bf16,1.0,False,True,True,1778.2794100389228,0.3168874673765154,0.363421143847487
+conversation,Llama-3.3-70B (GQA),HBM,H100 bf16,0.1,False,True,True,316.22776601683796,0.1507395530097605,0.29149740034662047
+conversation,Llama-3.3-70B (GQA),HBM,H100 bf16,1.0,True,False,True,1.0,0.01947029384841037,0.03761525129982669
+conversation,Llama-3.3-70B (GQA),Host DRAM,H100 bf16,1.0,True,False,True,562.341325190349,0.2874640545929834,0.33759792027729635
+conversation,Llama-3.3-70B (GQA),NVMe RAID x4,H100 bf16,1.0,True,False,True,3162.2776601683795,0.2627758591113878,0.3664124783362218
+conversation,Llama-3.3-70B (GQA),HDD RAID5 x4,H100 bf16,1.0,True,False,True,3162.2776601683795,0.35424617850406614,0.3664124783362218
+conversation,Llama-3.3-70B (GQA),S3-class object store,H100 bf16,1.0,True,False,True,1778.2794100389228,0.3396868743533342,0.363421143847487
+conversation,Llama-3.3-70B (GQA),HBM,H100 bf16,0.1,True,False,True,177.82794100389228,0.07082398052284344,0.23548700173310225
+conversation,DeepSeek-V3 (MLA),HBM,H100 fp8,1.0,False,False,True,1.0,0.01336402186724961,0.03761525129982669
+conversation,DeepSeek-V3 (MLA),Host DRAM,H100 fp8,1.0,False,False,True,1000.0,0.29688636355812026,0.35783015597920276
+conversation,DeepSeek-V3 (MLA),NVMe RAID x4,H100 fp8,1.0,False,False,True,3162.2776601683795,0.2877412142150485,0.3664124783362218
+conversation,DeepSeek-V3 (MLA),HDD RAID5 x4,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,DeepSeek-V3 (MLA),S3-class object store,H100 fp8,1.0,False,False,True,1778.2794100389228,0.30165779323365194,0.363421143847487
+conversation,DeepSeek-V3 (MLA),HBM,H100 fp8,0.1,False,False,True,316.22776601683796,0.1302044274718016,0.29149740034662047
+conversation,DeepSeek-V3 (MLA),HBM,B200 fp8,1.0,False,False,True,1.0,0.01361836862748611,0.03761525129982669
+conversation,DeepSeek-V3 (MLA),Host DRAM,B200 fp8,1.0,False,False,True,1000.0,0.28894143192200317,0.35783015597920276
+conversation,DeepSeek-V3 (MLA),NVMe RAID x4,B200 fp8,1.0,False,False,True,3162.2776601683795,0.27389032401292757,0.3664124783362218
+conversation,DeepSeek-V3 (MLA),HDD RAID5 x4,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,DeepSeek-V3 (MLA),S3-class object store,B200 fp8,1.0,False,False,True,1778.2794100389228,0.2635708610246851,0.363421143847487
+conversation,DeepSeek-V3 (MLA),HBM,B200 fp8,0.1,False,False,True,316.22776601683796,0.1369212152219177,0.29149740034662047
+conversation,DeepSeek-V3 (MLA),HBM,H100 bf16,1.0,False,True,True,100.0,0.026945041622172927,0.16927556325823223
+conversation,DeepSeek-V3 (MLA),Host DRAM,H100 bf16,1.0,False,True,True,1778.2794100389228,0.32296475402331615,0.363421143847487
+conversation,DeepSeek-V3 (MLA),NVMe RAID x4,H100 bf16,1.0,False,True,True,3162.2776601683795,0.32718125260178565,0.3664124783362218
+conversation,DeepSeek-V3 (MLA),HDD RAID5 x4,H100 bf16,1.0,False,True,True,3162.2776601683795,0.24330738134421837,0.3664124783362218
+conversation,DeepSeek-V3 (MLA),S3-class object store,H100 bf16,1.0,False,True,True,3162.2776601683795,0.33031517230929264,0.3664124783362218
+conversation,DeepSeek-V3 (MLA),HBM,H100 bf16,0.1,False,True,True,562.341325190349,0.25450753914046176,0.33759792027729635
+conversation,DeepSeek-V3 (MLA),HBM,H100 bf16,1.0,True,False,True,1.0,0.015785207373228305,0.03761525129982669
+conversation,DeepSeek-V3 (MLA),Host DRAM,H100 bf16,1.0,True,False,True,1000.0,0.31539035416133054,0.35783015597920276
+conversation,DeepSeek-V3 (MLA),NVMe RAID x4,H100 bf16,1.0,True,False,True,3162.2776601683795,0.3169669091373347,0.3664124783362218
+conversation,DeepSeek-V3 (MLA),HDD RAID5 x4,H100 bf16,1.0,True,False,True,3162.2776601683795,0.34016857299049164,0.3664124783362218
+conversation,DeepSeek-V3 (MLA),S3-class object store,H100 bf16,1.0,True,False,True,3162.2776601683795,0.335045607887683,0.3664124783362218
+conversation,DeepSeek-V3 (MLA),HBM,H100 bf16,0.1,True,False,True,562.341325190349,0.20145389702879768,0.33759792027729635
+conversation,gpt-oss-120b (sliding),HBM,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,gpt-oss-120b (sliding),Host DRAM,H100 fp8,1.0,False,False,True,316.22776601683796,0.17894264742259314,0.29149740034662047
+conversation,gpt-oss-120b (sliding),NVMe RAID x4,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,gpt-oss-120b (sliding),HDD RAID5 x4,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,gpt-oss-120b (sliding),S3-class object store,H100 fp8,1.0,False,False,True,1000.0,0.12207244403598339,0.35783015597920276
+conversation,gpt-oss-120b (sliding),HBM,H100 fp8,0.1,False,False,True,1.0,0.02248251470727025,0.03761525129982669
+conversation,gpt-oss-120b (sliding),HBM,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,gpt-oss-120b (sliding),Host DRAM,B200 fp8,1.0,False,False,True,316.22776601683796,0.14825442475357686,0.29149740034662047
+conversation,gpt-oss-120b (sliding),NVMe RAID x4,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,gpt-oss-120b (sliding),HDD RAID5 x4,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,gpt-oss-120b (sliding),S3-class object store,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,gpt-oss-120b (sliding),HBM,B200 fp8,0.1,False,False,True,1.0,0.022654890859091448,0.03761525129982669
+conversation,gpt-oss-120b (sliding),HBM,H100 bf16,1.0,False,True,True,1.0,0.017566479454985906,0.03761525129982669
+conversation,gpt-oss-120b (sliding),Host DRAM,H100 bf16,1.0,False,True,True,1000.0,0.2836868681245308,0.35783015597920276
+conversation,gpt-oss-120b (sliding),NVMe RAID x4,H100 bf16,1.0,False,True,True,3162.2776601683795,0.26144972262371,0.3664124783362218
+conversation,gpt-oss-120b (sliding),HDD RAID5 x4,H100 bf16,1.0,False,True,True,0,0.0,0.0
+conversation,gpt-oss-120b (sliding),S3-class object store,H100 bf16,1.0,False,True,True,1778.2794100389228,0.2874467927698843,0.363421143847487
+conversation,gpt-oss-120b (sliding),HBM,H100 bf16,0.1,False,True,True,177.82794100389228,0.08700082133890652,0.23548700173310225
+conversation,gpt-oss-120b (sliding),HBM,H100 bf16,1.0,True,False,True,1.0,0.009370324929489082,0.03761525129982669
+conversation,gpt-oss-120b (sliding),Host DRAM,H100 bf16,1.0,True,False,True,562.341325190349,0.25598549848844143,0.33759792027729635
+conversation,gpt-oss-120b (sliding),NVMe RAID x4,H100 bf16,1.0,True,False,True,3162.2776601683795,0.19222496749002538,0.3664124783362218
+conversation,gpt-oss-120b (sliding),HDD RAID5 x4,H100 bf16,1.0,True,False,True,3162.2776601683795,0.34946752591003694,0.3664124783362218
+conversation,gpt-oss-120b (sliding),S3-class object store,H100 bf16,1.0,True,False,True,1000.0,0.32933806205334226,0.35783015597920276
+conversation,gpt-oss-120b (sliding),HBM,H100 bf16,0.1,True,False,True,1.0,0.02412340307538352,0.03761525129982669
+conversation,Qwen3.5-27B (linear hybrid),HBM,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,Qwen3.5-27B (linear hybrid),Host DRAM,H100 fp8,1.0,False,False,True,177.82794100389228,0.11376165742665556,0.23548700173310225
+conversation,Qwen3.5-27B (linear hybrid),NVMe RAID x4,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,Qwen3.5-27B (linear hybrid),HDD RAID5 x4,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,Qwen3.5-27B (linear hybrid),S3-class object store,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,Qwen3.5-27B (linear hybrid),HBM,H100 fp8,0.1,False,False,True,1.0,0.027228061171726825,0.03761525129982669
+conversation,Qwen3.5-27B (linear hybrid),HBM,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,Qwen3.5-27B (linear hybrid),Host DRAM,B200 fp8,1.0,False,False,True,177.82794100389228,0.06913541023419656,0.23548700173310225
+conversation,Qwen3.5-27B (linear hybrid),NVMe RAID x4,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,Qwen3.5-27B (linear hybrid),HDD RAID5 x4,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,Qwen3.5-27B (linear hybrid),S3-class object store,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,Qwen3.5-27B (linear hybrid),HBM,B200 fp8,0.1,False,False,True,1.0,0.02756803833736754,0.03761525129982669
+conversation,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,1.0,False,True,True,1.0,0.01753217392643769,0.03761525129982669
+conversation,Qwen3.5-27B (linear hybrid),Host DRAM,H100 bf16,1.0,False,True,True,562.341325190349,0.26005720356985174,0.33759792027729635
+conversation,Qwen3.5-27B (linear hybrid),NVMe RAID x4,H100 bf16,1.0,False,True,True,3162.2776601683795,0.18553692436651015,0.3664124783362218
+conversation,Qwen3.5-27B (linear hybrid),HDD RAID5 x4,H100 bf16,1.0,False,True,True,0,0.0,0.0
+conversation,Qwen3.5-27B (linear hybrid),S3-class object store,H100 bf16,1.0,False,True,True,1000.0,0.24429742137634491,0.35783015597920276
+conversation,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,0.1,False,True,True,3.1622776601683795,0.03241027866923696,0.041868284228769495
+conversation,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,1.0,True,False,True,1.0,0.0013669134991786125,0.03761525129982669
+conversation,Qwen3.5-27B (linear hybrid),Host DRAM,H100 bf16,1.0,True,False,True,316.22776601683796,0.2096070133447242,0.29149740034662047
+conversation,Qwen3.5-27B (linear hybrid),NVMe RAID x4,H100 bf16,1.0,True,False,True,3162.2776601683795,0.04900506771906088,0.3664124783362218
+conversation,Qwen3.5-27B (linear hybrid),HDD RAID5 x4,H100 bf16,1.0,True,False,True,3162.2776601683795,0.3591342751659087,0.3664124783362218
+conversation,Qwen3.5-27B (linear hybrid),S3-class object store,H100 bf16,1.0,True,False,True,1000.0,0.3285161494644049,0.35783015597920276
+conversation,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,0.1,True,False,True,1.0,0.030464382268244994,0.03761525129982669
+conversation,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,1.0,False,False,False,1.0,0.027911615871518136,0.03761525129982669
+conversation,Qwen3.5-27B (linear hybrid),Host DRAM,H100 bf16,1.0,False,False,False,1000.0,0.31163506080521386,0.35783015597920276
+conversation,Qwen3.5-27B (linear hybrid),NVMe RAID x4,H100 bf16,1.0,False,False,False,3162.2776601683795,0.29829256072305754,0.3664124783362218
+conversation,Qwen3.5-27B (linear hybrid),HDD RAID5 x4,H100 bf16,1.0,False,False,False,0,0.0,0.0
+conversation,Qwen3.5-27B (linear hybrid),S3-class object store,H100 bf16,1.0,False,False,False,1778.2794100389228,0.315839828467668,0.363421143847487
+conversation,Qwen3.5-27B (linear hybrid),HBM,H100 bf16,0.1,False,False,False,177.82794100389228,0.13761862740033992,0.23548700173310225
+conversation,"Llama-3.1-8B (GQA, small)",HBM,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",Host DRAM,H100 fp8,1.0,False,False,True,177.82794100389228,0.11313464220808123,0.23548700173310225
+conversation,"Llama-3.1-8B (GQA, small)",NVMe RAID x4,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",HDD RAID5 x4,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",S3-class object store,H100 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",HBM,H100 fp8,0.1,False,False,True,1.0,0.01899616265082449,0.03761525129982669
+conversation,"Llama-3.1-8B (GQA, small)",HBM,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",Host DRAM,B200 fp8,1.0,False,False,True,177.82794100389228,0.0736886806317556,0.23548700173310225
+conversation,"Llama-3.1-8B (GQA, small)",NVMe RAID x4,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",HDD RAID5 x4,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",S3-class object store,B200 fp8,1.0,False,False,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",HBM,B200 fp8,0.1,False,False,True,1.0,0.019296674727417917,0.03761525129982669
+conversation,"Llama-3.1-8B (GQA, small)",HBM,H100 bf16,1.0,False,True,True,1.0,0.010425789389052365,0.03761525129982669
+conversation,"Llama-3.1-8B (GQA, small)",Host DRAM,H100 bf16,1.0,False,True,True,562.341325190349,0.2544545700332358,0.33759792027729635
+conversation,"Llama-3.1-8B (GQA, small)",NVMe RAID x4,H100 bf16,1.0,False,True,True,3162.2776601683795,0.19384678956310453,0.3664124783362218
+conversation,"Llama-3.1-8B (GQA, small)",HDD RAID5 x4,H100 bf16,1.0,False,True,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",S3-class object store,H100 bf16,1.0,False,True,True,1000.0,0.24443146144507866,0.35783015597920276
+conversation,"Llama-3.1-8B (GQA, small)",HBM,H100 bf16,0.1,False,True,True,1.0,0.023285683590514195,0.03761525129982669
+conversation,"Llama-3.1-8B (GQA, small)",HBM,H100 bf16,1.0,True,False,True,0,0.0,0.0
+conversation,"Llama-3.1-8B (GQA, small)",Host DRAM,H100 bf16,1.0,True,False,True,562.341325190349,0.2073132276675902,0.33759792027729635
+conversation,"Llama-3.1-8B (GQA, small)",NVMe RAID x4,H100 bf16,1.0,True,False,True,3162.2776601683795,0.07316376757613874,0.3664124783362218
+conversation,"Llama-3.1-8B (GQA, small)",HDD RAID5 x4,H100 bf16,1.0,True,False,True,3162.2776601683795,0.34729268430124727,0.3664124783362218
+conversation,"Llama-3.1-8B (GQA, small)",S3-class object store,H100 bf16,1.0,True,False,True,1000.0,0.3188739458817892,0.35783015597920276
+conversation,"Llama-3.1-8B (GQA, small)",HBM,H100 bf16,0.1,True,False,True,1.0,0.021856806457018485,0.03761525129982669

@@ -1,0 +1,288 @@
+{
+ "sweep": [
+  {
+   "source": "prefill sweep",
+   "cached_from": 768,
+   "cached_to": 31488,
+   "n": [
+    23,
+    19
+   ],
+   "ttft_diff_s": 0.13982305100000003,
+   "ttft_diff_95": 0.452486191,
+   "min_tokens_per_s": 67891.57461824067,
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "baseten",
+   "min_gb_per_s": {}
+  },
+  {
+   "source": "prefill sweep",
+   "cached_from": 1920,
+   "cached_to": 31488,
+   "n": [
+    1,
+    15
+   ],
+   "ttft_diff_s": -0.13723118499999998,
+   "ttft_diff_95": -0.10626860199999999,
+   "min_tokens_per_s": Infinity,
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "coreweave/fp8",
+   "min_gb_per_s": {}
+  },
+  {
+   "source": "prefill sweep",
+   "cached_from": 896.0,
+   "cached_to": 31488.0,
+   "n": [
+    20,
+    20
+   ],
+   "ttft_diff_s": 0.021216775999999937,
+   "ttft_diff_95": 0.13722173599999998,
+   "min_tokens_per_s": 222938.44176406573,
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "deepinfra/fp8",
+   "min_gb_per_s": {}
+  },
+  {
+   "source": "prefill sweep",
+   "cached_from": 889.0,
+   "cached_to": 31424.0,
+   "n": [
+    20,
+    20
+   ],
+   "ttft_diff_s": 0.03170597500000005,
+   "ttft_diff_95": 0.18825667844999988,
+   "min_tokens_per_s": 162198.76102886815,
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "fireworks",
+   "min_gb_per_s": {}
+  },
+  {
+   "source": "prefill sweep",
+   "cached_from": 896.0,
+   "cached_to": 31488,
+   "n": [
+    20,
+    19
+   ],
+   "ttft_diff_s": 0.4649008280000002,
+   "ttft_diff_95": 0.856309279,
+   "min_tokens_per_s": 35725.4099076509,
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "gmicloud/fp8",
+   "min_gb_per_s": {}
+  },
+  {
+   "source": "prefill sweep",
+   "cached_from": 1024.0,
+   "cached_to": 31488.0,
+   "n": [
+    20,
+    20
+   ],
+   "ttft_diff_s": 0.5608100395,
+   "ttft_diff_95": 0.633723211,
+   "min_tokens_per_s": 48071.46001789731,
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "novita/fp8",
+   "min_gb_per_s": {}
+  },
+  {
+   "source": "prefill sweep",
+   "cached_from": 896.0,
+   "cached_to": 31488.0,
+   "n": [
+    20,
+    20
+   ],
+   "ttft_diff_s": 0.3171807075,
+   "ttft_diff_95": 0.37945968497500004,
+   "min_tokens_per_s": 80619.89510694791,
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "parasail/fp8",
+   "min_gb_per_s": {}
+  },
+  {
+   "source": "prefill sweep",
+   "cached_from": 896.0,
+   "cached_to": 31488.0,
+   "n": [
+    20,
+    20
+   ],
+   "ttft_diff_s": 0.04723913399999999,
+   "ttft_diff_95": 0.06825293510000002,
+   "min_tokens_per_s": 448215.1566841554,
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "together",
+   "min_gb_per_s": {}
+  },
+  {
+   "source": "prefill sweep",
+   "cached_from": 992.0,
+   "cached_to": 31520.0,
+   "n": [
+    20,
+    20
+   ],
+   "ttft_diff_s": 0.31239017599999996,
+   "ttft_diff_95": 0.4073560883999998,
+   "min_tokens_per_s": 74941.80366839956,
+   "model": "moonshotai/kimi-k2.6",
+   "provider": "deepinfra/fp4",
+   "min_gb_per_s": {
+    "MLA (as K2.5)": 5.266310427385774
+   }
+  },
+  {
+   "source": "prefill sweep",
+   "cached_from": 1022.0,
+   "cached_to": 30720.0,
+   "n": [
+    22,
+    20
+   ],
+   "ttft_diff_s": 0.6427540080000003,
+   "ttft_diff_95": 1.6580990259749995,
+   "min_tokens_per_s": 17910.87235126799,
+   "model": "moonshotai/kimi-k2.6",
+   "provider": "moonshotai",
+   "min_gb_per_s": {
+    "MLA (as K2.5)": 1.2586328218683043
+   }
+  },
+  {
+   "source": "prefill sweep",
+   "cached_from": 1008.0,
+   "cached_to": 31552.0,
+   "n": [
+    14,
+    18
+   ],
+   "ttft_diff_s": 0.46582095600000006,
+   "ttft_diff_95": 0.6354957499249999,
+   "min_tokens_per_s": 48063.2640007502,
+   "model": "moonshotai/kimi-k2.6",
+   "provider": "parasail/int4",
+   "min_gb_per_s": {
+    "MLA (as K2.5)": 3.377501687860718
+   }
+  }
+ ],
+ "grid": [
+  {
+   "source": "cache grid (500 new tokens)",
+   "cached_from": 3968,
+   "cached_to": 31488.0,
+   "n": [
+    21,
+    20
+   ],
+   "ttft_diff_s": 0.20093713299999993,
+   "ttft_diff_95": 0.23638477417499998,
+   "min_tokens_per_s": 116420.35785107902,
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "parasail/fp8",
+   "min_gb_per_s": {}
+  },
+  {
+   "source": "cache grid (500 new tokens)",
+   "cached_from": 6144,
+   "cached_to": 30720.0,
+   "n": [
+    21,
+    20
+   ],
+   "ttft_diff_s": 0.4284410515000001,
+   "ttft_diff_95": 0.9451899438249995,
+   "min_tokens_per_s": 26001.123012953052,
+   "model": "moonshotai/kimi-k2.6",
+   "provider": "moonshotai",
+   "min_gb_per_s": {
+    "MLA (as K2.5)": 1.827150916366237
+   }
+  },
+  {
+   "source": "cache grid (500 new tokens)",
+   "cached_from": 3936.0,
+   "cached_to": 30928.0,
+   "n": [
+    20,
+    20
+   ],
+   "ttft_diff_s": 0.31083565299999993,
+   "ttft_diff_95": 0.39465897400000005,
+   "min_tokens_per_s": 68393.22498213356,
+   "model": "openai/gpt-oss-120b",
+   "provider": "nebius/fp4",
+   "min_gb_per_s": {
+    "sliding windows only": 2.521247845741372,
+    "all sliding-layer KV kept": 5.042495691482744
+   }
+  }
+ ],
+ "slow_tier": [
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "provider": "deepinfra/fp8",
+   "cached": 15744.0,
+   "n_fast": 100,
+   "n_slow": 22,
+   "slow_hits_reported": 22,
+   "ttft_fast": 0.5665067720000001,
+   "ttft_slow": 0.5611679985000001,
+   "floor_s": 0.0,
+   "extra_s": -0.008635784999999951,
+   "min_tokens_per_s": 26098.108282500052,
+   "max_tokens_per_s": Infinity,
+   "gb_per_s": {}
+  },
+  {
+   "model": "moonshotai/kimi-k2.6",
+   "provider": "moonshotai",
+   "cached": 6144,
+   "n_fast": 139,
+   "n_slow": 62,
+   "slow_hits_reported": 0,
+   "ttft_fast": 1.560179629,
+   "ttft_slow": 1.7361393120000002,
+   "floor_s": 1.004911136,
+   "extra_s": 0.16567623374999996,
+   "min_tokens_per_s": 7049.8088940696525,
+   "max_tokens_per_s": Infinity,
+   "gb_per_s": {
+    "MLA (as K2.5)": [
+     0.4954041706040626,
+     Infinity
+    ]
+   }
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "provider": "nebius/fp4",
+   "cached": 15520,
+   "n_fast": 97,
+   "n_slow": 22,
+   "slow_hits_reported": 22,
+   "ttft_fast": 0.500269684,
+   "ttft_slow": 0.7367623329999999,
+   "floor_s": 0.23363353875,
+   "extra_s": 0.23432372350000003,
+   "min_tokens_per_s": 27333.622928547877,
+   "max_tokens_per_s": 157551.01688269808,
+   "gb_per_s": {
+    "sliding windows only": [
+     1.007626675637989,
+     5.807960686363782
+    ],
+    "all sliding-layer KV kept": [
+     2.015253351275978,
+     11.615921372727565
+    ]
+   }
+  }
+ ]
+}

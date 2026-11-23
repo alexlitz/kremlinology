@@ -1,0 +1,87 @@
+{
+ "run_id": "8dcad5328389",
+ "spent_usd": 0.0181,
+ "calls": 40,
+ "witnessed_records": 40,
+ "routing": {
+  "prompts": 10,
+  "repeats": 30,
+  "providers_seen": {
+   "DeepInfra": 24,
+   "GMICloud": 16
+  },
+  "first_request_providers": {
+   "GMICloud": 7,
+   "DeepInfra": 3
+  },
+  "repeats_on_first_provider": 18,
+  "share_on_first_provider": 0.6,
+  "share_expected_without_stickiness": 0.52,
+  "median_cached_tokens_same_provider": 2304.0,
+  "median_cached_tokens_other_provider": 0.0,
+  "median_prompt_tokens": 2695.0,
+  "sequences": [
+   [
+    "GMICloud",
+    "DeepInfra",
+    "GMICloud (2048 cached)",
+    "GMICloud (2048 cached)"
+   ],
+   [
+    "GMICloud",
+    "DeepInfra",
+    "GMICloud (2048 cached)",
+    "GMICloud (2048 cached)"
+   ],
+   [
+    "GMICloud",
+    "DeepInfra",
+    "GMICloud (2048 cached)",
+    "GMICloud (2048 cached)"
+   ],
+   [
+    "DeepInfra",
+    "DeepInfra (2560 cached)",
+    "DeepInfra (2560 cached)",
+    "DeepInfra (2560 cached)"
+   ],
+   [
+    "GMICloud",
+    "DeepInfra",
+    "DeepInfra (2560 cached)",
+    "DeepInfra (2560 cached)"
+   ],
+   [
+    "GMICloud",
+    "GMICloud (2048 cached)",
+    "DeepInfra",
+    "DeepInfra (2624 cached)"
+   ],
+   [
+    "DeepInfra",
+    "DeepInfra (2624 cached)",
+    "DeepInfra (2624 cached)",
+    "DeepInfra (2624 cached)"
+   ],
+   [
+    "DeepInfra",
+    "DeepInfra (2560 cached)",
+    "DeepInfra (2560 cached)",
+    "DeepInfra (2560 cached)"
+   ],
+   [
+    "GMICloud",
+    "DeepInfra",
+    "DeepInfra (2560 cached)",
+    "GMICloud (2048 cached)"
+   ],
+   [
+    "GMICloud",
+    "GMICloud (2048 cached)",
+    "DeepInfra",
+    "DeepInfra (2560 cached)"
+   ]
+  ]
+ },
+ "honesty": []
+}

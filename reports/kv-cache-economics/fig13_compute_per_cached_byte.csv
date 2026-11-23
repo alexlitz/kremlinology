@@ -1,0 +1,8 @@
+family,models,median_flops_per_kv_byte
+MHA,54,13272.0
+GQA,357,94208.0
+MQA,4,215040.0
+MLA (latent),33,843521.0622406639
+Sliding / chunked + global,131,263794.96166484116
+Linear attention + global,291,395124.44496214326
+SSM / conv hybrid,38,223846.35418064962

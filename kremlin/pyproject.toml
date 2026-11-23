@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kremlin"
+version = "0.3.3"
+description = "Black-box forensics for LLM inference APIs: same-backend fingerprints, cache probes, output differences, billing and timing."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["httpx>=0.25"]
+
+
+[project.optional-dependencies]
+witness = ["cryptography>=42", "certifi", "brotli", "zstandard", "tlslite-ng>=0.8.2"]
+datasets = ["datasets"]
+test = ["pytest>=7"]
+
+[project.scripts]
+kremlin = "kremlin.cli:main"
+kremlin-witness = "kremlin.witness.relay:main"
+kremlin-hub = "kremlin.hub:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

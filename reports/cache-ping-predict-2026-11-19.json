@@ -1,0 +1,224 @@
+{
+ "conversation": {
+  "variant": "conversation",
+  "conversations_total": 7373,
+  "conversations_multi": 2259,
+  "endpoints": {
+   "haiku4.5": {
+    "auc": {
+     "age+n": 0.57,
+     "age+rate": 0.608,
+     "age+out": 0.607,
+     "age only": 0.5
+    },
+    "best_feature": "age+rate",
+    "miss_mtok": 2.163,
+    "blind_mtok": 18.0337,
+    "pred_mtok": 6.7103,
+    "oracle_mtok": 0.9713,
+    "blind_waste": 0.937,
+    "pred_waste": 0.789
+   },
+   "kimi-k2.6": {
+    "auc": {
+     "age+n": 0.598,
+     "age+rate": 0.666,
+     "age+out": 0.697,
+     "age only": 0.5
+    },
+    "best_feature": "age+out",
+    "miss_mtok": 0.5375,
+    "blind_mtok": 9.5605,
+    "pred_mtok": 3.6545,
+    "oracle_mtok": 0.4129,
+    "blind_waste": 0.959,
+    "pred_waste": 0.891
+   }
+  }
+ },
+ "conversation-x3": {
+  "variant": "conversation-x3",
+  "conversations_total": 7373,
+  "conversations_multi": 2259,
+  "endpoints": {
+   "haiku4.5": {
+    "auc": {
+     "age+n": 0.512,
+     "age+rate": 0.572,
+     "age+out": 0.591,
+     "age only": 0.5
+    },
+    "best_feature": "age+out",
+    "miss_mtok": 10.9998,
+    "blind_mtok": 30.5099,
+    "pred_mtok": 25.4982,
+    "oracle_mtok": 4.3615,
+    "blind_waste": 0.764,
+    "pred_waste": 0.694
+   },
+   "kimi-k2.6": {
+    "auc": {
+     "age+n": 0.543,
+     "age+rate": 0.583,
+     "age+out": 0.584,
+     "age only": 0.5
+    },
+    "best_feature": "age+out",
+    "miss_mtok": 3.8716,
+    "blind_mtok": 15.1264,
+    "pred_mtok": 13.0617,
+    "oracle_mtok": 2.7025,
+    "blind_waste": 0.77,
+    "pred_waste": 0.727
+   }
+  }
+ },
+ "conversation-x8": {
+  "variant": "conversation-x8",
+  "conversations_total": 7373,
+  "conversations_multi": 2259,
+  "endpoints": {
+   "haiku4.5": {
+    "auc": {
+     "age+n": 0.569,
+     "age+rate": 0.527,
+     "age+out": 0.713,
+     "age only": 0.5
+    },
+    "best_feature": "age+out",
+    "miss_mtok": 23.2163,
+    "blind_mtok": 50.0477,
+    "pred_mtok": 47.9915,
+    "oracle_mtok": 11.6028,
+    "blind_waste": 0.545,
+    "pred_waste": 0.548
+   },
+   "kimi-k2.6": {
+    "auc": {
+     "age+n": 0.521,
+     "age+rate": 0.512,
+     "age+out": 0.623,
+     "age only": 0.5
+    },
+    "best_feature": "age+out",
+    "miss_mtok": 10.6317,
+    "blind_mtok": 26.5911,
+    "pred_mtok": 24.3404,
+    "oracle_mtok": 8.1626,
+    "blind_waste": 0.533,
+    "pred_waste": 0.542
+   }
+  }
+ },
+ "toolagent": {
+  "variant": "toolagent",
+  "conversations_total": 6554,
+  "conversations_multi": 2071,
+  "endpoints": {
+   "haiku4.5": {
+    "auc": {
+     "age+n": 0.832,
+     "age+rate": 0.852,
+     "age+out": 0.84,
+     "age only": 0.5
+    },
+    "best_feature": "age+rate",
+    "miss_mtok": 0.354,
+    "blind_mtok": 6.1454,
+    "pred_mtok": 1.7734,
+    "oracle_mtok": 0.229,
+    "blind_waste": 0.958,
+    "pred_waste": 0.839
+   },
+   "kimi-k2.6": {
+    "auc": {
+     "age+n": 0.806,
+     "age+rate": 0.831,
+     "age+out": 0.835,
+     "age only": 0.5
+    },
+    "best_feature": "age+out",
+    "miss_mtok": 0.0493,
+    "blind_mtok": 3.3227,
+    "pred_mtok": 0.856,
+    "oracle_mtok": 0.0584,
+    "blind_waste": 0.984,
+    "pred_waste": 0.953
+   }
+  }
+ },
+ "arxiv": {
+  "variant": "arxiv",
+  "conversations_total": 6557,
+  "conversations_multi": 2070,
+  "endpoints": {
+   "haiku4.5": {
+    "auc": {
+     "age+n": 0.833,
+     "age+rate": 0.852,
+     "age+out": 0.84,
+     "age only": 0.5
+    },
+    "best_feature": "age+rate",
+    "miss_mtok": 0.3682,
+    "blind_mtok": 5.9475,
+    "pred_mtok": 1.7496,
+    "oracle_mtok": 0.2237,
+    "blind_waste": 0.957,
+    "pred_waste": 0.838
+   },
+   "kimi-k2.6": {
+    "auc": {
+     "age+n": 0.808,
+     "age+rate": 0.827,
+     "age+out": 0.833,
+     "age only": 0.5
+    },
+    "best_feature": "age+out",
+    "miss_mtok": 0.0327,
+    "blind_mtok": 3.183,
+    "pred_mtok": 0.8062,
+    "oracle_mtok": 0.0575,
+    "blind_waste": 0.984,
+    "pred_waste": 0.951
+   }
+  }
+ },
+ "synthetic": {
+  "variant": "synthetic",
+  "conversations_total": 2245,
+  "conversations_multi": 385,
+  "endpoints": {
+   "haiku4.5": {
+    "auc": {
+     "age+n": 0.79,
+     "age+rate": 0.694,
+     "age+out": 0.498,
+     "age only": 0.5
+    },
+    "best_feature": "age+n",
+    "miss_mtok": 0.3575,
+    "blind_mtok": 12.4749,
+    "pred_mtok": 1.1303,
+    "oracle_mtok": 0.4864,
+    "blind_waste": 0.96,
+    "pred_waste": 0.403
+   },
+   "kimi-k2.6": {
+    "auc": {
+     "age+n": 0.899,
+     "age+rate": 0.88,
+     "age+out": 0.541,
+     "age only": 0.5
+    },
+    "best_feature": "age+n",
+    "miss_mtok": 0.0,
+    "blind_mtok": 6.7774,
+    "pred_mtok": 0.0,
+    "oracle_mtok": 0.0456,
+    "blind_waste": 0.996,
+    "pred_waste": 0.0
+   }
+  }
+ }
+}
